@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgGui.Controller">
    <children>
-      <ImageView id="image" fitHeight="65.0" fitWidth="304.0" layoutX="248.0" layoutY="300.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onScroll="#SelectedSound" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="image" fitHeight="65.0" fitWidth="304.0" layoutX="248.0" layoutY="300.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resources/Media/Images/UI/NuevaPartida.png" />
          </image>
@@ -15,7 +15,7 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </ImageView>
-      <ImageView id="image" fitHeight="65.0" fitWidth="304.0" layoutX="248.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="image" fitHeight="65.0" fitWidth="304.0" layoutX="248.0" layoutY="360.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resources/Media/Images/UI/CargarPartida.png" />
          </image>
@@ -23,7 +23,7 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </ImageView>
-      <ImageView id="image" fitHeight="60.0" fitWidth="168.0" layoutX="319.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="image" fitHeight="60.0" fitWidth="168.0" layoutX="319.0" layoutY="422.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resources/Media/Images/UI/Ajustes.png" />
          </image>
@@ -31,7 +31,7 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </ImageView>
-      <ImageView id="image" fitHeight="48.0" fitWidth="120.0" layoutX="348.0" layoutY="482.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="image" fitHeight="48.0" fitWidth="120.0" layoutX="348.0" layoutY="482.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Exit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resources/Media/Images/UI/Salir.png" />
          </image>
