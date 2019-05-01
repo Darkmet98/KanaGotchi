@@ -6,17 +6,19 @@ import javafx.scene.media.MediaPlayer;
 public class SoundController {
 
     //MediaPlayer for background Music
-    MediaPlayer background;
+    public static MediaPlayer background;
 
     //MediaPlayer for button sounds
-    MediaPlayer button;
+    private MediaPlayer button;
 
     public void BackgroundMusic(String file) {
+        //Settings link
+
         try  {
             Media mediaBackground = new Media(getClass().getResource(file).toURI().toString());
-            background = new MediaPlayer(mediaBackground);
-            background.setCycleCount(MediaPlayer.INDEFINITE);
-            background.setAutoPlay(true);
+            setBackground(new MediaPlayer(mediaBackground));
+            getBackground().setCycleCount(MediaPlayer.INDEFINITE);
+            getBackground().setAutoPlay(true);
         }
         catch (Exception e) {
             System.out.println(e);
@@ -26,12 +28,27 @@ public class SoundController {
     public void InterfaceSounds(String file) {
         try  {
             Media mediaSound = new Media(getClass().getResource(file).toURI().toString());
-            button = new MediaPlayer(mediaSound);
-            button.setAutoPlay(true);
+            setButton(new MediaPlayer(mediaSound));
+            getButton().setAutoPlay(true);
         }
         catch (Exception e) {
             System.out.println(e);
         }
     }
 
+    public MediaPlayer getBackground() {
+        return background;
+    }
+
+    public void setBackground(MediaPlayer background) {
+        this.background = background;
+    }
+
+    public MediaPlayer getButton() {
+        return button;
+    }
+
+    public void setButton(MediaPlayer button) {
+        this.button = button;
+    }
 }

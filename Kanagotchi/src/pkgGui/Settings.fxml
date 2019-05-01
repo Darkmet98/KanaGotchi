@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgGui.Controller">
+   <children>
+      <Slider fx:id="VolumenSlider" layoutX="295.0" layoutY="231.0" onMouseEntered="#SelectedSound" onMousePressed="#ChangeVolume" onMouseReleased="#ChangeVolume" prefHeight="38.0" prefWidth="210.0" value="100.0" />
+      <ChoiceBox layoutX="325.0" layoutY="338.0" onMouseEntered="#SelectedSound" prefWidth="150.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/Media/Images/UI/Ajustes.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="301.0" layoutX="255.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/Media/Images/UI/Volumen.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="186.0" layoutX="307.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/Media/Images/UI/Resolucion.png" />
+         </image>
+      </ImageView>
+      <ImageView id="image" fitHeight="44.0" fitWidth="131.0" layoutX="335.0" layoutY="429.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/Media/Images/UI/Creditos.png" />
+         </image>
+      </ImageView>
+      <ImageView id="image" fitHeight="38.0" fitWidth="89.0" layoutX="359.0" layoutY="517.0" onMouseEntered="#SelectedSound" onMouseReleased="#TitleScreen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/Media/Images/UI/Salir.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

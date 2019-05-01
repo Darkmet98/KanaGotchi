@@ -1,16 +1,6 @@
 package pkgGui;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
+public class Settings {
 
-public class Settings extends Application {
-
-    public static void main(String[] args) {
-        launch(args);
-    }
-
-    @Override
-    public void start(Stage primaryStage) {
-
-    }
+    private int[][] Resolutions = new int[][] {{800, 600}};
 }
