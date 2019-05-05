@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgGui.Controller">
+   <children>
+      <ImageView id="image" fitHeight="65.0" fitWidth="304.0" layoutX="248.0" layoutY="300.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Media/Images/UI/NuevaPartida.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView id="image" fitHeight="65.0" fitWidth="304.0" layoutX="248.0" layoutY="360.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Media/Images/UI/CargarPartida.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView id="image" fitHeight="60.0" fitWidth="168.0" layoutX="319.0" layoutY="422.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMousePressed="#Settings" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Media/Images/UI/Ajustes.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView id="image" fitHeight="48.0" fitWidth="120.0" layoutX="348.0" layoutY="482.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Media/Images/UI/Salir.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="243.0" fitWidth="610.0" layoutX="95.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Media/Images/UI/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="176.0" layoutX="14.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Media/Images/UI/Version.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="333.0" layoutX="532.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Media/Images/UI/Desarrollado.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
