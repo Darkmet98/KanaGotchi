@@ -1,9 +1,15 @@
 package pkgMechanics;
 
+import pkgDebug.DataInputStream_Debug;
+import pkgDebug.DataOutputStream_Debug;
+import pkgExceptions.BadHeaderSave;
 import pkgExceptions.InsufficientMoney;
 import pkgExceptions.ItemIsZero;
-import pkgSave.FileFormat;
+import pkgExceptions.SaveFileDoesntExists;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.*;
@@ -17,8 +23,11 @@ public class Game {
     private LocalDateTime Time;
     private Timer Count;
     private Map<Integer, Integer> ItemsOwned;
-    private Items item = new Items();
-    private FileFormat saveformat;
+    public Items item = new Items();
+    private File SaveFolder = new File(System.getProperty("user.home")+"/KanaGotchi");
+    private File SaveFile = new File(getSaveFolder() +"/save.sav");
+    private DataOutputStream_Debug save_stream;
+    private DataInputStream_Debug load_stream;
 
     public Game() {}
 
@@ -111,9 +120,54 @@ public class Game {
     }
 
     public void save() throws IOException {
-        setSaveformat(new FileFormat(getMoney(),getStatus(),getHealth(),getTime(),getItemsOwned()));
-        getSaveformat().SaveFile();
+        if(!getSaveFolder().exists()) getSaveFolder().mkdirs();
+        FileOutputStream save = new FileOutputStream(getSaveFile());
+        save_stream = new DataOutputStream_Debug(save);
+        //MAGIC
+        save_stream.writeSave("KNTI", true);
+        //Money
+        //save_stream.writeSave((Encrypt(getMoney())), true);
+        save_stream.writeSave((Encrypt(getMoney())), true);
+        //Status
+        save_stream.writeSave(((int)Encrypt(getStatus())), true);
+        //Health
+        save_stream.writeSave((int)Encrypt(getHealth()), true);
+        //Time
+        save_stream.writeSave(getTime().toString(), true);
+        //ItemsOwned
+        for(int i = 0; i < getItemsOwned().size(); i++) {
+            //Write the item
+            save_stream.writeSave(((int)Encrypt(getItemsOwned().get(i))), true);
+        }
+        save_stream.flush();
+        save_stream.close();
+        save.close();
     }
+
+    public void load() throws BadHeaderSave, IOException, SaveFileDoesntExists {
+        //Check if the file exists.
+        if(!getSaveFile().exists()) throw new SaveFileDoesntExists("La partida no existe.");
+        //Load the save
+        FileInputStream load = new FileInputStream(getSaveFile());
+        load_stream = new DataInputStream_Debug(load);
+        //Check the magic
+        if(!load_stream.readSaveMagic(true).equals("KNTI")) throw new BadHeaderSave("La partida está corrupta");
+        //Read the money
+        setMoney(Encrypt(load_stream.readSaveLong(true)));
+        //Read the status
+        setStatus((int)Encrypt(load_stream.readSaveInt(true)));
+        //Read the Health
+        setHealth((int)Encrypt(load_stream.readSaveInt(true)));
+        //Read the Time
+        setTime(load_stream.readSaveDate(true));
+        //Read the items owned
+        Map<Integer, Integer> temp = new TreeMap<>();
+        for(int i = 0; i < item.getItemList().size(); i++) temp.put(i, (int)Encrypt(load_stream.readSaveInt(true)));
+        setItemsOwned(temp);
+    }
+
+    private long Encrypt(long value) { return value^456970; }
+
 
     //Get Set Zone
     public long getMoney() { return Money; }
@@ -129,11 +183,11 @@ public class Game {
     public Map<Integer, Integer> getItemsOwned() { return ItemsOwned; }
     public void setItemsOwned(Map<Integer, Integer> itemsOwned) { ItemsOwned = itemsOwned; }
 
-    public FileFormat getSaveformat() {
-        return saveformat;
+    public File getSaveFolder() {
+        return SaveFolder;
     }
 
-    public void setSaveformat(FileFormat saveformat) {
-        this.saveformat = saveformat;
+    public File getSaveFile() {
+        return SaveFile;
     }
 }

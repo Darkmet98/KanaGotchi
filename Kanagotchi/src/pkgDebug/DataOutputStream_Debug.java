@@ -17,7 +17,7 @@ public class DataOutputStream_Debug extends DataOutputStream {
     }
 
     public void writeSave(int b, boolean debug) throws IOException {
-        write(b);
+        writeInt(b);
         write((int)RandomNumbers());
         if(debug) Log.log(Level.INFO, Integer.toString(b));
     }
@@ -28,13 +28,10 @@ public class DataOutputStream_Debug extends DataOutputStream {
         if(debug) Log.log(Level.INFO, Long.toString(b));
     }
 
-    public void writeSave(byte[] b, boolean debug) throws IOException {
-        write(b);
+    public void writeSave(String b, boolean debug) throws IOException {
+        writeUTF(b);
         write((int)RandomNumbers());
-        if(debug) {
-            String logstring = new String(b);
-            Log.log(Level.INFO, logstring);
-        }
+        if(debug) Log.log(Level.INFO, b);
     }
 
     private long RandomNumbers() {

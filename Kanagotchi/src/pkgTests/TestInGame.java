@@ -3,11 +3,12 @@ package pkgTests;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import pkgExceptions.BadHeaderSave;
 import pkgExceptions.InsufficientMoney;
 import pkgExceptions.ItemIsZero;
+import pkgExceptions.SaveFileDoesntExists;
 import pkgMechanics.Game;
 
-import java.io.File;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -135,12 +136,24 @@ public class TestInGame {
     }
 
     @Test
-    @DisplayName("Test save game")
-    void TestSaveGame() throws IOException {
+    @DisplayName("Test load game")
+    void TestLoadGame() throws IOException, InsufficientMoney, BadHeaderSave, SaveFileDoesntExists {
         testingame.NewGame();
+        testingame.setHealth(40);
+        testingame.setStatus(2);
+        testingame.Buy(1);
         testingame.setMoney(0x4565647);
         testingame.save();
-        assertEquals(true, testingame.getSaveformat().getSaveFile().exists());
+        testingame.NewGame();
+        testingame.load();
+        assertAll(
+                ()-> assertEquals(40, testingame.getHealth()),
+                ()-> assertEquals(2, testingame.getStatus()),
+                ()-> assertEquals(0x4565647, testingame.getMoney()),
+                ()-> assertEquals(2, testingame.getItemsOwned().get(0)),
+                ()-> assertEquals(3, testingame.getItemsOwned().get(1)),
+                ()-> assertEquals(0, testingame.getItemsOwned().get(2))
+        );
     }
 
     /*@Test
