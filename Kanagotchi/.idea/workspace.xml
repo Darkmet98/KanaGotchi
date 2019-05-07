@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612d03f1-8e42-43f7-b453-12eca723af94" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pkgSaves/LoadSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pkgSaves/WriteSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JavaFX.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/JavaFX.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkgDebug/DataInputStream_Debug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkgDebug/DataInputStream_Debug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkgDebug/DataOutputStream_Debug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkgDebug/DataOutputStream_Debug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kanagotchi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kanagotchi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/META-INF/Kanagotchi.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pkgMechanics/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkgMechanics/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkgSave/FileFormat.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pkgTests/TestInGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkgTests/TestInGame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -22,53 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pkgMechanics/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-487">
-              <caret line="129" column="38" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6213#6214#0" expanded="true" />
-                <element signature="e#6246#6247#0" expanded="true" />
-                <element signature="e#6368#6369#0" expanded="true" />
-                <element signature="e#6399#6400#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pkgTests/TestInGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pkgDebug/DataInputStream_Debug.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pkgDebug/DataOutputStream_Debug.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="-856">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,10 +90,12 @@
         <option value="$PROJECT_DIR$/src/pkgDebug/InputStream_Debug.java" />
         <option value="$PROJECT_DIR$/src/pkgTests/TestItems.java" />
         <option value="$PROJECT_DIR$/src/pkgSave/FileFormat.java" />
-        <option value="$PROJECT_DIR$/src/pkgMechanics/Game.java" />
         <option value="$PROJECT_DIR$/src/pkgDebug/DataInputStream_Debug.java" />
         <option value="$PROJECT_DIR$/src/pkgDebug/DataOutputStream_Debug.java" />
         <option value="$PROJECT_DIR$/src/pkgTests/TestInGame.java" />
+        <option value="$PROJECT_DIR$/src/pkgSaves/WriteSave.java" />
+        <option value="$PROJECT_DIR$/src/pkgSaves/LoadSave.java" />
+        <option value="$PROJECT_DIR$/src/pkgMechanics/Game.java" />
       </list>
     </option>
   </component>
@@ -174,7 +137,7 @@
               <item name="Kanagotchi" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kanagotchi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkgDebug" type="462c0819:PsiDirectoryNode" />
+              <item name="pkgTests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,10 +150,12 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="true" />
-    <property name="Repository.Attach.Sources" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/Media/Data" />
+    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -324,9 +289,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TitleScreen" />
         <item itemvalue="JUnit.TestInGame.TestLoadGame" />
         <item itemvalue="JUnit.TestInGame" />
-        <item itemvalue="Application.TitleScreen" />
         <item itemvalue="JUnit.TestInGame.TestNewGame" />
         <item itemvalue="JUnit.TestItems" />
       </list>
@@ -342,6 +307,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556173666836</updated>
+      <workItem from="1557214705358" duration="2568000" />
     </task>
     <task id="LOCAL-00001" summary=":heart_eyes: Switched to IntelliJ and JavaFX">
       <created>1556180579985</created>
@@ -375,21 +341,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.06 at 23h 51m 00s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.06 at 23h 51m 29s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.06 at 23h 56m 01s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.07 at 00h 02m 27s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.07 at 00h 04m 02s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestInGame_TestLoadGame - 2019.05.07 at 00h 04m 22s.xml">
       <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
     </history-entry>
@@ -405,6 +356,24 @@
     <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 00h 07m 34s.xml">
       <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 09h 46m 42s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 10h 02m 44s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 10h 03m 14s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 10h 10m 41s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 10h 10m 54s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2568000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,17 +385,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1368" height="746" extended-state="7" />
+    <frame x="-1" y="-1" width="1368" height="746" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1918429" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.19486405" />
+      <window_info id="Structure" order="1" sideWeight="0.50162864" side_tool="true" weight="0.19486405" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32854864" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848944" visible="true" weight="0.46570972" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848944" weight="0.46570972" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.553429" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -434,13 +405,15 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32854864" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.18660288" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50151056" side_tool="true" weight="0.9521531" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.36044657" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.35993487" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Snyk" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Maven" order="1" weight="0.32930514" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32930514" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.43957704" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
     </layout>
     <layout-to-restore>
@@ -468,6 +441,9 @@
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32930514" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":heart_eyes: Switched to IntelliJ and JavaFX" />
@@ -502,6 +478,9 @@
     <SUITE FILE_PATH="coverage/Kanagotchi$TitleScreen.ic" NAME="TitleScreen Coverage Results" MODIFIED="1556259303793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>pkgGui.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Kanagotchi$pkgTests_in_Kanagotchi.ic" NAME="pkgTests in Kanagotchi Coverage Results" MODIFIED="1557216651881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pkgTests.*</FILTER>
+    </SUITE>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -523,35 +502,15 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/TitleScreen.form" />
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/a.java" />
     <entry file="file://$PROJECT_DIR$/src/pkgGui/a.form" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.vmoptions" />
     <entry file="file://$PROJECT_DIR$/src/pkgTests/Sample.java" />
     <entry file="file://$PROJECT_DIR$/src/pkgGui/Controllerx.java" />
     <entry file="file://$PROJECT_DIR$/src/pkgGui/Settingss.java" />
     <entry file="file://$PROJECT_DIR$/src/pkgGui/Settings.xsl" />
     <entry file="file://$PROJECT_DIR$/src/pkgGui/MainController.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/javafx/application/Application.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/com/sun/javafx/application/LauncherImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="297" selection-start-line="297" selection-end-line="297" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/javafx/application/Application.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/com/sun/javafx/application/LauncherImpl.class" />
     <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/lang/reflect/Method.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -597,12 +556,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkgGui/TitleScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="27" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/jdk/internal/misc/Unsafe.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -619,20 +578,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkgGui/Settings.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="117" selection-start-line="10" selection-start-column="117" selection-end-line="10" selection-end-column="129" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkgGui/MainWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="111" lean-forward="true" selection-start-line="3" selection-start-column="111" selection-end-line="3" selection-end-column="111" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkgGui/VistaNavigator.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -678,16 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/SoundController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="29" column="88" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pkgMechanics/Items.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -706,22 +655,8 @@
           <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="354" selection-start-line="354" selection-end-line="354" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class" />
     <entry file="file://$PROJECT_DIR$/src/pkgExceptions/SaveFileDoesntExists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -767,57 +702,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/function/Executable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgSave/FileFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="49" column="21" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="49" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#3069#3070#0" expanded="true" />
-            <element signature="e#3102#3103#0" expanded="true" />
-            <element signature="e#3135#3136#0" expanded="true" />
-            <element signature="e#3166#3167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgMechanics/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-487">
-          <caret line="129" column="38" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6213#6214#0" expanded="true" />
-            <element signature="e#6246#6247#0" expanded="true" />
-            <element signature="e#6368#6369#0" expanded="true" />
-            <element signature="e#6399#6400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/function/Executable.class" />
+    <entry file="file://$PROJECT_DIR$/src/pkgSave/FileFormat.java" />
     <entry file="file://$PROJECT_DIR$/src/pkgDebug/DataOutputStream_Debug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="252">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkgGui/SoundController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkgDebug/DataInputStream_Debug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="798">
           <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkgSaves/LoadSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -826,12 +743,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkgTests/TestInGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+        <state relative-caret-position="1072">
+          <caret line="98" column="25" lean-forward="true" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkgSaves/WriteSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkgMechanics/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-856">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -916,7 +851,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.18690784" />
               </list>
             </option>
           </splitter-proportions>

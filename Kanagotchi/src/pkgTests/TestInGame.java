@@ -11,6 +11,7 @@ import pkgMechanics.Game;
 
 import java.io.IOException;
 
+import static junit.framework.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestInGame {
@@ -36,7 +37,7 @@ public class TestInGame {
                 //Check the list of items owned
                 ()-> assertEquals(3, testingame.getItemsOwned().size()),
                 //Check if the game have a item from the first save
-                ()-> assertEquals(2, testingame.getItemsOwned().get(0))
+                ()-> assertEquals(2, testingame.getItemsOwned().get(0).intValue())
         );
     }
 
@@ -47,7 +48,7 @@ public class TestInGame {
         testingame.Buy(1);
         assertAll(
                 ()-> assertEquals(80, testingame.getMoney()),
-                ()->assertEquals(3, testingame.getItemsOwned().get(1)),
+                ()->assertEquals(3, testingame.getItemsOwned().get(1).intValue()),
                 ()-> assertThrows(InsufficientMoney.class, ()-> {
                     testingame.Buy(1);
                     testingame.Buy(1);
@@ -126,7 +127,7 @@ public class TestInGame {
         testingame.EatFood(1);
         assertAll(
                 ()-> assertEquals(60, testingame.getHealth()),
-                ()-> assertEquals(1, testingame.getItemsOwned().get(1)),
+                ()-> assertEquals(1, testingame.getItemsOwned().get(1).intValue()),
                 ()->  {
                     testingame.EatFood(1);
                     assertThrows(ItemIsZero.class, ()-> testingame.EatFood(1));
@@ -150,9 +151,9 @@ public class TestInGame {
                 ()-> assertEquals(40, testingame.getHealth()),
                 ()-> assertEquals(2, testingame.getStatus()),
                 ()-> assertEquals(0x4565647, testingame.getMoney()),
-                ()-> assertEquals(2, testingame.getItemsOwned().get(0)),
-                ()-> assertEquals(3, testingame.getItemsOwned().get(1)),
-                ()-> assertEquals(0, testingame.getItemsOwned().get(2))
+                ()-> assertEquals(2, testingame.getItemsOwned().get(0).intValue()),
+                ()-> assertEquals(3, testingame.getItemsOwned().get(1).intValue()),
+                ()-> assertEquals(0, testingame.getItemsOwned().get(2).intValue())
         );
     }
 
