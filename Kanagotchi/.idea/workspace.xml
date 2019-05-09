@@ -2,15 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612d03f1-8e42-43f7-b453-12eca723af94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pkgSaves/LoadSave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pkgSaves/WriteSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JavaFX.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/JavaFX.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Media/BGM/BGM_Ingame.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Media/Images/Characters/Nep_VeryHappy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Media/Images/UI/LifeBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Media/Images/UI/Menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Executables/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/css/UI.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/pkgControllers/IngameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/pkgControllers/Settings_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/pkgFxml/Main_Ingame.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kanagotchi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kanagotchi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/META-INF/Kanagotchi.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkgMechanics/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkgMechanics/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkgTests/TestInGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkgTests/TestInGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pkgGui/MainWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pkgGui/Settings.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pkgGui/TitleScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pkgGui/css/ImageButtons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pkgGui/css/TitleScreen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgCharacters/Neptune.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgCharacters/Neptune.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgDebug/DataInputStream_Debug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgDebug/DataInputStream_Debug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgDebug/DataOutputStream_Debug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgDebug/DataOutputStream_Debug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgExceptions/BadHeaderSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgExceptions/BadHeaderSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgExceptions/InsufficientMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgExceptions/InsufficientMoney.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgExceptions/ItemIsZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgExceptions/ItemIsZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgExceptions/SaveFileDoesntExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgExceptions/SaveFileDoesntExists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGames/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgGames/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgFxml/MainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/Settings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgFxml/Settings.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/Settings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/SoundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/SoundController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/TitleScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgFxml/TitleScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/TitleScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/VistaNavigator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/VistaNavigator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/css/ImageButtons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/css/ImageButtons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgGui/css/TitleScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/css/Window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgItems/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgItems/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgMechanics/CustomEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgMechanics/CustomEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgMechanics/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgMechanics/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgMechanics/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgMenu/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgSaves/LoadSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgSaves/LoadSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgSaves/WriteSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgSaves/WriteSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgTests/TestInGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgTests/TestInGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkgTests/TestItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgTests/TestItems.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -20,19 +56,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pkgMechanics/Game.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/pkgFxml/Main_Ingame.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-856">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="-136" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/VistaNavigator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="78" column="128" selection-start-line="78" selection-start-column="128" selection-end-line="78" selection-end-column="128" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/TitleScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -46,6 +113,8 @@
         <option value="Singleton" />
         <option value="XSLT Stylesheet" />
         <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -54,7 +123,16 @@
     <findStrings>
       <find>version</find>
       <find>app</find>
+      <find>boolean</find>
+      <find>getHealth().intValue()</find>
+      <find>getHealth().get()</find>
+      <find>getHealth()</find>
     </findStrings>
+    <replaceStrings>
+      <replace>getHealth().get()</replace>
+      <replace>getHealth()</replace>
+      <replace>getHealth().intValue()</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -62,8 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pkgGui/Main.java" />
-        <option value="$PROJECT_DIR$/src/pkgGui/sample.fxml" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.vmoptions" />
         <option value="$PROJECT_DIR$/src/pkgGui/Controllerx.java" />
         <option value="$PROJECT_DIR$/src/pkgGui/Settings.xsl" />
@@ -71,16 +147,10 @@
         <option value="$PROJECT_DIR$/src/prueba/main.fxml" />
         <option value="$PROJECT_DIR$/src/prueba/vista2.fxml" />
         <option value="$PROJECT_DIR$/src/prueba/vista1.fxml" />
-        <option value="$PROJECT_DIR$/src/pkgGui/TitleScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/pkgGui/MainWindow.fxml" />
-        <option value="$PROJECT_DIR$/src/pkgGui/css/TitleScreen.css" />
         <option value="$PROJECT_DIR$/src/pkgGui/css/ImageButtons.css" />
         <option value="$PROJECT_DIR$/src/pkgGui/Settings.fxml" />
-        <option value="$PROJECT_DIR$/src/pkgGui/TitleScreen.java" />
-        <option value="$PROJECT_DIR$/src/pkgGui/VistaNavigator.java" />
         <option value="$PROJECT_DIR$/src/pkgGui/SoundController.java" />
         <option value="$PROJECT_DIR$/src/pkgGui/Settings.java" />
-        <option value="$PROJECT_DIR$/src/pkgGui/Controller.java" />
         <option value="$PROJECT_DIR$/src/pkgExceptions/InsufficientMoney.java" />
         <option value="$PROJECT_DIR$/src/pkgExceptions/ItemIsZero.java" />
         <option value="$PROJECT_DIR$/src/pkgMechanics/Items.java" />
@@ -92,10 +162,35 @@
         <option value="$PROJECT_DIR$/src/pkgSave/FileFormat.java" />
         <option value="$PROJECT_DIR$/src/pkgDebug/DataInputStream_Debug.java" />
         <option value="$PROJECT_DIR$/src/pkgDebug/DataOutputStream_Debug.java" />
-        <option value="$PROJECT_DIR$/src/pkgTests/TestInGame.java" />
-        <option value="$PROJECT_DIR$/src/pkgSaves/WriteSave.java" />
+        <option value="$PROJECT_DIR$/src/pkgGui/css/TitleScreen.css" />
+        <option value="$PROJECT_DIR$/src/pkgGui/MainWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/pkgGui/css/Window.css" />
+        <option value="$PROJECT_DIR$/src/pkgGui/MainGame.fxml" />
+        <option value="$PROJECT_DIR$/src/pkgGui/VistaNavigator.java" />
+        <option value="$PROJECT_DIR$/src/pkgGui/TitleScreen.fxml" />
         <option value="$PROJECT_DIR$/src/pkgSaves/LoadSave.java" />
+        <option value="$PROJECT_DIR$/src/pkgEvents/HealthListener.java" />
+        <option value="$PROJECT_DIR$/src/pkgSaves/WriteSave.java" />
+        <option value="$PROJECT_DIR$/src/pkgTests/TestInGame.java" />
         <option value="$PROJECT_DIR$/src/pkgMechanics/Game.java" />
+        <option value="$PROJECT_DIR$/src/pkgGui/TitleScreen.java" />
+        <option value="$PROJECT_DIR$/src/pkgGui/Controller.java" />
+        <option value="$PROJECT_DIR$/src/pkgGui/css/UI.css" />
+        <option value="$PROJECT_DIR$/src/pkgGui/Main_Ingame.fxml" />
+        <option value="$PROJECT_DIR$/src/pkgGui/IngameController.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgGui/IngameController.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgGui/Main_Ingame.fxml" />
+        <option value="$PROJECT_DIR$/src/Executables/Main.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgControllers/MenuIngame.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgControllers/Settings.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgFxml/TitleScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgControllers/Settings_Controller.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgFxml/Settings.fxml" />
+        <option value="$PROJECT_DIR$/src/UI/pkgControllers/Controller.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgControllers/IngameController.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgControllers/TitleScreen.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgControllers/VistaNavigator.java" />
       </list>
     </option>
   </component>
@@ -119,7 +214,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -137,12 +231,27 @@
               <item name="Kanagotchi" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kanagotchi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pkgTests" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kanagotchi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kanagotchi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="pkgControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kanagotchi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kanagotchi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="pkgFxml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,22 +264,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
-    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Escritorio/Examen/ParaExamenTests2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.18690784" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="pkgSave" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/UI/pkgFxml" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/Media/Images/Characters" />
+      <recent name="$PROJECT_DIR$/resources/Media/BGM" />
+      <recent name="$PROJECT_DIR$/resources/Media/Images/UI" />
       <recent name="$PROJECT_DIR$/resources/Media/Data" />
       <recent name="$PROJECT_DIR$/resources/Media/Images/Icons" />
-      <recent name="$PROJECT_DIR$/resources/Media/Images/UI" />
-      <recent name="$PROJECT_DIR$/src/prueba" />
-      <recent name="$PROJECT_DIR$/resources/Media/Sounds" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -185,14 +298,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.pkgTests in Kanagotchi">
-    <configuration name="TitleScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pkgGui.TitleScreen" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="HealthListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pkgEvents.HealthListener" />
       <module name="Kanagotchi" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.media" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pkgGui.*" />
+          <option name="PATTERN" value="Engine.pkgEvents.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -200,17 +312,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestInGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Executables.Main" />
       <module name="Kanagotchi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pkgTests.*" />
+          <option name="PATTERN" value="Executables.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pkgTests" />
-      <option name="MAIN_CLASS_NAME" value="pkgTests.TestInGame" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TitleScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UI.pkgControllers.TitleScreen" />
+      <module name="Kanagotchi" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.media" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UI.pkgControllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Engine.pkgTests in Kanagotchi" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Kanagotchi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Engine.pkgTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Engine.pkgTests" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,12 +360,12 @@
       <module name="Kanagotchi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pkgTests.*" />
+          <option name="PATTERN" value="Engine.pkgTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pkgTests" />
-      <option name="MAIN_CLASS_NAME" value="pkgTests.TestInGame" />
+      <option name="PACKAGE_NAME" value="Engine.pkgTests" />
+      <option name="MAIN_CLASS_NAME" value="Engine.pkgTests.TestInGame" />
       <option name="METHOD_NAME" value="TestLoadGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -235,65 +376,33 @@
       <module name="Kanagotchi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pkgTests.*" />
+          <option name="PATTERN" value="Engine.pkgTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pkgTests" />
-      <option name="MAIN_CLASS_NAME" value="pkgTests.TestInGame" />
+      <option name="PACKAGE_NAME" value="Engine.pkgTests" />
+      <option name="MAIN_CLASS_NAME" value="Engine.pkgTests.TestInGame" />
       <option name="METHOD_NAME" value="TestNewGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Kanagotchi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pkgTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pkgTests" />
-      <option name="MAIN_CLASS_NAME" value="pkgTests.TestItems" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="pkgTests in Kanagotchi" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="Kanagotchi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pkgTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pkgTests" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.TitleScreen" />
-      <item itemvalue="JUnit.pkgTests in Kanagotchi" />
-      <item itemvalue="JUnit.TestInGame" />
-      <item itemvalue="JUnit.TestItems" />
+      <item itemvalue="Application.HealthListener" />
+      <item itemvalue="JUnit.Engine.pkgTests in Kanagotchi" />
       <item itemvalue="JUnit.TestInGame.TestNewGame" />
       <item itemvalue="JUnit.TestInGame.TestLoadGame" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TitleScreen" />
-        <item itemvalue="JUnit.TestInGame.TestLoadGame" />
-        <item itemvalue="JUnit.TestInGame" />
+        <item itemvalue="Application.HealthListener" />
         <item itemvalue="JUnit.TestInGame.TestNewGame" />
-        <item itemvalue="JUnit.TestItems" />
+        <item itemvalue="JUnit.TestInGame.TestLoadGame" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +416,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556173666836</updated>
-      <workItem from="1557214705358" duration="2568000" />
+      <workItem from="1557214705358" duration="26802000" />
+      <workItem from="1557265553557" duration="106000" />
+      <workItem from="1557296398175" duration="12753000" />
+      <workItem from="1557388807975" duration="6402000" />
+      <workItem from="1557425438330" duration="9951000" />
     </task>
     <task id="LOCAL-00001" summary=":heart_eyes: Switched to IntelliJ and JavaFX">
       <created>1556180579985</created>
@@ -337,43 +450,50 @@
       <option name="project" value="LOCAL" />
       <updated>1556747784020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=":smile: Finished the last refactorization">
+      <created>1557217424659</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557217424659</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.07 at 00h 04m 22s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.07 at 00h 05m 17s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.07 at 00h 06m 29s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestInGame_TestLoadGame - 2019.05.07 at 00h 07m 26s.xml">
-      <configuration name="TestInGame.TestLoadGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 00h 07m 34s.xml">
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 20h 15m 44s.xml">
       <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 09h 46m 42s.xml">
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 20h 16m 57s.xml">
       <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 10h 02m 44s.xml">
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 20h 19m 53s.xml">
       <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 10h 03m 14s.xml">
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 22h 35m 34s.xml">
       <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 10h 10m 41s.xml">
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.08 at 12h 05m 19s.xml">
       <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.07 at 10h 10m 54s.xml">
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.08 at 12h 08m 59s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.08 at 12h 09m 32s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.08 at 13h 35m 14s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.08 at 13h 39m 54s.xml">
+      <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="pkgTests_in_Kanagotchi - 2019.05.08 at 13h 42m 32s.xml">
       <configuration name="pkgTests in Kanagotchi" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2568000" />
+    <option name="totallyTimeSpent" value="56014000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,58 +508,62 @@
     <frame x="-1" y="-1" width="1368" height="746" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.19486405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20996979" />
       <window_info id="Structure" order="1" sideWeight="0.50162864" side_tool="true" weight="0.19486405" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32854864" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848944" weight="0.46570972" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.553429" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32736155" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49773413" visible="true" weight="0.27361563" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5521173" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854864" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32854864" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.18660288" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50151056" side_tool="true" weight="0.9521531" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.35993487" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Snyk" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven" order="1" weight="0.32930514" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.43957704" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32736155" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.18566775" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5022659" side_tool="true" weight="0.26058632" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3583062" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Database" order="0" weight="0.32930514" />
+      <window_info anchor="right" id="Snyk" order="1" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32930514" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.43957704" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1918429" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20694864" />
+      <window_info id="Structure" order="1" sideWeight="0.50162864" side_tool="true" weight="0.19486405" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32854864" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924472" weight="0.3141946" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.553429" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32736155" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848944" visible="true" weight="0.26058632" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5521173" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854864" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32854864" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.18660288" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007553" side_tool="true" weight="0.14673047" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.36044657" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven" order="1" weight="0.32930514" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32930514" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32736155" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.18566775" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50151056" side_tool="true" weight="0.95114005" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3583062" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Snyk" order="1" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32930514" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.43957704" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +574,8 @@
     <MESSAGE value=":smirk: Title Screen finished!" />
     <MESSAGE value=":smiley: Updated sounds buttons" />
     <MESSAGE value=":innocent: Finished Settings menu and added a scene framework." />
-    <option name="LAST_COMMIT_MESSAGE" value=":innocent: Finished Settings menu and added a scene framework." />
+    <MESSAGE value=":smile: Finished the last refactorization" />
+    <option name="LAST_COMMIT_MESSAGE" value=":smile: Finished the last refactorization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -502,15 +627,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/a.form" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.vmoptions" />
-    <entry file="file://$PROJECT_DIR$/src/pkgTests/Sample.java" />
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/Controllerx.java" />
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/Settingss.java" />
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/Settings.xsl" />
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/MainController.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/javafx/application/Application.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/com/sun/javafx/application/LauncherImpl.class" />
     <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/lang/reflect/Method.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -539,105 +655,16 @@
     <entry file="file://$PROJECT_DIR$/src/prueba/Vista1Controller.java" />
     <entry file="file://$PROJECT_DIR$/src/prueba/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/prueba/VistaNavigator.java" />
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/css/TitleScreen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/prueba/main.fxml" />
     <entry file="file://$PROJECT_DIR$/src/prueba/MainController.java" />
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/css/ImageButtons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/TitleScreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/jdk/internal/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="1146" column="23" selection-start-line="1146" selection-start-column="23" selection-end-line="1146" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/Settings.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="117" selection-start-line="10" selection-start-column="117" selection-end-line="10" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/MainWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="111" lean-forward="true" selection-start-line="3" selection-start-column="111" selection-end-line="3" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/VistaNavigator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/TitleScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgExceptions/InsufficientMoney.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgExceptions/InsufficientMoney.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" column="5" selection-start-line="2" selection-start-column="31" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgMechanics/CustomEvents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgMechanics/Items.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgMechanics/Items.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
@@ -657,7 +684,7 @@
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class" />
-    <entry file="file://$PROJECT_DIR$/src/pkgExceptions/SaveFileDoesntExists.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgExceptions/SaveFileDoesntExists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="53" lean-forward="true" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
@@ -671,14 +698,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgExceptions/BadHeaderSave.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgExceptions/BadHeaderSave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgExceptions/ItemIsZero.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgExceptions/ItemIsZero.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" column="5" selection-start-line="2" selection-start-column="24" selection-end-line="5" selection-end-column="5" />
@@ -692,7 +719,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgTests/TestItems.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgTests/TestItems.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
@@ -704,7 +731,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/function/Executable.class" />
     <entry file="file://$PROJECT_DIR$/src/pkgSave/FileFormat.java" />
-    <entry file="file://$PROJECT_DIR$/src/pkgDebug/DataOutputStream_Debug.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgDebug/DataOutputStream_Debug.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
@@ -714,57 +741,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgGui/SoundController.java">
+    <entry file="file://$PROJECT_DIR$/resources/Media/Images/Backgrounds/room1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/css/Window.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgDebug/DataInputStream_Debug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/jdk/internal/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13623">
+          <caret line="1267" column="23" selection-start-line="1267" selection-start-column="23" selection-end-line="1267" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgMechanics/CustomEvents.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgDebug/DataInputStream_Debug.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgSaves/LoadSave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="97">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgSaves/LoadSave.java">
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgSaves/WriteSave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="105">
+          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgTests/TestInGame.java">
+    <entry file="file://$PROJECT_DIR$/src/pkgEvents/HealthListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/UI/css/ImageButtons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="98" column="25" lean-forward="true" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+        <state>
+          <caret selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/css/UI.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgTests/TestInGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="156" column="10" selection-start-line="149" selection-start-column="8" selection-end-line="156" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgSaves/WriteSave.java">
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgMenu/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgFxml/MainWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="85" selection-start-line="3" selection-start-column="85" selection-end-line="3" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/SoundController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkgMechanics/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/Executables/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-856">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="147">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/MenuIngame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3589#3590#0" expanded="true" />
+            <element signature="e#3622#3623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Settings_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgFxml/Settings.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="191" selection-start-line="8" selection-start-column="191" selection-end-line="8" selection-end-column="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgFxml/TitleScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="115" selection-start-line="9" selection-start-column="115" selection-end-line="9" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/IngameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-587">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgFxml/Main_Ingame.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/TitleScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/VistaNavigator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="78" column="128" selection-start-line="78" selection-start-column="128" selection-end-line="78" selection-end-column="128" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -827,7 +1012,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.18690784" />
               </list>
             </option>
           </splitter-proportions>

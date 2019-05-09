@@ -1,7 +1,0 @@
-#image:hover {
-    -fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 0);
-}
-
-#image:pressed:hover {
-    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
-}

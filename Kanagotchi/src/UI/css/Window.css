@@ -1,0 +1,9 @@
+AnchorPane{
+    -fx-background-image: url("/Media/Images/Backgrounds/TitleScreen.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 800 600;
+    -fx-background-position: center center;
+}
+#Ingame{
+    -fx-background-image: url("/Media/Images/Backgrounds/room1.jpg");
+}
