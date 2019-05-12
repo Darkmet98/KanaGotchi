@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.pkgControllers.Shop_Controller">
+   <children>
+      <Label id="TextUI" layoutX="691.0" layoutY="14.0" onMouseReleased="#Return" text="Volver">
+         <font>
+            <Font name="Curse Casual Regular" size="42.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ItemTable" layoutX="10.0" layoutY="236.0" prefHeight="354.0" prefWidth="780.0">
+        <columns>
+           <TableColumn fx:id="ImageTable" editable="false" prefWidth="141.0" text="Imagen" visible="false" reorderable="false" />
+           <TableColumn fx:id="Name" editable="false" minWidth="0.0" prefWidth="508.0" text="Nombre" reorderable="false" />
+           <TableColumn fx:id="Price" editable="false" prefWidth="85.0" text="Precio" reorderable="false" />
+           <TableColumn fx:id="Health" editable="false" text="Salud" reorderable="false" />
+           <TableColumn fx:id="Experience" editable="false" prefWidth="106.0" text="Experiencia" reorderable="false" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label id="TextUI" layoutX="515.0" layoutY="198.0" prefHeight="36.0" prefWidth="88.0" text="Dinero:">
+         <font>
+            <Font name="Curse Casual Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" fx:id="Money" layoutX="603.0" layoutY="198.0" prefHeight="36.0" prefWidth="88.0" text="VALUE">
+         <font>
+            <Font name="Curse Casual Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" layoutX="14.0" layoutY="174.0" onMouseReleased="#Buy" text="Comprar">
+         <font>
+            <Font name="Curse Casual Regular" size="42.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" layoutX="11.0" layoutY="14.0" text="TIENDA">
+         <font>
+            <Font name="Curse Casual Regular" size="55.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

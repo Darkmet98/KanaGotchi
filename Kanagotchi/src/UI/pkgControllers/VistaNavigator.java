@@ -21,6 +21,8 @@ public class VistaNavigator {
     public static final String MAIN_WINDOW = "/UI/pkgFxml/MainWindow.fxml";
     public static final String TITLE_SCREEN = "/UI/pkgFxml/TitleScreen.fxml";
     public static final String SETTINGS = "/UI/pkgFxml/Settings.fxml";
+    public static final String SHOP = "/UI/pkgFxml/Shop.fxml";
+    public static final String FOOD_MENU = "/UI/pkgFxml/Food.fxml";
 
     /** The main application layout controller. */
     public static Controller mainController;

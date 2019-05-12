@@ -4,18 +4,16 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import Engine.pkgMechanics.Game;
-import Engine.pkgMechanics.Items;
+import Engine.pkgItems.Items;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestItems {
 
-    private static Game testingame;
     private static Items testitems;
 
     @BeforeAll
     static void Initialize() {
-        testingame= new Game();
         testitems= new Items();
     }
 
@@ -31,7 +29,7 @@ public class TestItems {
     void TestNameListItems() {
         testitems.LoadItems();
         Items i = (Items) testitems.getItemList().get(1);
-        assertEquals("Garbanzos", i.getName());
+        assertEquals("Sopa", i.getName());
     }
 
 }

@@ -15,13 +15,21 @@ public class IngameController {
     @FXML
     public ProgressBar health;
     @FXML
+    public ProgressBar experience;
+    @FXML
     public Label status;
-    private Game game = new Game();
+    @FXML
+    public Label level;
+    public static Game game = new Game();
 
     //Start the game
     public IngameController() throws IOException, BadHeaderSave, SaveFileDoesntExists {
-        if(VistaNavigator.loadSave) game.load();
-        else game.NewGame(true);
+        if(VistaNavigator.loadSave && !game.isEngineStarted()) {
+            game.load();
+        }
+        else if (!VistaNavigator.loadSave && !game.isEngineStarted()) {
+            game.NewGame(false);
+        }
     }
 
     //Initialize the game
@@ -29,22 +37,43 @@ public class IngameController {
     public void initialize() {
         LoadValues();
     }
-    private void LoadValues() {
+    public void LoadValues() {
         TextStatus();
         LoadListeners();
-        double healthvalue = game.Health.getValue();
-        health.setProgress(healthvalue/100);
+        double value = game.getHealth();
+        health.setProgress(value/100);
+        value = game.getExperience();
+        experience.setProgress(value/100);
+        level.setText(String.valueOf(game.getPlayerLevel()));
     }
-    private void LoadListeners() {
+    public void LoadListeners() {
         //Health Listener
-        game.Health.addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
-            double healthvalue = game.Health.getValue();
+        game.getHealthProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
+            double healthvalue = game.getHealth();
             health.setProgress(healthvalue/100);
         }));
         //Status Listener
-        game.Status.addListener((observable, oldValue, newValue) -> Platform.runLater(this::TextStatus));
+        game.getStatusProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(this::TextStatus));
+        //Experience Listener
+        game.getExperienceProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
+            double experiencevalue = game.getExperience();
+            experience.setProgress(experiencevalue/100);
+        }));
+        //Level Listener
+        game.getPlayerLevelProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
+            level.setText(String.valueOf(game.getPlayerLevel()));
+        }));
     }
 
+    @FXML
+    public void Shop() {
+        VistaNavigator.loadVista(VistaNavigator.SHOP);
+    }
+
+    @FXML
+    public void Food() {
+        VistaNavigator.loadVista(VistaNavigator.FOOD_MENU);
+    }
 
     //Sounds methods
     @FXML
@@ -59,11 +88,12 @@ public class IngameController {
     Controller.getSounds().getBackground().stop();
     Controller.StartMusic();
     game.Stop();
+    game.setEngineStarted(false);
     VistaNavigator.loadVista(VistaNavigator.TITLE_SCREEN);
     }
 
     //Change the status
-    private void TextStatus() {
+    public void TextStatus() {
         String result = "";
         switch (game.getStatus()) {
             case 0:

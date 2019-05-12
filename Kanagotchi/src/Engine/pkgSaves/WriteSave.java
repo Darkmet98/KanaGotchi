@@ -29,7 +29,11 @@ public class WriteSave {
         //Status
         save_stream.writeSave(((int)Encrypt(Gameor.getStatus())), true);
         //Health
-        save_stream.writeSave((int)Encrypt(Gameor.getHealth().intValue()), true);
+        save_stream.writeSave((int)Encrypt(Gameor.getHealth()), true);
+        //Experience
+        save_stream.writeSave((int)Encrypt(Gameor.getExperience()), true);
+        //Level
+        save_stream.writeSave((int)Encrypt(Gameor.getPlayerLevel()), true);
         //Time
         save_stream.writeSave(Gameor.getTime().toString(), true);
         //ItemsOwned

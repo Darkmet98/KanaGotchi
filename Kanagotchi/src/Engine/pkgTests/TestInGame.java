@@ -29,7 +29,7 @@ class TestInGame {
         testingame.NewGame(true);
         assertAll(
                 //Check the health
-                ()-> assertEquals(100, testingame.getHealth().intValue()),
+                ()-> assertEquals(100, testingame.getHealth()),
                 //Check the money
                 ()-> assertEquals(100, testingame.getMoney()),
                 //Check the Status
@@ -42,19 +42,15 @@ class TestInGame {
     }
 
     @Test
-    @DisplayName("Buy a item")
+    @DisplayName("Shop a item")
     void TestBuy() throws InsufficientMoney {
         testingame.NewGame(true);
         testingame.Buy(1);
         assertAll(
-                ()-> assertEquals(80, testingame.getMoney()),
+                ()-> assertEquals(85, testingame.getMoney()),
                 ()->assertEquals(3, testingame.getItemsOwned().get(1).intValue()),
                 ()-> assertThrows(InsufficientMoney.class, ()-> {
-                    testingame.Buy(1);
-                    testingame.Buy(1);
-                    testingame.Buy(1);
-                    testingame.Buy(1);
-                    testingame.Buy(1);
+                    for(int i = 0; i < 15; i++) testingame.Buy(1);
                 })
 
         );
@@ -65,7 +61,7 @@ class TestInGame {
     void TestHealth() {
         testingame.NewGame(true);
         testingame.DecreaseHealth();
-        assertEquals(99, testingame.getHealth().intValue());
+        assertEquals(99, testingame.getHealth());
     }
 
     @Test
@@ -110,11 +106,11 @@ class TestInGame {
                 ()-> {
                     testingame.setHealth(45);
                     testingame.RecoveryHealth(40);
-                    assertEquals(85, testingame.getHealth().intValue());
+                    assertEquals(85, testingame.getHealth());
                 },
                 ()-> {
                     testingame.RecoveryHealth(400);
-                    assertEquals(100, testingame.getHealth().intValue());
+                    assertEquals(100, testingame.getHealth());
                 }
         );
     }
@@ -126,7 +122,7 @@ class TestInGame {
         testingame.setHealth(20);
         testingame.EatFood(1);
         assertAll(
-                ()-> assertEquals(60, testingame.getHealth().intValue()),
+                ()-> assertEquals(50, testingame.getHealth()),
                 ()-> assertEquals(1, testingame.getItemsOwned().get(1).intValue()),
                 ()->  {
                     testingame.EatFood(1);
@@ -144,16 +140,20 @@ class TestInGame {
         testingame.setStatus(2);
         testingame.Buy(1);
         testingame.setMoney(0x4565647);
+        testingame.setExperience(60);
+        testingame.setPlayerLevel(15);
         testingame.save();
         testingame.NewGame(true);
         testingame.load();
         assertAll(
-                ()-> assertEquals(40, testingame.getHealth().intValue()),
+                ()-> assertEquals(40, testingame.getHealth()),
                 ()-> assertEquals(2, testingame.getStatus()),
                 ()-> assertEquals(0x4565647, testingame.getMoney()),
                 ()-> assertEquals(2, testingame.getItemsOwned().get(0).intValue()),
                 ()-> assertEquals(3, testingame.getItemsOwned().get(1).intValue()),
-                ()-> assertEquals(0, testingame.getItemsOwned().get(2).intValue())
+                ()-> assertEquals(0, testingame.getItemsOwned().get(2).intValue()),
+                ()-> assertEquals(60, testingame.getExperience()),
+                ()-> assertEquals(15, testingame.getPlayerLevel())
         );
     }
 

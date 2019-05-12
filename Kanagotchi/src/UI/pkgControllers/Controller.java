@@ -9,9 +9,6 @@ import javafx.scene.layout.StackPane;
 
 public class Controller {
 
-    //@FXML
-    //private ChoiceBox;
-
     private static SoundController Sounds = new SoundController();
 
     /** Holder of a switchable vista. */
