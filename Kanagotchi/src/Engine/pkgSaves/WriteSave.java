@@ -12,8 +12,8 @@ public class WriteSave {
     public WriteSave() {}
     public WriteSave(Game game) { Gameor = game; }
 
-    private File SaveFolder = new File(System.getProperty("user.home")+"/KanaGotchi");
-    private File SaveFile = new File(getSaveFolder() +"/save.sav");
+    private static File SaveFolder = new File(System.getProperty("user.home")+"/KanaGotchi");
+    public static File SaveFile = new File(SaveFolder +"/save.sav");
 
     private DataOutputStream_Debug save_stream;
     private Game Gameor;
@@ -23,21 +23,23 @@ public class WriteSave {
         FileOutputStream save = new FileOutputStream(getSaveFile());
         save_stream = new DataOutputStream_Debug(save);
         //MAGIC
-        save_stream.writeSave("KNTI", true);
+        save_stream.writeSave("KNTI", Gameor.getDebug());
         //Money
-        save_stream.writeSave((Encrypt(Gameor.getMoney())), true);
+        save_stream.writeSave((Encrypt(Gameor.getMoney())), Gameor.getDebug());
         //Status
-        save_stream.writeSave(((int)Encrypt(Gameor.getStatus())), true);
+        save_stream.writeSave(((int)Encrypt(Gameor.getStatus())), Gameor.getDebug());
         //Health
-        save_stream.writeSave((int)Encrypt(Gameor.getHealth()), true);
+        save_stream.writeSave((int)Encrypt(Gameor.getHealth()), Gameor.getDebug());
         //Experience
-        save_stream.writeSave((int)Encrypt(Gameor.getExperience()), true);
+        save_stream.writeSave((int)Encrypt(Gameor.getExperience()), Gameor.getDebug());
         //Level
-        save_stream.writeSave((int)Encrypt(Gameor.getPlayerLevel()), true);
+        save_stream.writeSave((int)Encrypt(Gameor.getPlayerLevel()), Gameor.getDebug());
+        //Character
+        save_stream.writeSave((int)Encrypt(Gameor.getCharacterSelected()), Gameor.getDebug());
         //Time
-        save_stream.writeSave(Gameor.getTime().toString(), true);
+        save_stream.writeSave(Gameor.getTime().toString(), Gameor.getDebug());
         //ItemsOwned
-        for(int i = 0; i < Gameor.getItemsOwned().size(); i++) { save_stream.writeSave(((int)Encrypt(Gameor.getItemsOwned().get(i))), true); }
+        for(int i = 0; i < Gameor.getItemsOwned().size(); i++) { save_stream.writeSave(((int)Encrypt(Gameor.getItemsOwned().get(i))), Gameor.getDebug()); }
         save_stream.flush();
         save_stream.close();
         save.close();

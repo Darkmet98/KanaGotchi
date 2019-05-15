@@ -1,6 +1,7 @@
 package UI.pkgControllers;
 
 import Engine.pkgExceptions.InsufficientMoney;
+import Engine.pkgExceptions.ItemNotSelected;
 import Engine.pkgItems.Items;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -9,7 +10,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class Shop_Controller {
+public class Shop_Controller extends Common_Controller{
 
     @FXML
     TableView ItemTable;
@@ -31,14 +32,14 @@ public class Shop_Controller {
     public void initialize() {
         if(Money.getText().equals("VALUE")) {
             SetTable();
-            LoadListeners();
+            LoadMoneyListener();
             LoadItemTable();
         }
     }
 
     private void LoadItemTable() {
-        for(int i = 0; i < IngameController.game.getItem().getItemList().size(); i++) {
-            Items item = (Items) IngameController.game.getItem().getItemList().get(i);
+        for(int i = 0; i < Ingame_Controller.game.getItem().getItemList().size(); i++) {
+            Items item = (Items) Ingame_Controller.game.getItem().getItemList().get(i);
             ItemTable.getItems().add(item);
         }
     }
@@ -50,19 +51,18 @@ public class Shop_Controller {
             Experience.setCellValueFactory(new PropertyValueFactory<>("Experience"));
     }
 
-    private void LoadListeners() {
-        Money.setText(String.valueOf(IngameController.game.getMoney()));
+    private void LoadMoneyListener() {
+        Money.setText(String.valueOf(Ingame_Controller.game.getMoney()));
         //Money Listener
-        IngameController.game.getMoneyProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> Money.setText(String.valueOf(IngameController.game.getMoney()))));
+        Ingame_Controller.game.getMoneyProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> Money.setText(String.valueOf(Ingame_Controller.game.getMoney()))));
     }
 
     @FXML
-    public void Buy() throws InsufficientMoney {
-        IngameController.game.Buy(ItemTable.getSelectionModel().getSelectedIndex());
-    }
-
-    @FXML
-    public void Return() {
-        VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);
+    public void Buy() {
+        try{
+            Ingame_Controller.game.Buy(ItemTable.getSelectionModel().getSelectedIndex());
+        } catch (InsufficientMoney | ItemNotSelected msg) {
+          ShowInfoMsg(msg.toString());
+        }
     }
 }

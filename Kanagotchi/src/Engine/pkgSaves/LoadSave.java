@@ -23,22 +23,24 @@ public class LoadSave {
         FileInputStream load = new FileInputStream(write.getSaveFile());
         DataInputStream_Debug load_stream = new DataInputStream_Debug(load);
         //Check the magic
-        if(!load_stream.readSaveMagic(true).equals("KNTI")) throw new BadHeaderSave("La partida está corrupta");
+        if(!load_stream.readSaveMagic(Gameor.getDebug()).equals("KNTI")) throw new BadHeaderSave("La partida está corrupta");
         //Read the money
-        Gameor.setMoney(write.Encrypt(load_stream.readSaveLong(true)));
+        Gameor.setMoney(write.Encrypt(load_stream.readSaveLong(Gameor.getDebug())));
         //Read the status
-        Gameor.setStatus((int)write.Encrypt(load_stream.readSaveInt(true)));
+        Gameor.setStatus((int)write.Encrypt(load_stream.readSaveInt(Gameor.getDebug())));
         //Read the Health
-        Gameor.setHealth((int)write.Encrypt(load_stream.readSaveInt(true)));
+        Gameor.setHealth((int)write.Encrypt(load_stream.readSaveInt(Gameor.getDebug())));
         //Read the Experience
-        Gameor.setExperience((int)write.Encrypt(load_stream.readSaveInt(true)));
+        Gameor.setExperience((int)write.Encrypt(load_stream.readSaveInt(Gameor.getDebug())));
         //Read the level
-        Gameor.setPlayerLevel((int)write.Encrypt(load_stream.readSaveInt(true)));
+        Gameor.setPlayerLevel((int)write.Encrypt(load_stream.readSaveInt(Gameor.getDebug())));
+        //Read the Character selected
+        Gameor.setCharacterSelected((int)write.Encrypt(load_stream.readSaveInt(Gameor.getDebug())));
         //Read the Time
-        Gameor.setTime(load_stream.readSaveDate(true));
+        Gameor.setTime(load_stream.readSaveDate(Gameor.getDebug()));
         //Read the items owned
         Map<Integer, Integer> temp = new TreeMap<>();
-        for(int i = 0; i < Gameor.getItem().getItemList().size(); i++) temp.put(i, (int)write.Encrypt(load_stream.readSaveInt(true)));
+        for(int i = 0; i < Gameor.getItem().getItemList().size(); i++) temp.put(i, (int)write.Encrypt(load_stream.readSaveInt(Gameor.getDebug())));
         Gameor.setItemsOwned(temp);
         load_stream.close();
         load.close();

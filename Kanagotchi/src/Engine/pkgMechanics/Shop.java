@@ -1,6 +1,7 @@
 package Engine.pkgMechanics;
 
 import Engine.pkgExceptions.InsufficientMoney;
+import Engine.pkgExceptions.ItemNotSelected;
 import Engine.pkgItems.Items;
 
 public class Shop {
@@ -12,7 +13,8 @@ public class Shop {
     }
 
     //When you buy a item
-    public void Buy(int item_selected) throws InsufficientMoney {
+    public void Buy(Integer item_selected) throws InsufficientMoney, ItemNotSelected {
+        if(item_selected == -1) throw new ItemNotSelected("No has seleccionado ningún objeto.");
         Items i = (Items) GameValues.getItem().getItemList().get(item_selected);
 
         //If the price are higher

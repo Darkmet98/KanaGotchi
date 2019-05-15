@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="window" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.pkgControllers.CharaSelect_Controller">
+   <children>
+      <Label id="TextUI" layoutX="199.0" layoutY="50.0" text="SELECCIONA UN PERSONAJE">
+         <font>
+            <Font name="Curse Casual Regular" size="45.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" layoutX="133.0" layoutY="450.0" text="NEPTUNE">
+         <font>
+            <Font name="Curse Casual Regular" size="45.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" layoutX="558.0" layoutY="450.0" text="NOIRE">
+         <font>
+            <Font name="Curse Casual Regular" size="45.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" layoutX="345.0" layoutY="516.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#ReturnToTitleScreen" text="VOLVER">
+         <font>
+            <Font name="Curse Casual Regular" size="45.0" />
+         </font>
+      </Label>
+      <ImageView id="image" fitHeight="314.0" fitWidth="164.0" layoutX="164.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Neptune">
+         <image>
+            <Image url="@../../../resources/Media/Images/Characters/Neptune/Nep_preview.png" />
+         </image>
+      </ImageView>
+      <ImageView id="image" fitHeight="322.0" fitWidth="218.0" layoutX="544.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Noire">
+         <image>
+            <Image url="@../../../resources/Media/Images/Characters/Noire/Noire_preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

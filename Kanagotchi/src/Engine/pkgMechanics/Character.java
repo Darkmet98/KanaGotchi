@@ -1,6 +1,7 @@
 package Engine.pkgMechanics;
 
 import Engine.pkgExceptions.ItemIsZero;
+import Engine.pkgExceptions.ItemNotSelected;
 import Engine.pkgItems.Items;
 
 public class Character {
@@ -20,8 +21,9 @@ public class Character {
         GameValues = game;
     }
     //When the character eat food
-    public void EatFood(int selected) throws ItemIsZero {
-        if(GameValues.getItemsOwned().get(selected) == 0) throw new ItemIsZero("Actualmente no tienes ese objeto");
+    public void EatFood(Integer selected) throws ItemIsZero, ItemNotSelected {
+        if(selected == -1 || selected == null) throw new ItemNotSelected("No has seleccionado ningún objeto.");
+        if(GameValues.getItemsOwned().get(selected) == 0) throw new ItemIsZero("No tienes ese objeto.");
         //Se reduce en uno su cantidad
         GameValues.getItemsOwned().replace(selected, GameValues.getItemsOwned().get(selected)-1);
         //Se obtiene lo que cura y se cura el personaje

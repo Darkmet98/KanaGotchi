@@ -1,12 +1,9 @@
 package Engine.pkgTests;
 
+import Engine.pkgExceptions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import Engine.pkgExceptions.BadHeaderSave;
-import Engine.pkgExceptions.InsufficientMoney;
-import Engine.pkgExceptions.ItemIsZero;
-import Engine.pkgExceptions.SaveFileDoesntExists;
 import Engine.pkgMechanics.Game;
 
 import java.io.IOException;
@@ -43,7 +40,7 @@ class TestInGame {
 
     @Test
     @DisplayName("Shop a item")
-    void TestBuy() throws InsufficientMoney {
+    void TestBuy() throws InsufficientMoney, ItemNotSelected {
         testingame.NewGame(true);
         testingame.Buy(1);
         assertAll(
@@ -117,7 +114,7 @@ class TestInGame {
 
     @Test
     @DisplayName("Test eat food")
-    void TestEatFood() throws ItemIsZero {
+    void TestEatFood() throws ItemIsZero, ItemNotSelected {
         testingame.NewGame(true);
         testingame.setHealth(20);
         testingame.EatFood(1);
@@ -134,7 +131,7 @@ class TestInGame {
 
     @Test
     @DisplayName("Test load game")
-    void TestLoadGame() throws IOException, InsufficientMoney, BadHeaderSave, SaveFileDoesntExists {
+    void TestLoadGame() throws IOException, InsufficientMoney, BadHeaderSave, SaveFileDoesntExists, ItemNotSelected {
         testingame.NewGame(true);
         testingame.setHealth(40);
         testingame.setStatus(2);

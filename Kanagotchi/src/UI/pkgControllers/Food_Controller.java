@@ -1,8 +1,7 @@
 package UI.pkgControllers;
 
-import Engine.pkgExceptions.BadHeaderSave;
 import Engine.pkgExceptions.ItemIsZero;
-import Engine.pkgExceptions.SaveFileDoesntExists;
+import Engine.pkgExceptions.ItemNotSelected;
 import Engine.pkgItems.Items;
 import Engine.pkgItems.ItemsObtained;
 import javafx.fxml.FXML;
@@ -10,9 +9,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.io.IOException;
-
-public class Food_Controller extends IngameController {
+public class Food_Controller extends Common_Controller {
 
     @FXML
     TableView ItemTable;
@@ -24,11 +21,6 @@ public class Food_Controller extends IngameController {
     TableColumn<String, ItemsObtained> Name;
     @FXML
     TableColumn<String, ItemsObtained> Amount;
-
-
-    public Food_Controller() throws IOException, BadHeaderSave, SaveFileDoesntExists {
-
-    }
 
     @FXML
     public void initialize() {
@@ -45,20 +37,21 @@ public class Food_Controller extends IngameController {
     }
 
     private void LoadItemTable() {
-        for(int i = 0; i < IngameController.game.getItem().getItemList().size(); i++) {
-            Items item = (Items) IngameController.game.getItem().getItemList().get(i);
+        for(int i = 0; i < Ingame_Controller.game.getItem().getItemList().size(); i++) {
+            Items item = (Items) Ingame_Controller.game.getItem().getItemList().get(i);
             ItemTable.getItems().add(new ItemsObtained(game.getItemsOwned().get(i), item.getName(), item.getHealthRecovered(), item.getExperience()));
         }
     }
 
     @FXML
-    private void Eat() throws ItemIsZero {
-        game.EatFood(ItemTable.getSelectionModel().getSelectedIndex());
-        ItemTable.refresh();
-    }
-
-    @FXML
-    public void Return() {
-        VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);
+    private void Eat() {
+        try{
+            game.EatFood(ItemTable.getSelectionModel().getSelectedIndex());
+        }
+        catch (ItemIsZero | ItemNotSelected msg) {
+            ShowInfoMsg(msg.toString());
+        }
+        ItemTable.getItems().clear();
+        LoadItemTable();
     }
 }

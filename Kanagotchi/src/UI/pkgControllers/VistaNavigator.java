@@ -23,18 +23,20 @@ public class VistaNavigator {
     public static final String SETTINGS = "/UI/pkgFxml/Settings.fxml";
     public static final String SHOP = "/UI/pkgFxml/Shop.fxml";
     public static final String FOOD_MENU = "/UI/pkgFxml/Food.fxml";
+    public static final String CHARA_MENU = "/UI/pkgFxml/CharaSelect.fxml";
 
     /** The main application layout controller. */
-    public static Controller mainController;
+    public static TitleScreen_Controller mainTitleScreenController;
     public static boolean loadSave = false;
+    public static int chara = 0;
 
     /**
      * Stores the main controller for later use in navigation tasks.
      *
-     * @param mainController the main application layout controller.
+     * @param mainTitleScreenController the main application layout controller.
      */
-    public static void setMainController(Controller mainController) {
-        VistaNavigator.mainController = mainController;
+    public static void setMainTitleScreenController(TitleScreen_Controller mainTitleScreenController) {
+        VistaNavigator.mainTitleScreenController = mainTitleScreenController;
     }
 
     /**
@@ -56,7 +58,7 @@ public class VistaNavigator {
      */
     public static void loadVista(String fxml) {
         try {
-            mainController.setVista(
+            mainTitleScreenController.setVista(
                     FXMLLoader.load(
                             VistaNavigator.class.getResource(
                                     fxml

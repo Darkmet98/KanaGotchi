@@ -1,14 +1,11 @@
 package Engine.pkgMechanics;
 
-import Engine.pkgExceptions.InsufficientMoney;
-import Engine.pkgExceptions.ItemIsZero;
+import Engine.pkgExceptions.*;
 import Engine.pkgItems.Items;
 import javafx.beans.property.LongProperty;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-import Engine.pkgExceptions.BadHeaderSave;
-import Engine.pkgExceptions.SaveFileDoesntExists;
 import Engine.pkgSaves.LoadSave;
 import Engine.pkgSaves.WriteSave;
 
@@ -28,6 +25,7 @@ public class Game {
     private IntegerProperty PlayerLevel;
     private IntegerProperty Experience;
     private LocalDateTime Time;
+    private int CharacterSelected;
     private Timer Count;
     private Map<Integer, Integer> ItemsOwned;
     private Items item = new Items();
@@ -48,14 +46,6 @@ public class Game {
         Chara = new Character(this);
         ShopOperations = new Shop(this);
     }
-
-    /*public Game(long money, int status, int health, LocalDateTime time, Map<Integer, Integer> itemsOwned) {
-        setMoney(money);
-        setStatus(status);
-        setHealth(health);
-        setTime(time);
-        setItemsOwned(itemsOwned);
-    }*/
 
     //When you initialize the first time the game.
     public void NewGame(boolean debug) {
@@ -88,8 +78,8 @@ public class Game {
     //Stop the engine
     public void Stop() { getCount().cancel(); }
 
-    public void EatFood(int selected) throws ItemIsZero { Chara.EatFood(selected); }
-    public void Buy(int item_selected) throws InsufficientMoney {ShopOperations.Buy(item_selected);}
+    public void EatFood(int selected) throws ItemIsZero, ItemNotSelected { Chara.EatFood(selected); }
+    public void Buy(int item_selected) throws InsufficientMoney, ItemNotSelected {ShopOperations.Buy(item_selected);}
 
     //For tests
     public void DecreaseHealth() {Task.DecreaseHealth();}
@@ -225,5 +215,13 @@ public class Game {
 
     public void setEngineStarted(boolean engineStarted) {
         EngineStarted = engineStarted;
+    }
+
+    public int getCharacterSelected() {
+        return CharacterSelected;
+    }
+
+    public void setCharacterSelected(int characterSelected) {
+        CharacterSelected = characterSelected;
     }
 }

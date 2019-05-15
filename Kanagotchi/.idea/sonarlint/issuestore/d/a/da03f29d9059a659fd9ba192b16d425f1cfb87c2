@@ -1,0 +1,15 @@
+
+hsquid:S00116"PRename this field "Price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ó»
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(µõÀÓøÿÿÿÿ
+¬squid:S1845"”Rename field "Experience" to prevent any misunderstanding/clash with field "experience" defined in superclass "UI.pkgControllers.Common_Controller".(Ë‘íñ
+msquid:S00116"URename this field "Experience" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë‘íñ
+fsquid:S00100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôûÇ£
+qsquid:S00116"TRename this field "ItemTable" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¢Æøÿÿÿÿ
+isquid:S00116"QRename this field "Health" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÚäµ
+lsquid:S00116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Íœ¾êüÿÿÿÿ
+¤squid:S1845"ŒRename field "Health" to prevent any misunderstanding/clash with field "health" defined in superclass "UI.pkgControllers.Common_Controller".(ÔÚäµ
+hsquid:S00116"PRename this field "Money" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÛéÛ
+ksquid:S00100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Üƒöÿÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(•šÁ”ûÿÿÿÿ
+fsquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÇËú
+ksquid:S001005"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şæ’ÿÿÿÿÿ
