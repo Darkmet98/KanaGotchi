@@ -10,3 +10,6 @@ AnchorPane{
 #IngameNoire{
     -fx-background-image: url("/Media/Images/Backgrounds/room2.jpg");
 }
+#MiniGameMath{
+    -fx-background-image: url("/Media/Images/Backgrounds/MathBackground.png");
+}

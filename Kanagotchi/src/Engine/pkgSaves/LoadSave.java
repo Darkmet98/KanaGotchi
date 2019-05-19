@@ -36,6 +36,8 @@ public class LoadSave {
         Gameor.setPlayerLevel((int)write.Encrypt(load_stream.readSaveInt(Gameor.getDebug())));
         //Read the Character selected
         Gameor.setCharacterSelected((int)write.Encrypt(load_stream.readSaveInt(Gameor.getDebug())));
+        //Read the Character selected
+        Gameor.setMaxPunctuationMath(write.Encrypt(load_stream.readSaveLong(Gameor.getDebug())));
         //Read the Time
         Gameor.setTime(load_stream.readSaveDate(Gameor.getDebug()));
         //Read the items owned

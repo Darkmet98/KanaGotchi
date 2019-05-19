@@ -1,46 +1,22 @@
 
-nsquid:S00116"QRename this field "Status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šü¯ûÿÿÿÿ
-isquid:S00117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÔÛÎ
-usquid:S00116)"XRename this field "EngineStarted" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ˜É•şÿÿÿÿ
-<squid:S2629£"$Invoke method(s) only conditionally.(Œº”
-Asquid:S2629ƒ"$Invoke method(s) only conditionally.(±†‹Ãşÿÿÿÿ
-<squid:S2629À"$Invoke method(s) only conditionally.(ô²ò€
-Asquid:S2629“"$Invoke method(s) only conditionally.(•½îÃùÿÿÿÿ
-Asquid:S2629·"$Invoke method(s) only conditionally.(úºÀ½şÿÿÿÿ
-ssquid:S00116"VRename this field "PlayerLevel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô»¬ªşÿÿÿÿ
-msquid:S00116'"PRename this field "Chara" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÿñıÿÿÿÿ
-fsquid:S00116&"ORename this field "Task" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ”ÂZ
-fsquid:S00116"ORename this field "Time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ­ŸL
-;squid:S2629Û"$Invoke method(s) only conditionally.(‚…
-@squid:S2629s"$Invoke method(s) only conditionally.(ÓèŞÑùÿÿÿÿ
-@squid:S2629~"$Invoke method(s) only conditionally.(±†‹Ãşÿÿÿÿ
-hsquid:S00116"PRename this field "Money" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¢
-bsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(¹ö’¹
-<squid:S2629™"$Invoke method(s) only conditionally.(ñ©­
-fsquid:S00100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÔÛÎ
-fsquid:S00100P"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¾ÎÀ
-<squid:S2629Å"$Invoke method(s) only conditionally.(§èåÛ
+<squid:S2629"$Invoke method(s) only conditionally.(»æ§ˆ
+<squid:S2629¢"$Invoke method(s) only conditionally.(¦¿åî
+Asquid:S2629¬"$Invoke method(s) only conditionally.(úºÀ½şÿÿÿÿ
+Asquid:S2629“"$Invoke method(s) only conditionally.(ëú‰²ıÿÿÿÿ
+<squid:S2629µ"$Invoke method(s) only conditionally.(ô²ò€
+@squid:S2629c"$Invoke method(s) only conditionally.(ÓèŞÑùÿÿÿÿ
+@squid:S2629n"$Invoke method(s) only conditionally.(š Ô¿úÿÿÿÿ
+@squid:S2629x"$Invoke method(s) only conditionally.(±†‹Ãşÿÿÿÿ
+<squid:S2629˜"$Invoke method(s) only conditionally.(Œº”
+<squid:S2629º"$Invoke method(s) only conditionally.(§èåÛ
+<squid:S2629À"$Invoke method(s) only conditionally.(§èåÛ
+;squid:S2629Å"$Invoke method(s) only conditionally.(‚…
 ;squid:S2629Ğ"$Invoke method(s) only conditionally.(‚…
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö‹÷Á
-<squid:S2629¨"$Invoke method(s) only conditionally.(»æ§ˆ
-fsquid:S00100a"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Ì©É
-qsquid:S00116("YRename this field "ShopOperations" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Œì¶
-Asquid:S2629"$Invoke method(s) only conditionally.(ëú‰²ıÿÿÿÿ
-fsquid:S00100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ€œË
-isquid:S00116"QRename this field "Health" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—á¦±
-Asquid:S2629"$Invoke method(s) only conditionally.(•½îÃùÿÿÿÿ
-ksquid:S00100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«–åãøÿÿÿÿ
-msquid:S00116"URename this field "Experience" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÿ¼€
-<squid:S2629­"$Invoke method(s) only conditionally.(¦¿åî
-msquid:S00116!"URename this field "ItemsOwned" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ§Œº
-@squid:S2629y"$Invoke method(s) only conditionally.(š Ô¿úÿÿÿÿ
-€squid:S00116"\Rename this field "CharacterSelected" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓØœ†ÿÿÿÿÿ8²Ãü‘«-
-<squid:S2629Ë"$Invoke method(s) only conditionally.(§èåÛ
-@squid:S2629n"$Invoke method(s) only conditionally.(ÓèŞÑùÿÿÿÿ
-;squid:S2629Õ"$Invoke method(s) only conditionally.(‚…
-<squid:S2629²"$Invoke method(s) only conditionally.(™Ø“™
-fsquid:S00100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷ëµó
-msquid:S00116 "PRename this field "Count" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¢ÓÛÿÿÿÿÿ
-Asquid:S2629‰"$Invoke method(s) only conditionally.(´ü¾¢úÿÿÿÿ
-fsquid:S00100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±àîÚ
-ksquid:S00100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÌŒíıÿÿÿÿ
+Asquid:S2629ƒ"$Invoke method(s) only conditionally.(•½îÃùÿÿÿÿ
+<squid:S2629"$Invoke method(s) only conditionally.(ñ©­
+@squid:S2629h"$Invoke method(s) only conditionally.(ÓèŞÑùÿÿÿÿ
+@squid:S2629~"$Invoke method(s) only conditionally.(´ü¾¢úÿÿÿÿ
+<squid:S2629§"$Invoke method(s) only conditionally.(™Ø“™
+Asquid:S2629ˆ"$Invoke method(s) only conditionally.(•½îÃùÿÿÿÿ
+;squid:S2629Ê"$Invoke method(s) only conditionally.(‚…
+@squid:S2629s"$Invoke method(s) only conditionally.(±†‹Ãşÿÿÿÿ

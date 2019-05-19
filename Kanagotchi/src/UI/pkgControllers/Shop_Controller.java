@@ -61,8 +61,8 @@ public class Shop_Controller extends Common_Controller{
     public void Buy() {
         try{
             Ingame_Controller.game.Buy(ItemTable.getSelectionModel().getSelectedIndex());
-        } catch (InsufficientMoney | ItemNotSelected msg) {
-          ShowInfoMsg(msg.toString());
+        } catch (InsufficientMoney | ItemNotSelected  msg) {
+          ShowInfoMsg(msg.getMessage());
         }
     }
 }

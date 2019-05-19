@@ -36,10 +36,13 @@ public class WriteSave {
         save_stream.writeSave((int)Encrypt(Gameor.getPlayerLevel()), Gameor.getDebug());
         //Character
         save_stream.writeSave((int)Encrypt(Gameor.getCharacterSelected()), Gameor.getDebug());
+        //MathGameMaxPunctuation
+        save_stream.writeSave(Encrypt(Gameor.getMaxPunctuationMath()), Gameor.getDebug());
         //Time
         save_stream.writeSave(Gameor.getTime().toString(), Gameor.getDebug());
         //ItemsOwned
         for(int i = 0; i < Gameor.getItemsOwned().size(); i++) { save_stream.writeSave(((int)Encrypt(Gameor.getItemsOwned().get(i))), Gameor.getDebug()); }
+
         save_stream.flush();
         save_stream.close();
         save.close();

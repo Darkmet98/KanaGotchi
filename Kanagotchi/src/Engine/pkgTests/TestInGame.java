@@ -133,6 +133,8 @@ class TestInGame {
     @DisplayName("Test load game")
     void TestLoadGame() throws IOException, InsufficientMoney, BadHeaderSave, SaveFileDoesntExists, ItemNotSelected {
         testingame.NewGame(true);
+        testingame.setCharacterSelected(1);
+        testingame.setMaxPunctuationMath((long)40);
         testingame.setHealth(40);
         testingame.setStatus(2);
         testingame.Buy(1);
@@ -150,16 +152,9 @@ class TestInGame {
                 ()-> assertEquals(3, testingame.getItemsOwned().get(1).intValue()),
                 ()-> assertEquals(0, testingame.getItemsOwned().get(2).intValue()),
                 ()-> assertEquals(60, testingame.getExperience()),
-                ()-> assertEquals(15, testingame.getPlayerLevel())
+                ()-> assertEquals(15, testingame.getPlayerLevel()),
+                ()-> assertEquals(1, testingame.getCharacterSelected()),
+                ()-> assertEquals(40, testingame.getMaxPunctuationMath().intValue())
         );
     }
-
-    /*@Test
-    @DisplayName("Test health time event.")
-    void TestHealthEvent() throws InterruptedException {
-        testingame.NewGame();
-        //TimeUnit.MINUTES.sleep(2);
-        //TimeUnit.MINUTES.wait(2);
-        assertEquals(99, testingame.getHealth().intValue());
-    }*/
 }

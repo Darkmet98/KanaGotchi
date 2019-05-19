@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="window" id="MiniGameMath" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.pkgControllers.MathGame_Controller">
+    <children>
+        <Label id="TextUI" layoutX="319.0" layoutY="459.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#CheckResult" text="COMPROBAR">
+            <font>
+                <Font name="Curse Casual Regular" size="45.0" />
+            </font>
+        </Label>
+        <Label id="TextUI" layoutX="662.0" layoutY="31.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Quit" text="VOLVER">
+            <font>
+                <Font name="Curse Casual Regular" size="45.0" />
+            </font>
+        </Label>
+        <Label id="TextUI" layoutX="25.0" layoutY="72.0" text="PUNTUACIÓN:">
+            <font>
+                <Font name="Curse Casual Regular" size="35.0" />
+            </font>
+        </Label>
+      <Label fx:id="MaxPunctuation" id="TextUI" layoutX="249.0" layoutY="113.0" text="VALUEMAX">
+         <font>
+            <Font name="Curse Casual Regular" size="35.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" layoutX="26.0" layoutY="113.0" text="PUNTUACIÓN MÁX:">
+         <font>
+            <Font name="Curse Casual Regular" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="Punctuation" id="TextUI" layoutX="187.0" layoutY="72.0" text="VALUEPUNT">
+         <font>
+            <Font name="Curse Casual Regular" size="35.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" layoutX="26.0" layoutY="160.0" text="OPERACIÓN ACTUAL:">
+         <font>
+            <Font name="Curse Casual Regular" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="OperationLine1" id="TextUI" contentDisplay="CENTER" layoutX="342.0" layoutY="272.0" text="VALUE1" textAlignment="CENTER">
+         <font>
+            <Font name="Curse Casual Regular" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="OperationLine2" id="TextUI" contentDisplay="CENTER" layoutX="342.0" layoutY="328.0" text="VALUE2" textAlignment="CENTER">
+         <font>
+            <Font name="Curse Casual Regular" size="48.0" />
+         </font>
+      </Label>
+      <Line endX="402.0" layoutX="265.0" layoutY="397.0" startX="-110.0" />
+      <TextField fx:id="UserResult" layoutX="154.0" layoutY="409.0" prefHeight="26.0" prefWidth="513.0" />
+      <Label id="TextUI" layoutX="26.0" layoutY="31.0" text="VIDA:">
+         <font>
+            <Font name="Curse Casual Regular" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="Operation" id="TextUI" layoutX="366.0" layoutY="160.0" text="VALUEACTU">
+         <font>
+            <Font name="Curse Casual Regular" size="50.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Heart1" fitHeight="41.0" fitWidth="73.0" layoutX="96.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/Media/Images/Icons/life.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Heart2" fitHeight="41.0" fitWidth="73.0" layoutX="146.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/Media/Images/Icons/life.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Heart3" fitHeight="41.0" fitWidth="73.0" layoutX="197.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/Media/Images/Icons/life.png" />
+         </image>
+      </ImageView>
+    </children>
+
+</AnchorPane>

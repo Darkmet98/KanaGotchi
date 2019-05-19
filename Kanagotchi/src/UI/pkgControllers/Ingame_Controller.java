@@ -40,6 +40,9 @@ public class Ingame_Controller extends Common_Controller {
     }
 
     @FXML
+    public void SelectMiniGame() {VistaNavigator.loadVista(VistaNavigator.MINIGAME_MENU);}
+
+    @FXML
     public void Shop() {
         VistaNavigator.loadVista(VistaNavigator.SHOP);
     }
@@ -51,13 +54,13 @@ public class Ingame_Controller extends Common_Controller {
 
     @FXML
     public void Menu() throws IOException {
-    game.save();
-    PressedSound();
-    TitleScreen_Controller.getSounds().getBackground().stop();
-    TitleScreen_Controller.StartMusic();
-    game.Stop();
-    game.setEngineStarted(false);
-    VistaNavigator.loadVista(VistaNavigator.TITLE_SCREEN);
+        game.save();
+        PressedSound();
+        TitleScreen_Controller.getSounds().getBackground().stop();
+        TitleScreen_Controller.StartMusic();
+        game.Stop();
+        game.setEngineStarted(false);
+        VistaNavigator.loadVista(VistaNavigator.TITLE_SCREEN);
     }
 
     @Override

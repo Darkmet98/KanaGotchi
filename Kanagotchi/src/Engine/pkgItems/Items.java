@@ -1,7 +1,5 @@
 package Engine.pkgItems;
 
-import javafx.scene.control.TableColumn;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -48,7 +46,7 @@ public class Items {
             // Read the first line from the text file.
             String line = br.readLine();
 
-            // Loop until all lines are read.
+            // Loop until all lines are read
             while (line != null) {
 
                 /*

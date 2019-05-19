@@ -49,7 +49,7 @@ public class Food_Controller extends Common_Controller {
             game.EatFood(ItemTable.getSelectionModel().getSelectedIndex());
         }
         catch (ItemIsZero | ItemNotSelected msg) {
-            ShowInfoMsg(msg.toString());
+            ShowInfoMsg(msg.getMessage());
         }
         ItemTable.getItems().clear();
         LoadItemTable();

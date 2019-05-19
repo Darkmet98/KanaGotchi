@@ -1,6 +1,7 @@
 package Engine.pkgMechanics;
 
 import Engine.pkgExceptions.*;
+import Engine.pkgGames.pkgMath.Engine.MathMotor;
 import Engine.pkgItems.Items;
 import javafx.beans.property.LongProperty;
 import javafx.beans.property.SimpleLongProperty;
@@ -34,8 +35,13 @@ public class Game {
     private Boolean debug = false;
     private Tasks Task;
     private Character Chara;
+    public MathMotor Maths;
     private Shop ShopOperations;
     private boolean EngineStarted = false;
+
+    //MiniGames
+    private LongProperty MaxPunctuationMath;
+    private LongProperty MaxPunctuationCatchBall;
 
     public static final Logger Log = Logger.getLogger( "DEBUG DATA IN" );
 
@@ -45,6 +51,7 @@ public class Game {
         Task = new Tasks(this);
         Chara = new Character(this);
         ShopOperations = new Shop(this);
+        Maths = new MathMotor(this);
     }
 
     //When you initialize the first time the game.
@@ -60,6 +67,8 @@ public class Game {
         setHealth(100);
         setPlayerLevel(1);
         setExperience(1);
+        setMaxPunctuationMath((long)0);
+        setMaxPunctuationCatchBall((long)0);
         setTime(LocalDateTime.now());
         setItemsOwned(newgame);
         Task.StartTasks();
@@ -223,5 +232,36 @@ public class Game {
 
     public void setCharacterSelected(int characterSelected) {
         CharacterSelected = characterSelected;
+    }
+
+    public LongProperty getMaxPunctuationMathProperty() {
+        if(getDebug()) Log.log(Level.INFO, Long.toString(getMaxPunctuationMath()));
+        return MaxPunctuationMath;
+    }
+    public Long getMaxPunctuationMath() {
+        if(getDebug()) Log.log(Level.INFO, Long.toString(getMaxPunctuationMath()));
+        return MaxPunctuationMath.getValue();
+    }
+
+    public void setMaxPunctuationMath(Long maxPunctuationMath) {
+        if(MaxPunctuationMath == null) MaxPunctuationMath = new SimpleLongProperty();
+        if(getDebug()) Log.log(Level.INFO, Long.toString(getMaxPunctuationMath()));
+        MaxPunctuationMath.set(maxPunctuationMath);
+    }
+
+    public LongProperty getMaxPunctuationCatchBallProperty() {
+        if(getDebug()) Log.log(Level.INFO, Long.toString(getMaxPunctuationCatchBall()));
+        return MaxPunctuationCatchBall;
+    }
+
+    public Long getMaxPunctuationCatchBall() {
+        if(getDebug()) Log.log(Level.INFO, Long.toString(getMaxPunctuationCatchBall()));
+        return MaxPunctuationCatchBall.getValue();
+    }
+
+    public void setMaxPunctuationCatchBall(Long maxPunctuationCatchBall) {
+        if(MaxPunctuationCatchBall == null) MaxPunctuationCatchBall = new SimpleLongProperty();
+        if(getDebug()) Log.log(Level.INFO, Long.toString(getMaxPunctuationCatchBall()));
+        MaxPunctuationCatchBall.set(maxPunctuationCatchBall);
     }
 }
