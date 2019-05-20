@@ -4,29 +4,16 @@ import Engine.pkgExceptions.OperationResultIsNull;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 
-public class MathGame_Controller extends Common_Controller {
+public class MathGame_Controller extends MiniGameCommon_Controller {
 
-    @FXML
-    Label Punctuation;
-    @FXML
-    Label MaxPunctuation;
+
     @FXML
     Label Operation;
     @FXML
     Label OperationLine1;
     @FXML
     Label OperationLine2;
-    @FXML
-    ImageView Heart1;
-    @FXML
-    ImageView Heart2;
-    @FXML
-    ImageView Heart3;
-    @FXML
-    TextField UserResult;
 
     @FXML
     public void initialize() {
@@ -36,14 +23,18 @@ public class MathGame_Controller extends Common_Controller {
     }
 
     @FXML
+    public void Quit() {
+        ShowInfoMsg("Fin de la partida. Has conseguido " + (game.Maths.CommonValues.getMaxPunctuation()*2) + " monedas.");
+        VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);
+    }
+
+    @FXML
     public void CheckResult() {
         try {
             SendResults();
         } catch (OperationResultIsNull msg) {
             ShowInfoMsg(msg.getMessage());
         }
-
-
     }
 
     private void SendResults() throws OperationResultIsNull {
@@ -53,44 +44,14 @@ public class MathGame_Controller extends Common_Controller {
         UserResult.clear();
     }
 
-    @FXML
-    public void Quit() {
-        ShowInfoMsg("Fin de la partida. Has conseguido " + (game.Maths.getMaxPunctuation()*2) + " monedas.");
-        VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);
-    }
 
-    private void LoadGameValues() {
-        Punctuation.setText(String.valueOf(game.Maths.getMaxPunctuation()));
-        MaxPunctuation.setText(String.valueOf(game.getMaxPunctuationMath()));
+    public void LoadGameValues() {
         ActualOperation();
+        Punctuation.setText(String.valueOf(game.Maths.CommonValues.getMaxPunctuation()));
+        MaxPunctuation.setText(String.valueOf(game.getMaxPunctuationMath()));
         OperationLine1.setText(String.valueOf(game.Maths.getFirstLine()));
         OperationLine2.setText(String.valueOf(game.Maths.getSecondLine()));
 
-    }
-
-    private void LoadMiniGameListeners() {
-        //Get the actual punctuation
-        game.Maths.getMaxPunctuationProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
-            Punctuation.setText(String.valueOf(game.Maths.getMaxPunctuation()));
-        }));
-        //Get the life
-        game.Maths.getLifeProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(this::LifeHearts));
-        //Get the Actual Operation
-        game.Maths.getTypeProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(this::ActualOperation));
-        //Get the first line from the operation
-        game.Maths.getFirstLineProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
-            OperationLine1.setText(String.valueOf(game.Maths.getFirstLine()));
-        }));
-        //Get the second line from the operation
-        game.Maths.getSecondLineProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
-            OperationLine2.setText(String.valueOf(game.Maths.getSecondLine()));
-        }));
-        // force the field to be numeric only
-        UserResult.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (!newValue.matches("\\d*")) {
-                UserResult.setText(newValue.replaceAll("[^\\d]", ""));
-            }
-        });
     }
 
     public void ActualOperation() {
@@ -107,8 +68,33 @@ public class MathGame_Controller extends Common_Controller {
         }
     }
 
+    public void LoadMiniGameListeners() {
+        //Get the Actual Operation
+        game.Maths.getTypeProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(this::ActualOperation));
+        //Get the first line from the operation
+        game.Maths.getFirstLineProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
+            OperationLine1.setText(String.valueOf(game.Maths.getFirstLine()));
+        }));
+        //Get the second line from the operation
+        game.Maths.getSecondLineProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
+            OperationLine2.setText(String.valueOf(game.Maths.getSecondLine()));
+        }));
+        // force the field to be numeric only
+        UserResult.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                UserResult.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+        });
+        //Get the actual punctuation
+        game.Maths.CommonValues.getMaxPunctuationProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
+            Punctuation.setText(String.valueOf(game.Maths.CommonValues.getMaxPunctuation()));
+        }));
+        //Get the life
+        game.Maths.CommonValues.getLifeProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(this::LifeHearts));
+    }
+
     public void LifeHearts() {
-        switch (game.Maths.getLife()) {
+        switch (game.Maths.CommonValues.getLife()) {
             case 0: //End game
                 Heart1.setVisible(false);
                 Heart2.setVisible(false);
@@ -133,4 +119,5 @@ public class MathGame_Controller extends Common_Controller {
                 break;
         }
     }
+
 }

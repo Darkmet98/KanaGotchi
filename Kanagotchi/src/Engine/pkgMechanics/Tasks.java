@@ -21,8 +21,7 @@ public class Tasks {
                 DecreaseHealth();
             }
         };
-        GameValues.getCount().schedule(checkHealth, 1000, 1000);
-        //getCount().schedule(checkHealth, 60000, 60000);
+        GameValues.getCount().schedule(checkHealth, 60000, 60000);
     }
 
     public void DecreaseHealth() {

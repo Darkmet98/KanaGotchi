@@ -28,6 +28,7 @@ public class VistaNavigator {
 
     //MiniGames
     public static final String MINIGAME_MATH = "/UI/pkgFxml/MathGame.fxml";
+    public static final String MINIGAME_CATCHTHEBALL = "/UI/pkgFxml/CatchTheBallGame.fxml";
 
     /** The main application layout controller. */
     public static TitleScreen_Controller mainTitleScreenController;

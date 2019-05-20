@@ -38,6 +38,8 @@ public class WriteSave {
         save_stream.writeSave((int)Encrypt(Gameor.getCharacterSelected()), Gameor.getDebug());
         //MathGameMaxPunctuation
         save_stream.writeSave(Encrypt(Gameor.getMaxPunctuationMath()), Gameor.getDebug());
+        //CatchTheBallGameMaxPunctuation
+        save_stream.writeSave(Encrypt(Gameor.getMaxPunctuationCatchBall()), Gameor.getDebug());
         //Time
         save_stream.writeSave(Gameor.getTime().toString(), Gameor.getDebug());
         //ItemsOwned

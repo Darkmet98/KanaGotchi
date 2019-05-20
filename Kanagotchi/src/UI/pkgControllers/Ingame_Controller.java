@@ -3,6 +3,8 @@ package UI.pkgControllers;
 import Engine.pkgExceptions.BadHeaderSave;
 import Engine.pkgExceptions.SaveFileDoesntExists;
 import javafx.animation.*;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -13,6 +15,8 @@ import java.io.IOException;
 import java.util.Random;
 
 public class Ingame_Controller extends Common_Controller {
+
+
 
     @FXML
     private Label characterTalk;

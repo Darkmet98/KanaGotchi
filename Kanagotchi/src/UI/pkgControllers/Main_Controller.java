@@ -17,12 +17,14 @@ public class Main_Controller extends Application {
 
         stage.setTitle("Kanagotchi");
         stage.setScene(createScene(loadMainPane()));
-        //stage.setResizable(false);
         stage.sizeToScene();
+        /* Workaround Fix Linux */
+        //stage.setWidth(800);
+        //stage.setHeight(600);
+        //stage.setResizable(false);
         stage.show();
         stagex = stage;
     }
-
 
     private Pane loadMainPane() throws IOException {
         FXMLLoader loader = new FXMLLoader();

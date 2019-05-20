@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="MiniGameCatchTheBall" fx:id="window" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.pkgControllers.CatchTheBallGame_Controller">
+<children>
+      <Sphere fx:id="sphere" layoutX="400.0" layoutY="300.0" onMouseClicked="#BallCatched" radius="50" />
+    <Label id="TextUI" layoutX="662.0" layoutY="31.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Quit" text="VOLVER">
+        <font>
+            <Font name="Curse Casual Regular" size="45.0" />
+        </font>
+    </Label>
+    <Label id="TextUI" layoutX="25.0" layoutY="63.0" text="PUNTUACIÓN:">
+        <font>
+            <Font name="Curse Casual Regular" size="25.0" />
+        </font>
+    </Label>
+    <Label id="TextUI" fx:id="MaxPunctuation" layoutX="184.0" layoutY="91.0" text="VALUEMAX">
+        <font>
+            <Font name="Curse Casual Regular" size="25.0" />
+        </font>
+    </Label>
+    <Label id="TextUI" layoutX="25.0" layoutY="91.0" text="PUNTUACIÓN MÁX:">
+        <font>
+            <Font name="Curse Casual Regular" size="25.0" />
+        </font>
+    </Label>
+    <Label id="TextUI" fx:id="Punctuation" layoutX="145.0" layoutY="63.0" text="VALUEPUNT">
+        <font>
+            <Font name="Curse Casual Regular" size="25.0" />
+        </font>
+    </Label>
+    <Label id="TextUI" layoutX="26.0" layoutY="31.0" text="VIDA:">
+        <font>
+            <Font name="Curse Casual Regular" size="25.0" />
+        </font>
+    </Label>
+    <ImageView fx:id="Heart1" fitHeight="41.0" fitWidth="32.0" layoutX="77.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../../resources/Media/Images/Icons/life.png" />
+        </image>
+    </ImageView>
+      <Label id="TextUI" layoutX="25.0" layoutY="119.0" prefHeight="29.0" prefWidth="79.0" text="TIEMPO:">
+         <font>
+            <Font name="Curse Casual Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label id="TextUI" fx:id="time" layoutX="99.0" layoutY="120.0" text="VALUETIE">
+         <font>
+            <Font name="Curse Casual Regular" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Heart2" fitHeight="41.0" fitWidth="32.0" layoutX="114.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/Media/Images/Icons/life.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Heart3" fitHeight="41.0" fitWidth="32.0" layoutX="152.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/Media/Images/Icons/life.png" />
+         </image>
+      </ImageView>
+</children>
+</AnchorPane>

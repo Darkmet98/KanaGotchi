@@ -36,7 +36,7 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff00e2" height="13.0" layoutX="208.0" layoutY="224.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
       <ImageView fitHeight="183.0" fitWidth="221.0" layoutX="86.0" layoutY="176.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#StartMathGame" pickOnBounds="true" preserveRatio="true" />
       <Sphere fx:id="sphere" layoutX="604.0" layoutY="272.0" radius="50" />
-      <ImageView fitHeight="164.0" fitWidth="247.0" layoutX="481.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="164.0" fitWidth="247.0" layoutX="481.0" layoutY="190.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#StartCatchTheBallGame" pickOnBounds="true" preserveRatio="true" />
     </children>
 
 </AnchorPane>

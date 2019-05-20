@@ -1,4 +1,4 @@
-package Engine.pkgGames.pkgMath.Engine;
+package Engine.pkgGames;
 
 import Engine.pkgExceptions.OperationResultIsNull;
 import Engine.pkgMechanics.Game;
@@ -15,14 +15,12 @@ public class MathMotor {
     private IntegerProperty FirstLine;
     private IntegerProperty SecondLine;
     private LongProperty Result;
-    private LongProperty MaxPunctuation;
-    private IntegerProperty Life;
     private Random r = new Random();
-    private Game GameValues;
     private boolean ValueCorrect = false;
+    public Common CommonValues;
 
     public MathMotor(Game game) {
-        GameValues = game;
+        CommonValues = new Common(game);
     }
 
     /*
@@ -35,25 +33,24 @@ public class MathMotor {
 
 
     public void StartGame() {
-        setLife(3);
-        setMaxPunctuation((long) 0);
+        CommonValues.StartGame();
         NewCalculation();
 
     }
 
     public void CheckResult(Long result) throws OperationResultIsNull {
-        if(result.equals(null)) throw new OperationResultIsNull("Error, no puedes enviar el resultado en blanco.");
+        if(null == result) throw new OperationResultIsNull("Error, no puedes enviar el resultado en blanco.");
         if(getResult().equals(result)) {
             setValueCorrect(true);
-            setMaxPunctuation(getMaxPunctuation()+1);
+            CommonValues.setMaxPunctuation(CommonValues.getMaxPunctuation()+1);
         }
         else {
             setValueCorrect(false);
-            setLife(getLife()-1);
+            CommonValues.setLife(CommonValues.getLife()-1);
         }
 
-        if(getLife() == 0) {
-            EndGame();
+        if(CommonValues.getLife() == 0) {
+            CommonValues.EndGame();
         }
         else {
             NewCalculation();
@@ -89,11 +86,6 @@ public class MathMotor {
                 setResult((long)getFirstLine()*getSecondLine());
                 break;
         }
-    }
-
-    public void EndGame() {
-        if (getMaxPunctuation() > GameValues.getMaxPunctuationMath()) GameValues.setMaxPunctuationMath(getMaxPunctuation());
-        GameValues.setMoney(GameValues.getMoney() + (getMaxPunctuation()*2));
     }
 
 
@@ -143,33 +135,6 @@ public class MathMotor {
         if(Result == null) Result = new SimpleLongProperty();
         Result.set(result);
     }
-
-    public LongProperty getMaxPunctuationProperty() {
-        return MaxPunctuation;
-    }
-
-    public Long getMaxPunctuation() {
-        return MaxPunctuation.getValue();
-    }
-
-    public void setMaxPunctuation(Long maxPunctuation) {
-        if(MaxPunctuation == null) MaxPunctuation = new SimpleLongProperty();
-        MaxPunctuation.set(maxPunctuation);
-    }
-
-    public IntegerProperty getLifeProperty() {
-        return Life;
-    }
-
-    public Integer getLife() {
-        return Life.getValue();
-    }
-
-    public void setLife(Integer life) {
-        if(Life == null) Life = new SimpleIntegerProperty();
-        Life.set(life);
-    }
-
     public boolean isValueCorrect() {
         return ValueCorrect;
     }

@@ -1,7 +1,8 @@
 package Engine.pkgMechanics;
 
 import Engine.pkgExceptions.*;
-import Engine.pkgGames.pkgMath.Engine.MathMotor;
+import Engine.pkgGames.CatchBallMotor;
+import Engine.pkgGames.MathMotor;
 import Engine.pkgItems.Items;
 import javafx.beans.property.LongProperty;
 import javafx.beans.property.SimpleLongProperty;
@@ -36,6 +37,7 @@ public class Game {
     private Tasks Task;
     private Character Chara;
     public MathMotor Maths;
+    public CatchBallMotor CatchBall;
     private Shop ShopOperations;
     private boolean EngineStarted = false;
 
@@ -52,6 +54,7 @@ public class Game {
         Chara = new Character(this);
         ShopOperations = new Shop(this);
         Maths = new MathMotor(this);
+        CatchBall = new CatchBallMotor(this);
     }
 
     //When you initialize the first time the game.

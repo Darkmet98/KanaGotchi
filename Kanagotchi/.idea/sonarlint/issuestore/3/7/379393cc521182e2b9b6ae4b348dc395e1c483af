@@ -1,9 +1,9 @@
 
-‹"squid:ClassVariableVisibilityCheck"QMake chara a static final constant or non-public and provide accessors if needed.(–¥ö„øÿÿÿÿ8“‡©’«-
+bsquid:S1444""?Make this "public static mainTitleScreenController" field final(èñý‘ûÿÿÿÿ8ú»¶¯«-
+‡"squid:ClassVariableVisibilityCheck#"TMake loadSave a static final constant or non-public and provide accessors if needed.(û¼Ø¿ýÿÿÿÿ
 Vsquid:S1118":Add a private constructor to hide the implicit public one.(Øºœ»þÿÿÿÿ
-Ÿ"squid:ClassVariableVisibilityCheck"eMake mainTitleScreenController a static final constant or non-public and provide accessors if needed.(èñý‘ûÿÿÿÿ8ú»¶¯«-
-Nsquid:S1444"+Make this "public static chara" field final(–¥ö„øÿÿÿÿ8“‡©’«-
-?squid:S1148E"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-bsquid:S1444"?Make this "public static mainTitleScreenController" field final(èñý‘ûÿÿÿÿ8ú»¶¯«-
-Jsquid:S1444".Make this "public static loadSave" field final(û¼Ø¿ýÿÿÿÿ
-‡"squid:ClassVariableVisibilityCheck"TMake loadSave a static final constant or non-public and provide accessors if needed.(û¼Ø¿ýÿÿÿÿ
+‹"squid:ClassVariableVisibilityCheck$"QMake chara a static final constant or non-public and provide accessors if needed.(–¥ö„øÿÿÿÿ8“‡©’«-
+Jsquid:S1444#".Make this "public static loadSave" field final(û¼Ø¿ýÿÿÿÿ
+Ÿ"squid:ClassVariableVisibilityCheck""eMake mainTitleScreenController a static final constant or non-public and provide accessors if needed.(èñý‘ûÿÿÿÿ8ú»¶¯«-
+?squid:S1148J"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Nsquid:S1444$"+Make this "public static chara" field final(–¥ö„øÿÿÿÿ8“‡©’«-
