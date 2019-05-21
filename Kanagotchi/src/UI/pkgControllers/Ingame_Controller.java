@@ -3,8 +3,6 @@ package UI.pkgControllers;
 import Engine.pkgExceptions.BadHeaderSave;
 import Engine.pkgExceptions.SaveFileDoesntExists;
 import javafx.animation.*;
-import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -23,10 +21,18 @@ public class Ingame_Controller extends Common_Controller {
     @FXML
     private ImageView dialogBox;
 
+    //Detect if the save file doesn't exist
+    boolean SaveDoesntExist = false;
+
     //Start the game
     public Ingame_Controller() throws IOException, BadHeaderSave, SaveFileDoesntExists {
         if(VistaNavigator.loadSave && !game.isEngineStarted()) {
-            game.load();
+            try {
+                game.load();
+            }
+            catch (SaveFileDoesntExists s) {
+                SaveDoesntExist = true;
+            }
         }
         else if (!VistaNavigator.loadSave && !game.isEngineStarted()) {
             game.NewGame(false);
@@ -37,6 +43,17 @@ public class Ingame_Controller extends Common_Controller {
     //Initialize the game
     @FXML
     public void initialize() {
+        if(game.isBdFailed() && !SaveDoesntExist) {
+            ShowInfoMsg("Aviso, se ha producido un error al intentar acceder a la base de datos\n" +
+                    "pero se ha cargado la partida local.");
+            game.setBdFailed(false);
+        }
+        else if(game.isBdFailed() && SaveDoesntExist) {
+            ShowInfoMsg("Aviso, se ha producido un error al intentar acceder a la base de datos\n" +
+                    "y no tienes ninguna partida local guardada.\n" +
+                    "Has vuelto a la pantalla de título.");
+            returnToTitleScreen();
+        }
         LoadValues();
         DigiEvolution();
         if(game.getCharacterSelected() == 0) window.setId("IngameNeptune");
@@ -60,6 +77,14 @@ public class Ingame_Controller extends Common_Controller {
     public void Menu() throws IOException {
         game.save();
         PressedSound();
+        returnToTitleScreen();
+        if(game.isBdFailed()) {
+            ShowInfoMsg("Aviso, se ha producido un error al intentar acceder a la base de datos\n" +
+                    "pero la partida local se ha guardado sin problemas.");
+        }
+    }
+
+    public void returnToTitleScreen() {
         TitleScreen_Controller.getSounds().getBackground().stop();
         TitleScreen_Controller.StartMusic();
         game.Stop();

@@ -37,7 +37,7 @@ public class TestMinigames {
         testingame.Maths.StartGame();
         for(int i = 0; i < 80; i++) testingame.Maths.CheckResult(testingame.Maths.getResult());
         System.out.println(testingame.Maths.CommonValues.getMaxPunctuation());
-        for(int i = 0; i < 3; i++) testingame.Maths.CheckResult((long)0);
+        for(int i = 0; i < 4; i++) testingame.Maths.CheckResult((long)0);
         assertEquals(80, testingame.getMaxPunctuationMath().intValue());
     }
 }

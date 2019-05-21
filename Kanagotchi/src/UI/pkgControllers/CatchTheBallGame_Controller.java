@@ -44,6 +44,8 @@ public class CatchTheBallGame_Controller extends MiniGameCommon_Controller {
         }
 
     }));
+
+
     @FXML
     public void initialize() {
         game.CatchBall.StartGame();
@@ -62,7 +64,8 @@ public class CatchTheBallGame_Controller extends MiniGameCommon_Controller {
 
     @FXML
     public void Quit() {
-        ShowInfoMsg("Fin de la partida. Has conseguido " + (game.CatchBall.CommonValues.getMaxPunctuation()*2) + " monedas.");
+        ShowInfoMsg("Fin de la partida. Has conseguido " + (game.CatchBall.CommonValues.getMaxPunctuation()*2) + " monedas y\n" + game.CatchBall.CommonValues.getMaxPunctuation() + " puntos de experiencia.");
+        game.CatchBall.EndGame();
         VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);
     }
 

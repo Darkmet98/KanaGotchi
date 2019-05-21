@@ -22,8 +22,8 @@ public class Common {
 
     }
     public void EndGame() {
-        if (getMaxPunctuation() >  InGameValues.getMaxPunctuationMath())  InGameValues.setMaxPunctuationMath(getMaxPunctuation());
         InGameValues.setMoney( InGameValues.getMoney() + (getMaxPunctuation()*2));
+        InGameValues.setExperience((int) (InGameValues.getExperience()+getMaxPunctuation()));
     }
 
     public LongProperty getMaxPunctuationProperty() {

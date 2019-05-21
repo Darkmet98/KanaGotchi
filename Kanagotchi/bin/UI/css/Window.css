@@ -13,3 +13,6 @@ AnchorPane{
 #MiniGameMath{
     -fx-background-image: url("/Media/Images/Backgrounds/MathBackground.png");
 }
+#MiniGameCatchTheBall{
+    -fx-background-image: url("/Media/Images/Backgrounds/CatchTheBallBackground.jpg");
+}

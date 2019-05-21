@@ -38,6 +38,11 @@ public class MathMotor {
 
     }
 
+    public void EndGame() {
+        if (CommonValues.getMaxPunctuation() >  CommonValues.InGameValues.getMaxPunctuationMath())  CommonValues.InGameValues.setMaxPunctuationMath(CommonValues.getMaxPunctuation());
+        CommonValues.EndGame();
+    }
+
     public void CheckResult(Long result) throws OperationResultIsNull {
         if(null == result) throw new OperationResultIsNull("Error, no puedes enviar el resultado en blanco.");
         if(getResult().equals(result)) {
@@ -50,7 +55,7 @@ public class MathMotor {
         }
 
         if(CommonValues.getLife() == 0) {
-            CommonValues.EndGame();
+            EndGame();
         }
         else {
             NewCalculation();

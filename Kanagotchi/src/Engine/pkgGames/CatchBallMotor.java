@@ -25,6 +25,7 @@ public class CatchBallMotor {
 
 
     public void EndGame() {
+        if (CommonValues.getMaxPunctuation() >  CommonValues.InGameValues.getMaxPunctuationCatchBall())  CommonValues.InGameValues.setMaxPunctuationCatchBall(CommonValues.getMaxPunctuation());
         CommonValues.EndGame();
         Count.cancel();
     }

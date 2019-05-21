@@ -33,6 +33,7 @@ public class TitleScreen_Controller extends Common_Controller {
     //Load the save and start the game
     @FXML
     private void LoadGame() {
+
         PressedSound();
         getSounds().getBackground().stop();
         getSounds().BackgroundMusic("/Media/BGM/BGM_Ingame.wav");
