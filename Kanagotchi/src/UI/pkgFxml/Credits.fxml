@@ -23,7 +23,7 @@
             <Font name="Curse Casual Regular" size="34.0" />
          </font>
       </Label>
-      <Label id="TextNotSelectionableUI" layoutX="245.0" layoutY="103.0" text="Diseñador de Neptune: Fox">
+      <Label id="TextNotSelectionableUI" layoutX="80.0" layoutY="103.0" text="Diseñador de Neptune: Manuel Fernández Falcón (Fox)">
          <font>
             <Font name="Curse Casual Regular" size="34.0" />
          </font>
@@ -38,7 +38,7 @@
             <Font name="Curse Casual Regular" size="34.0" />
          </font>
       </Label>
-      <Label id="TextNotSelectionableUI" layoutX="24.0" layoutY="229.0"  text="KanaGotchi es un juego basado en el famoso Tamagotchi como">
+      <Label id="TextNotSelectionableUI" layoutX="24.0" layoutY="229.0" text="KanaGotchi es un juego basado en el famoso Tamagotchi como">
          <font>
             <Font name="Curse Casual Regular" size="34.0" />
          </font>

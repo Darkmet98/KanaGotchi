@@ -84,7 +84,7 @@ public class CatchTheBallGame_Controller extends MiniGameCommon_Controller {
     @FXML
     public void Quit() {
         PressedSound();
-        //Show a mesagge
+        //Show a mesage
         ShowInfoMsg("Fin de la partida. Has conseguido " + (game.CatchBall.CommonValues.getMaxPunctuation()*2) + " monedas y\n" + game.CatchBall.CommonValues.getMaxPunctuation() + " puntos de experiencia.");
         //End the game and go to the ingame screen
         game.CatchBall.EndGame();

@@ -71,6 +71,9 @@ public class Ingame_Controller extends Common_Controller {
         //Read the character selected
         if(game.getCharacterSelected() == 0) window.setId("IngameNeptune");
         else window.setId("IngameNoire");
+
+        //Force the close request to end all timers
+        Main_Controller.MainStage.setOnCloseRequest(we -> returnToTitleScreen());
     }
 
     /*
@@ -114,17 +117,6 @@ public class Ingame_Controller extends Common_Controller {
             ShowInfoMsg("Aviso, se ha producido un error al intentar acceder a la base de datos\n" +
                     "pero la partida local se ha guardado sin problemas.");
         }
-    }
-
-    /*
-    * Return to the title screen and stop all ingame functions
-     */
-    public void returnToTitleScreen() {
-        TitleScreen_Controller.getSounds().getBackground().stop();
-        TitleScreen_Controller.StartMusic();
-        game.Stop();
-        game.setEngineStarted(false);
-        VistaNavigator.loadVista(VistaNavigator.TITLE_SCREEN);
     }
 
     /*

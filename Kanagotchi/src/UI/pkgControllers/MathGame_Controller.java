@@ -35,7 +35,9 @@ public class MathGame_Controller extends MiniGameCommon_Controller {
     @FXML
     public void Quit() {
         PressedSound();
+        //Show a mesage
         ShowInfoMsg("Fin de la partida. Has conseguido " + (game.Maths.getCommonValues().getMaxPunctuation()*2) + " monedas y\n" + game.Maths.getCommonValues().getMaxPunctuation() + " puntos de experiencia.");
+        //End the game and go to the ingame screen
         game.Maths.EndGame();
         VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);
     }

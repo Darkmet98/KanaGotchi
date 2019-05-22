@@ -68,6 +68,7 @@ public class Common_Controller {
         game.getHealthProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
             double healthvalue = game.getHealth();
             health.setProgress(healthvalue/100);
+            if(game.getHealth() == 0) EndTheGame();
         }));
         //Status Listener
         game.getStatusProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(this::TextStatus));
@@ -164,6 +165,25 @@ public class Common_Controller {
                 }
                 break;
         }
+    }
+
+    /*
+    * The character die
+     */
+    public void EndTheGame() {
+        returnToTitleScreen();
+        ShowInfoMsg("Tu personaje se ha marchado de casa\nal ver que no la cuidabas.\nFIN DE LA PARTIDA.");
+    }
+
+    /*
+     * Return to the title screen and stop all ingame functions
+     */
+    public void returnToTitleScreen() {
+        TitleScreen_Controller.getSounds().getBackground().stop();
+        TitleScreen_Controller.StartMusic();
+        game.Stop();
+        game.setEngineStarted(false);
+        VistaNavigator.loadVista(VistaNavigator.TITLE_SCREEN);
     }
 
     /*

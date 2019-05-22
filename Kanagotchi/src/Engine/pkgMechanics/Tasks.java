@@ -28,6 +28,7 @@ public class Tasks {
                 DecreaseHealth();
             }
         };
+        //GameValues.getCount().schedule(checkHealth, 0, 1000);
         GameValues.getCount().schedule(checkHealth, 60000, 60000);
     }
 
@@ -36,7 +37,8 @@ public class Tasks {
      */
     public void DecreaseHealth() {
         if (GameValues.getDebug()) Game.Log.log(Level.INFO, "Enabled timer event, decreased one point from "+GameValues.getHealth());
-        if(GameValues.getHealth() != 1) GameValues.setHealth(GameValues.getHealth()-1);
+        GameValues.setHealth(GameValues.getHealth()-1);
+        if(GameValues.getHealth() == 0) GameValues.Stop();
         ChangeStatus();
     }
 
