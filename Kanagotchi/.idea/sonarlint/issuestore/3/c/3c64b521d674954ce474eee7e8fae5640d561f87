@@ -1,0 +1,8 @@
+
+Rsquid:S2696!"6Make the enclosing method "static" or remove this set.(‡žüªøÿÿÿÿ
+Isquid:S1444"2Make this "public static BdConnection" field final(½ÒÌÙ
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†€éˆ8àä—Î­-
+<squid:S2068!" Remove this hard-coded password.(‡žüªøÿÿÿÿ
+isquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(†€éˆ8ˆõ–Î­-
+†"squid:ClassVariableVisibilityCheck"XMake BdConnection a static final constant or non-public and provide accessors if needed.(½ÒÌÙ
+nsquid:S3008"WRename this field "BdConnection" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ÒÌÙ

@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612d03f1-8e42-43f7-b453-12eca723af94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/Media/Images/Icons/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="17">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2254#2255#0" expanded="true" />
@@ -172,7 +171,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1" />
     <option name="y" value="-1" />
     <option name="width" value="1368" />
@@ -198,20 +197,7 @@
             <path>
               <item name="Kanagotchi" type="b2602c69:ProjectViewProjectNode" />
               <item name="Kanagotchi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kanagotchi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kanagotchi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kanagotchi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kanagotchi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="pkgControllers" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaDoc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,7 +359,7 @@
       <workItem from="1558269918212" duration="26680000" />
       <workItem from="1558339698416" duration="25308000" />
       <workItem from="1558425156651" duration="5632000" />
-      <workItem from="1558509229150" duration="27798000" />
+      <workItem from="1558509229150" duration="28994000" />
     </task>
     <task id="LOCAL-00001" summary=":heart_eyes: Switched to IntelliJ and JavaFX">
       <created>1556180579985</created>
@@ -494,7 +480,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558555453633</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary=":bowtie: Added the program icon.">
+      <created>1558556944342</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1558556944342</updated>
+    </task>
+    <task id="LOCAL-00019" summary=":grin: Added javadoc.">
+      <created>1558559031884</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1558559031884</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -530,7 +530,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227400000" />
+    <option name="totallyTimeSpent" value="228596000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,14 +542,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1368" height="746" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-1" width="1368" height="746" extended-state="7" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5031348" side_tool="true" weight="0.22205438" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.4968652" visible="true" weight="0.25226587" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.4968652" visible="true" weight="0.25226587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32736155" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4954683" weight="0.39576548" />
@@ -557,7 +556,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32736155" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.8127036" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.8127036" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.18566775" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50453174" side_tool="true" weight="0.24104235" />
       <window_info anchor="bottom" id="SonarLint" order="10" weight="0.3306189" />
@@ -656,7 +655,9 @@
     <MESSAGE value=":couple: Fixed typo." />
     <MESSAGE value=" :metal: Updated credits" />
     <MESSAGE value=" :metal: Fixed the close button, fixed the minigame money calculations, updated the credits and finished all." />
-    <option name="LAST_COMMIT_MESSAGE" value=" :metal: Fixed the close button, fixed the minigame money calculations, updated the credits and finished all." />
+    <MESSAGE value=":bowtie: Added the program icon." />
+    <MESSAGE value=":grin: Added javadoc." />
+    <option name="LAST_COMMIT_MESSAGE" value=":grin: Added javadoc." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1204,8 +1205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="17">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2254#2255#0" expanded="true" />
