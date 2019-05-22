@@ -69,7 +69,7 @@ public class TitleScreen_Controller extends Common_Controller {
     /*
     * Start Background Music
      */
-    public static void StartMusic() { getSounds().BackgroundMusic("/Media/BGM/BGM_TitleScreen.wav"); }
+    public static void StartMusic() { getSounds().BackgroundMusic(Sound.TITLE_SCREEN); }
     //Get Set Zone
     public static Sound getSounds() {
         return Sounds;

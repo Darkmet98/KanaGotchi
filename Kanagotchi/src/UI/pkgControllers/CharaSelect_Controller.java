@@ -1,5 +1,6 @@
 package UI.pkgControllers;
 
+import Engine.pkgMechanics.Sound;
 import Engine.pkgSaves.WriteSave;
 import javafx.fxml.FXML;
 
@@ -51,7 +52,7 @@ public class CharaSelect_Controller extends Common_Controller {
     private void StartGame() {
         PressedSound();
         getSounds().getBackground().stop();
-        getSounds().BackgroundMusic("/Media/BGM/BGM_Ingame.wav");
+        getSounds().BackgroundMusic(Sound.IN_GAME);
         VistaNavigator.loadSave = false;
         //Load the game screen
         VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);

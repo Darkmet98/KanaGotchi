@@ -1,6 +1,7 @@
 package UI.pkgControllers;
 
 import Engine.pkgMechanics.Game;
+import Engine.pkgMechanics.Sound;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
@@ -83,9 +84,9 @@ public class Common_Controller {
     * Sounds methods
      */
     @FXML
-    public void SelectedSound() {getSounds().InterfaceSounds("/Media/Sounds/Selection.wav");}
+    public void SelectedSound() {getSounds().InterfaceSounds(Sound.SELECTED);}
     @FXML
-    public void PressedSound() {getSounds().InterfaceSounds("/Media/Sounds/Click.wav");}
+    public void PressedSound() {getSounds().InterfaceSounds(Sound.CLICKED);}
 
     /*
     * Change the status
