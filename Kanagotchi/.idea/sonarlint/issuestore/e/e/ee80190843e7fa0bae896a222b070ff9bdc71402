@@ -1,31 +1,29 @@
 
-Hsquid:S2629ƒ"$Invoke method(s) only conditionally.(šî½›şÿÿÿÿ8ÚÃÌŠ­-
-Hsquid:S2629"$Invoke method(s) only conditionally.(šî½›şÿÿÿÿ8õÔÑŠ­-
-@squid:S2629w"$Invoke method(s) only conditionally.(ÓèŞÑùÿÿÿÿ
-Hsquid:S2629ş"$Invoke method(s) only conditionally.(¹âÕáùÿÿÿÿ8ïËŠ­-
-Asquid:S2629’"$Invoke method(s) only conditionally.(•½îÃùÿÿÿÿ
-Hsquid:S2629ô"$Invoke method(s) only conditionally.(¹âÕáùÿÿÿÿ8ïËŠ­-
-Asquid:S2629»"$Invoke method(s) only conditionally.(úºÀ½şÿÿÿÿ
-Hsquid:S2629ø"$Invoke method(s) only conditionally.(¹âÕáùÿÿÿÿ8ïËŠ­-
-†"squid:ClassVariableVisibilityCheck("QMake Maths a static final constant or non-public and provide accessors if needed.(É’å–8Ş‹³„­-
-;squid:S2629ß"$Invoke method(s) only conditionally.(‚…
-;squid:S2629Ô"$Invoke method(s) only conditionally.(‚…
-<squid:S2629Ï"$Invoke method(s) only conditionally.(§èåÛ
-Asquid:S2629‡"$Invoke method(s) only conditionally.(±†‹Ãşÿÿÿÿ
-<squid:S2629"$Invoke method(s) only conditionally.(ñ©­
-<squid:S2629±"$Invoke method(s) only conditionally.(¦¿åî
-Asquid:S2629¢"$Invoke method(s) only conditionally.(ëú‰²ıÿÿÿÿ
-<squid:S2629Ä"$Invoke method(s) only conditionally.(ô²ò€
-;squid:S2629Ù"$Invoke method(s) only conditionally.(‚…
-@squid:S2629r"$Invoke method(s) only conditionally.(ÓèŞÑùÿÿÿÿ
-Hsquid:S2629ˆ"$Invoke method(s) only conditionally.(šî½›şÿÿÿÿ8õíÌŠ­-
-Asquid:S2629"$Invoke method(s) only conditionally.(´ü¾¢úÿÿÿÿ
-Asquid:S2629—"$Invoke method(s) only conditionally.(•½îÃùÿÿÿÿ
-<squid:S2629§"$Invoke method(s) only conditionally.(Œº”
-<squid:S2629¬"$Invoke method(s) only conditionally.(»æ§ˆ
-<squid:S2629¶"$Invoke method(s) only conditionally.(™Ø“™
-Š"squid:ClassVariableVisibilityCheck)"UMake CatchBall a static final constant or non-public and provide accessors if needed.(ÁÀ·ğ8©¼ï­-
-@squid:S2629}"$Invoke method(s) only conditionally.(š Ô¿úÿÿÿÿ
-Asquid:S2629‚"$Invoke method(s) only conditionally.(±†‹Ãşÿÿÿÿ
-<squid:S2629É"$Invoke method(s) only conditionally.(§èåÛ
-"squid:ClassVariableVisibilityCheck*"ZMake MiniGameCommon a static final constant or non-public and provide accessors if needed.(¶ƒé”8ş¾õ­-
+‰"squid:ClassVariableVisibilityCheck."TMake DbTables a static final constant or non-public and provide accessors if needed.(ù°Øª8æÂË­-
+Asquid:S2629³"$Invoke method(s) only conditionally.(´ü¾¢úÿÿÿÿ
+Asquid:S2629¸"$Invoke method(s) only conditionally.(•½îÃùÿÿÿÿ
+;squid:S2629ú"$Invoke method(s) only conditionally.(‚…
+;squid:S2629…"$Invoke method(s) only conditionally.(‚…
+<squid:S2629ê"$Invoke method(s) only conditionally.(ô²ò€
+Asquid:S2629È"$Invoke method(s) only conditionally.(ëú‰²ıÿÿÿÿ
+Asquid:S2629½"$Invoke method(s) only conditionally.(•½îÃùÿÿÿÿ
+<squid:S2629Ü"$Invoke method(s) only conditionally.(™Ø“™
+]squid:UselessImportCheck"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8’œçË­-
+<squid:S2629Ã"$Invoke method(s) only conditionally.(ñ©­
+Hsquid:S2629š"$Invoke method(s) only conditionally.(¹âÕáùÿÿÿÿ8ïËŠ­-
+†"squid:ClassVariableVisibilityCheck2"QMake Maths a static final constant or non-public and provide accessors if needed.(É’å–8Ş‹³„­-
+Hsquid:S00108M")Either remove or fill this block of code.(‚Üò8’œçË­-
+Asquid:S2629"$Invoke method(s) only conditionally.(ÓèŞÑùÿÿÿÿ
+<squid:S2629õ"$Invoke method(s) only conditionally.(§èåÛ
+Asquid:S2629˜"$Invoke method(s) only conditionally.(ÓèŞÑùÿÿÿÿ
+Š"squid:ClassVariableVisibilityCheck3"UMake CatchBall a static final constant or non-public and provide accessors if needed.(ÁÀ·ğ8©¼ï­-
+Asquid:S2629á"$Invoke method(s) only conditionally.(úºÀ½şÿÿÿÿ
+Fsquid:S1148w"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8šê‘Ì­-
+<squid:S2629Ò"$Invoke method(s) only conditionally.(»æ§ˆ
+<squid:S2629×"$Invoke method(s) only conditionally.(¦¿åî
+;squid:S2629ÿ"$Invoke method(s) only conditionally.(‚…
+Asquid:S2629­"$Invoke method(s) only conditionally.(±†‹Ãşÿÿÿÿ
+<squid:S2629Í"$Invoke method(s) only conditionally.(Œº”
+Asquid:S2629¨"$Invoke method(s) only conditionally.(±†‹Ãşÿÿÿÿ
+Asquid:S2629£"$Invoke method(s) only conditionally.(š Ô¿úÿÿÿÿ
+<squid:S2629ï"$Invoke method(s) only conditionally.(§èåÛ

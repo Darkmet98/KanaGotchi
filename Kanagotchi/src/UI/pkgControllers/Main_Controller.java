@@ -6,22 +6,23 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class Main_Controller extends Application {
 
     static Stage stagex;
+
     @Override
     public void start(Stage stage) throws Exception{
-
         stage.setTitle("Kanagotchi");
         stage.setScene(createScene(loadMainPane()));
+        /* Fix Linux Window */
+        stage.setResizable(false);
         stage.sizeToScene();
-        /* Workaround Fix Linux */
-        //stage.setWidth(800);
-        //stage.setHeight(600);
-        //stage.setResizable(false);
+        stage.setMinWidth(800);
+        stage.setMinHeight(600);
+
+        /* End Fix */
         stage.show();
         stagex = stage;
     }

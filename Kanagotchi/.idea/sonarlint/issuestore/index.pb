@@ -174,3 +174,17 @@ d
 4src/UI/pkgControllers/MiniGameCommon_Controller.java,d/3/d3227f555b2315f87f46e7e57c04bf3688b239ee
 O
 src/Engine/pkgGames/Common.java,b/4/b4a1d9f2fcddbf2ae88a4b0c8d3c7737d0b1779d
+\
+,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
+F
+.idea/libraries/BD.xml,7/6/76adccf3b0490378facdd394c1dbfe957c550217
+_
+/src/Engine/pkgDataBase/DataBase_Connection.java,3/c/3c64b521d674954ce474eee7e8fae5640d561f87
+]
+-src/Engine/pkgDataBase/DataBase_SaveData.java,5/3/53f6e3baf9ee068a9c9d931d8a7dbd587bd7cd03
+[
++src/Engine/pkgDataBase/DataBase_Tables.java,5/7/576d73e46172b0813eeb7dedfdc83aad61d7b088
+O
+src/Engine/pkgTests/TestBD.java,4/4/444b7f2db5d10c2f57ca8af0c97f851a954c1a0e
+>
+Kanagotchi.iml,a/6/a692031ab14a7f54bbaf71a216cc866b56d1da78

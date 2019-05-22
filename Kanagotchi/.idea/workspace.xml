@@ -7,25 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612d03f1-8e42-43f7-b453-12eca723af94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/BD.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_SaveData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Tables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Engine/pkgTests/TestBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1bfc7d3e53f4d16c9b4bebd30e3b2e329e7732e7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1bfc7d3e53f4d16c9b4bebd30e3b2e329e7732e7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/369b20974447737b0bfa2ec17cc52eb52ae6e0b6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/369b20974447737b0bfa2ec17cc52eb52ae6e0b6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/379393cc521182e2b9b6ae4b348dc395e1c483af" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/379393cc521182e2b9b6ae4b348dc395e1c483af" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68269e6c5e1d428069556cf482f9f2de41ac33cd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68269e6c5e1d428069556cf482f9f2de41ac33cd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee80190843e7fa0bae896a222b070ff9bdc71402" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee80190843e7fa0bae896a222b070ff9bdc71402" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9153ce3a67813717dcbc6090f473264202959c9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9153ce3a67813717dcbc6090f473264202959c9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kanagotchi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kanagotchi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/UI/css/Window.css" beforeDir="false" afterPath="$PROJECT_DIR$/bin/UI/css/Window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/pkgGames/CatchBallMotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgGames/CatchBallMotor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/pkgGames/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgGames/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/pkgGames/MathMotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgGames/MathMotor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/pkgTests/TestMinigames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/pkgTests/TestMinigames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/pkgControllers/CatchTheBallGame_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/CatchTheBallGame_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/pkgControllers/Ingame_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/Ingame_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/pkgControllers/MathGame_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/MathGame_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/pkgControllers/TitleScreen_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/TitleScreen_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -54,79 +44,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Connection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Tables.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2957#2958#0" expanded="true" />
-                <element signature="e#2987#2988#0" expanded="true" />
-                <element signature="e#4246#4247#0" expanded="true" />
-                <element signature="e#4274#4275#0" expanded="true" />
-                <element signature="e#4318#4319#0" expanded="true" />
-                <element signature="e#4352#4353#0" expanded="true" />
-                <element signature="e#6898#6899#0" expanded="true" />
-                <element signature="e#6925#6926#0" expanded="true" />
-                <element signature="e#8146#8147#0" expanded="true" />
-                <element signature="e#8182#8183#0" expanded="true" />
-                <element signature="e#8241#8242#0" expanded="true" />
-                <element signature="e#8286#8287#0" expanded="true" />
-                <element signature="e#8327#8328#0" expanded="true" />
-                <element signature="e#8367#8368#0" expanded="true" />
-                <element signature="e#8430#8431#0" expanded="true" />
-                <element signature="e#8483#8484#0" expanded="true" />
-                <element signature="e#8731#8732#0" expanded="true" />
-                <element signature="e#8783#8784#0" expanded="true" />
-                <element signature="e#9057#9058#0" expanded="true" />
-                <element signature="e#9103#9104#0" expanded="true" />
-                <element signature="e#9151#9152#0" expanded="true" />
-                <element signature="e#9208#9209#0" expanded="true" />
-                <element signature="e#9896#9897#0" expanded="true" />
-                <element signature="e#9927#9928#0" expanded="true" />
-                <element signature="e#9976#9977#0" expanded="true" />
-                <element signature="e#10011#10012#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Ingame_Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+            <state relative-caret-position="17">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2054#2055#0" expanded="true" />
-                <element signature="e#2115#2116#0" expanded="true" />
-                <element signature="e#2151#2152#0" expanded="true" />
-                <element signature="e#2217#2218#0" expanded="true" />
+                <element signature="e#2134#2135#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/UI/pkgControllers/MiniGameCommon_Controller.java" />
         <option value="$PROJECT_DIR$/src/Engine/pkgSaves/WriteSave.java" />
         <option value="$PROJECT_DIR$/src/Engine/pkgSaves/LoadSave.java" />
-        <option value="$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java" />
         <option value="$PROJECT_DIR$/src/UI/css/Window.css" />
         <option value="$PROJECT_DIR$/src/UI/pkgFxml/CatchTheBallGame.fxml" />
         <option value="$PROJECT_DIR$/src/UI/pkgControllers/SelectMiniGame_Controller.java" />
@@ -243,6 +167,7 @@
         <option value="$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java" />
         <option value="$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Connection.java" />
         <option value="$PROJECT_DIR$/src/UI/pkgControllers/Ingame_Controller.java" />
+        <option value="$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java" />
       </list>
     </option>
   </component>
@@ -266,6 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,12 +223,17 @@
               <item name="UI" type="462c0819:PsiDirectoryNode" />
               <item name="pkgControllers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Kanagotchi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kanagotchi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="pkgFxml" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,7 +389,8 @@
       <workItem from="1558183870564" duration="608000" />
       <workItem from="1558269918212" duration="26680000" />
       <workItem from="1558339698416" duration="25308000" />
-      <workItem from="1558425156651" duration="5599000" />
+      <workItem from="1558425156651" duration="5632000" />
+      <workItem from="1558509229150" duration="651000" />
     </task>
     <task id="LOCAL-00001" summary=":heart_eyes: Switched to IntelliJ and JavaFX">
       <created>1556180579985</created>
@@ -522,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558350260893</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=":neckbeard: Added cloud save and loading and fix minigames values.&#10;And finished the project :sunglasses:">
+      <created>1558432323054</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558432323054</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -558,7 +498,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199569000" />
+    <option name="totallyTimeSpent" value="200253000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,7 +516,7 @@
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.4968652" visible="true" weight="0.24848942" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.4968652" visible="true" weight="0.25226587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32736155" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4954683" weight="0.39576548" />
@@ -584,7 +524,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854864" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3257329" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.8127036" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.18566775" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50453174" side_tool="true" weight="0.24104235" />
       <window_info anchor="bottom" id="SonarLint" order="10" weight="0.5325733" />
@@ -802,17 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,62 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Tables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2957#2958#0" expanded="true" />
-            <element signature="e#2987#2988#0" expanded="true" />
-            <element signature="e#4246#4247#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#4318#4319#0" expanded="true" />
-            <element signature="e#4352#4353#0" expanded="true" />
-            <element signature="e#6898#6899#0" expanded="true" />
-            <element signature="e#6925#6926#0" expanded="true" />
-            <element signature="e#8146#8147#0" expanded="true" />
-            <element signature="e#8182#8183#0" expanded="true" />
-            <element signature="e#8241#8242#0" expanded="true" />
-            <element signature="e#8286#8287#0" expanded="true" />
-            <element signature="e#8327#8328#0" expanded="true" />
-            <element signature="e#8367#8368#0" expanded="true" />
-            <element signature="e#8430#8431#0" expanded="true" />
-            <element signature="e#8483#8484#0" expanded="true" />
-            <element signature="e#8731#8732#0" expanded="true" />
-            <element signature="e#8783#8784#0" expanded="true" />
-            <element signature="e#9057#9058#0" expanded="true" />
-            <element signature="e#9103#9104#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9208#9209#0" expanded="true" />
-            <element signature="e#9896#9897#0" expanded="true" />
-            <element signature="e#9927#9928#0" expanded="true" />
-            <element signature="e#9976#9977#0" expanded="true" />
-            <element signature="e#10011#10012#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/TitleScreen_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1199,14 +1072,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Ingame_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="525">
           <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2217#2218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgMechanics/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2957#2958#0" expanded="true" />
+            <element signature="e#2987#2988#0" expanded="true" />
+            <element signature="e#4246#4247#0" expanded="true" />
+            <element signature="e#4274#4275#0" expanded="true" />
+            <element signature="e#4318#4319#0" expanded="true" />
+            <element signature="e#4352#4353#0" expanded="true" />
+            <element signature="e#6898#6899#0" expanded="true" />
+            <element signature="e#6925#6926#0" expanded="true" />
+            <element signature="e#8146#8147#0" expanded="true" />
+            <element signature="e#8182#8183#0" expanded="true" />
+            <element signature="e#8241#8242#0" expanded="true" />
+            <element signature="e#8286#8287#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8367#8368#0" expanded="true" />
+            <element signature="e#8430#8431#0" expanded="true" />
+            <element signature="e#8483#8484#0" expanded="true" />
+            <element signature="e#8731#8732#0" expanded="true" />
+            <element signature="e#8783#8784#0" expanded="true" />
+            <element signature="e#9057#9058#0" expanded="true" />
+            <element signature="e#9103#9104#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
+            <element signature="e#9208#9209#0" expanded="true" />
+            <element signature="e#9896#9897#0" expanded="true" />
+            <element signature="e#9927#9928#0" expanded="true" />
+            <element signature="e#9976#9977#0" expanded="true" />
+            <element signature="e#10011#10012#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Tables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/pkgDataBase/DataBase_Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/pkgControllers/Main_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
           </folding>
         </state>
       </provider>
