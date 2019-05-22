@@ -1,0 +1,10 @@
+Engine.pkgDataBase
+Engine.pkgDebug
+Engine.pkgExceptions
+Engine.pkgGames
+Engine.pkgItems
+Engine.pkgMechanics
+Engine.pkgSaves
+Engine.pkgTests
+Executables
+UI.pkgControllers
