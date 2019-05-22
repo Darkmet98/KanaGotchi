@@ -3,6 +3,7 @@ package UI.pkgControllers;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -17,6 +18,9 @@ public class Main_Controller extends Application {
         stage.setTitle("Kanagotchi");
         stage.setScene(createScene(loadMainPane()));
 
+        /* Set icon */
+        stage.getIcons().add(new Image(this.getClass().getResource("/Media/Images/Icons/icon.png").toExternalForm()));
+
         /* Fix Linux Window */
         stage.setResizable(false);
         stage.sizeToScene();
@@ -25,6 +29,7 @@ public class Main_Controller extends Application {
         /* End Fix */
 
         stage.show();
+
         /* Load the stage to a static for emergent window */
         MainStage = stage;
     }
