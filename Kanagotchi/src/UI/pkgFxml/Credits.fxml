@@ -13,7 +13,7 @@
             <Image url="@../../../resources/Media/Images/UI/Salir.png" />
         </image>
     </ImageView>
-    <Label id="TextNotSelectionableUI" layoutX="334.0" layoutY="14.0" text="CREDITOS">
+    <Label id="TextNotSelectionableUI" layoutX="334.0" layoutY="14.0" text="CRÉDITOS">
         <font>
             <Font name="Curse Casual Regular" size="42.0" />
         </font>
