@@ -32,6 +32,8 @@ public class VistaNavigator {
 
     /** The main application layout controller. */
     public static TitleScreen_Controller mainTitleScreenController;
+
+    // Ingame vista values
     public static boolean loadSave = false;
     public static int chara = 0;
 
@@ -71,7 +73,8 @@ public class VistaNavigator {
                     )
             );
         } catch (IOException e) {
-            e.printStackTrace();
+            //Enabled only on debug purposes
+            //e.printStackTrace();
         }
     }
 

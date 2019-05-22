@@ -7,31 +7,41 @@ import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.TreeMap;
 
+//Disable this for sql functions
+@SuppressWarnings("ALL")
 public class DataBase_Tables  {
 
+    //Values
     private Statement LineSql;
     private ResultSet ResultadoSql;
     private Game GameValues;
 
+    /*
+    * Initialize the class
+     */
     public DataBase_Tables(Game game) {
         GameValues = game;
 
     }
 
+    /*
+    * Check if the table on the DB exists
+     */
     public void CheckTable() throws SQLException {
         LineSql = DataBase_Connection.BdConnection.createStatement();
         ResultadoSql = LineSql.executeQuery("select count(*)\n" +
                 "from all_objects\n" +
                 "where object_type in ('TABLE','VIEW')\n" +
                 "and object_name = UPPER('KanaGotchi_Save')");
-        if(ResultadoSql.next()) {
+        if(ResultadoSql.next())
             //If the table doesn't exists
-            if(ResultadoSql.getByte(1) == 0) {
-                CreateTable();
-            }
-        }
+            if (ResultadoSql.getByte(1) == 0)  CreateTable();
+
     }
 
+    /*
+    * Create the game table on the DB
+     */
     private void CreateTable() throws SQLException {
         LineSql = DataBase_Connection.BdConnection.createStatement();
         //Create the table
@@ -58,6 +68,9 @@ public class DataBase_Tables  {
         }
     }
 
+    /*
+    * Write the save to the DB
+     */
     public void WriteSaveToBD() throws SQLException {
         LineSql = DataBase_Connection.BdConnection.createStatement();
         //Write the actual stats
@@ -84,7 +97,9 @@ public class DataBase_Tables  {
 
     }
 
-
+    /*
+    * Load the changes from the DB
+     */
     public void LoadSaveBD() throws SQLException {
         LineSql = DataBase_Connection.BdConnection.createStatement();
         //Load the Money

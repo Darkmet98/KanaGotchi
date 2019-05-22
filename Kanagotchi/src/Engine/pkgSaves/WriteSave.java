@@ -9,19 +9,24 @@ import java.io.IOException;
 
 public class WriteSave {
 
+    //Values
+    private static File SaveFolder = new File(System.getProperty("user.home")+"/KanaGotchi");
+    public static File SaveFile = new File(SaveFolder +"/save.sav");
+    private Game Gameor;
+
+    /*
+    * Initialize the class
+     */
     public WriteSave() {}
     public WriteSave(Game game) { Gameor = game; }
 
-    private static File SaveFolder = new File(System.getProperty("user.home")+"/KanaGotchi");
-    public static File SaveFile = new File(SaveFolder +"/save.sav");
-
-    private DataOutputStream_Debug save_stream;
-    private Game Gameor;
-
+    /*
+    * Write the local save file
+     */
     public void WriteSaveFile() throws IOException {
         if(!getSaveFolder().exists()) getSaveFolder().mkdirs();
         FileOutputStream save = new FileOutputStream(getSaveFile());
-        save_stream = new DataOutputStream_Debug(save);
+        DataOutputStream_Debug save_stream = new DataOutputStream_Debug(save);
         //MAGIC
         save_stream.writeSave("KNTI", Gameor.getDebug());
         //Money
@@ -50,7 +55,11 @@ public class WriteSave {
         save.close();
     }
 
+    /*
+    * Encrypt the data
+     */
     public long Encrypt(long value) { return value^456970; }
+
     //Get Set Zone
     public File getSaveFolder() { return SaveFolder; }
     public File getSaveFile() { return SaveFile; }

@@ -23,6 +23,8 @@ import static UI.pkgControllers.TitleScreen_Controller.getSounds;
 
 public class Common_Controller {
 
+
+    //Values
     public static Game game = new Game();
     @FXML
     public ProgressBar health;
@@ -39,16 +41,27 @@ public class Common_Controller {
     @FXML
     public AnchorPane window;
 
+    /*
+    * Load the game values
+     */
     public void LoadValues() {
+        //Read the text status
         TextStatus();
+        //Execute the listeners
         LoadListeners();
+        //Read the health
         double value = game.getHealth();
         health.setProgress(value/100);
+        //Read the experience
         value = game.getExperience();
         experience.setProgress(value/100);
+        //Read the level
         level.setText(String.valueOf(game.getPlayerLevel()));
     }
 
+    /*
+    * Execute the listeners
+     */
     public void LoadListeners() {
         //Health Listener
         game.getHealthProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
@@ -63,18 +76,20 @@ public class Common_Controller {
             experience.setProgress(experiencevalue/100);
         }));
         //Level Listener
-        game.getPlayerLevelProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
-            level.setText(String.valueOf(game.getPlayerLevel()));
-        }));
+        game.getPlayerLevelProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> level.setText(String.valueOf(game.getPlayerLevel()))));
     }
 
-    //Sounds methods
+    /*
+    * Sounds methods
+     */
     @FXML
     public void SelectedSound() {getSounds().InterfaceSounds("/Media/Sounds/Selection.wav");}
     @FXML
     public void PressedSound() {getSounds().InterfaceSounds("/Media/Sounds/Click.wav");}
 
-    //Change the status
+    /*
+    * Change the status
+     */
     public void TextStatus() {
         String result = "";
         switch (game.getStatus()) {
@@ -97,59 +112,67 @@ public class Common_Controller {
         status.setText(result);
     }
 
+    /*
+    * Change the character body
+     */
     public void DigiEvolution() {
         switch (game.getPlayerLevel()){
-            case 1:
-                if(game.getCharacterSelected() == 0) {
-                    character.setFitHeight(100.0*3);
-                    character.setFitWidth(280.0*3);
-                    character.setLayoutX(336);
-                    character.setLayoutY(127);
-                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Neptune/Nep_1.png").toString()));
+            case 1: //Children
+                if(game.getCharacterSelected() == 0) { //Neptune
+                    character.setFitHeight(100.0*3); //Set the height
+                    character.setFitWidth(280.0*3); //Set the width
+                    character.setLayoutX(336); //Set the X position
+                    character.setLayoutY(127); //Set the Y position
+                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Neptune/Nep_1.png").toString())); //Load the image
                 }
-                else {
-                    character.setFitHeight(109.0*3);
-                    character.setFitWidth(339.0*3);
-                    character.setLayoutX(345);
-                    character.setLayoutY(125);
-                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Noire/Noire_1.png").toString()));
-                }
-                break;
-            case 2:
-                if(game.getCharacterSelected() == 0) {
-
-                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Neptune/Nep_2.png").toString()));
-                }
-                else {
-                    character.setFitHeight(135.0*3);
-                    character.setFitWidth(350.0*3);
-                    character.setLayoutX(320);
-                    character.setLayoutY(122);
-                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Noire/Noire_2.png").toString()));
+                else { //Noire
+                    character.setFitHeight(109.0*3);  //Set the height
+                    character.setFitWidth(339.0*3); //Set the width
+                    character.setLayoutX(345); //Set the X position
+                    character.setLayoutY(125); //Set the Y position
+                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Noire/Noire_1.png").toString())); //Load the image
                 }
                 break;
-            case 3:
-                if(game.getCharacterSelected() == 0)  {
-                    character.setFitHeight(140.0*3);
-                    character.setFitWidth(355.0*3);
-                    character.setLayoutX(316);
-                    character.setLayoutY(124);
-                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Neptune/Nep_3.png").toString()));
+            case 2: //Young
+                if(game.getCharacterSelected() == 0) { //Neptune
+                    //In this phase the layout and size from the image is loaded from the FXML
+                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Neptune/Nep_2.png").toString())); //Load the image
                 }
-                else {
-                    character.setFitHeight(140.0*3);
-                    character.setFitWidth(355.0*3);
-                    character.setLayoutX(325);
-                    character.setLayoutY(115);
-                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Noire/Noire_3.png").toString()));
+                else { //Noire
+                    character.setFitHeight(135.0*3); //Set the height
+                    character.setFitWidth(350.0*3); //Set the width
+                    character.setLayoutX(320); //Set the X position
+                    character.setLayoutY(122); //Set the Y position
+                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Noire/Noire_2.png").toString())); //Load the image
+                }
+                break;
+            case 3: //Adult
+                if(game.getCharacterSelected() == 0)  { //Neptune
+                    character.setFitHeight(140.0*3); //Set the height
+                    character.setFitWidth(355.0*3); //Set the width
+                    character.setLayoutX(316); //Set the X position
+                    character.setLayoutY(124); //Set the Y position
+                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Neptune/Nep_3.png").toString())); //Load the image
+                }
+                else { //Noire
+                    character.setFitHeight(140.0*3); //Set the height
+                    character.setFitWidth(355.0*3); //Set the width
+                    character.setLayoutX(325); //Set the X position
+                    character.setLayoutY(115); //Set the Y position
+                    character.setImage(new Image(this.getClass().getResource("/Media/Images/Characters/Noire/Noire_3.png").toString())); //Load the image
                 }
                 break;
         }
     }
 
+    /*
+    * Show a info message
+     */
     public void ShowInfoMsg(String msg) {
+        //Set a blurred effect
         window.setEffect(new GaussianBlur());
 
+        //Create a new MSG box
         VBox MsgWindow = new VBox(5);
         MsgWindow.getChildren().add(new Label(msg));
         MsgWindow.setStyle("-fx-background-color: rgba(255, 255, 255, 0.8);");
@@ -157,23 +180,30 @@ public class Common_Controller {
         MsgWindow.setPadding(new Insets(20));
 
 
+        //Create a new button
         Button resume = new Button("Aceptar");
         MsgWindow.getChildren().add(resume);
 
+        //Create a new stage to show on the actual screen
         Stage popupStage = new Stage(StageStyle.TRANSPARENT);
-        popupStage.initOwner(Main_Controller.stagex);
+        popupStage.initOwner(Main_Controller.MainStage);
         popupStage.initModality(Modality.APPLICATION_MODAL);
         popupStage.setScene(new Scene(MsgWindow, Color.TRANSPARENT));
 
 
+        //Set a action on the button
         resume.setOnAction(event -> {
             window.setEffect(null);
             popupStage.hide();
         });
 
+        //Show
         popupStage.show();
     }
 
+    /*
+    * Return to the ingame screen
+     */
     @FXML
     public void Return() {
         VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);

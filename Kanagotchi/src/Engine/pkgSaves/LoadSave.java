@@ -12,10 +12,18 @@ import java.util.TreeMap;
 
 public class LoadSave {
 
-    public LoadSave(Game game) { Gameor = game; }
+    //Values
     private Game Gameor;
     private WriteSave write = new WriteSave();
 
+    /*
+    * Initialize the class
+     */
+    public LoadSave(Game game) { Gameor = game; }
+
+    /*
+    * Load the local save file
+     */
     public void LoadSaveFile() throws SaveFileDoesntExists, IOException, BadHeaderSave {
         //Check if the file exists.
         if(!write.getSaveFile().exists()) throw new SaveFileDoesntExists("La partida no existe.");

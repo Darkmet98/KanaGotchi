@@ -9,6 +9,7 @@ import javafx.scene.layout.StackPane;
 
 public class TitleScreen_Controller extends Common_Controller {
 
+    //Values
     private static Sound Sounds = new Sound();
 
     /** Holder of a switchable vista. */
@@ -25,15 +26,19 @@ public class TitleScreen_Controller extends Common_Controller {
     }
 
 
+    /*
+     * Start a new game
+     */
     @FXML
     private void NewGame() {
         VistaNavigator.loadVista(VistaNavigator.CHARA_MENU);
     }
 
-    //Load the save and start the game
+    /*
+    * Load the save and start the game
+     */
     @FXML
     private void LoadGame() {
-
         PressedSound();
         getSounds().getBackground().stop();
         getSounds().BackgroundMusic("/Media/BGM/BGM_Ingame.wav");
@@ -43,22 +48,29 @@ public class TitleScreen_Controller extends Common_Controller {
 
     }
 
-    //Go to the Settings page
+    /*
+    * Go to the Settings page
+     */
     @FXML
     public void Settings() {
         PressedSound();
         VistaNavigator.loadVista(VistaNavigator.SETTINGS);
     }
 
-    //Exit the program
+    /*
+    * Exit the program
+     */
     @FXML
     private void Exit() {
         PressedSound();
         Platform.exit();
     }
-    //Start Background Music
-    public static void StartMusic() { getSounds().BackgroundMusic("/Media/BGM/BGM_TitleScreen.wav"); }
 
+    /*
+    * Start Background Music
+     */
+    public static void StartMusic() { getSounds().BackgroundMusic("/Media/BGM/BGM_TitleScreen.wav"); }
+    //Get Set Zone
     public static Sound getSounds() {
         return Sounds;
     }

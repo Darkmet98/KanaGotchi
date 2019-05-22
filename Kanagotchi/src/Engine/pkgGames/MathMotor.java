@@ -11,60 +11,78 @@ import java.util.Random;
 
 public class MathMotor {
 
+    //Values
     private IntegerProperty Type;
     private IntegerProperty FirstLine;
     private IntegerProperty SecondLine;
     private LongProperty Result;
+    private LongProperty OldResult;
     private Random r = new Random();
     private boolean ValueCorrect = false;
-    public Common CommonValues;
+    private Common CommonValues;
 
+    /*
+    * Initialize the motor
+     */
     public MathMotor(Game game) {
-        CommonValues = new Common(game);
+        setCommonValues(new Common(game));
     }
 
     /*
-    * Type
-    *
-    * 0 = Sumar
-    * 1 = Restar
-    * 2 = Multiplicar
+    * Start the game
      */
-
-
     public void StartGame() {
-        CommonValues.StartGame();
+        //Start the game
+        getCommonValues().StartGame();
+        //Get a new calculation
         NewCalculation();
 
     }
 
+    /*
+    * End the game
+     */
     public void EndGame() {
-        if (CommonValues.getMaxPunctuation() >  CommonValues.InGameValues.getMaxPunctuationMath())  CommonValues.InGameValues.setMaxPunctuationMath(CommonValues.getMaxPunctuation());
-        CommonValues.EndGame();
+        //If you have a better punctuation
+        if (getCommonValues().getMaxPunctuation() >  getCommonValues().InGameValues.getMaxPunctuationMath())  getCommonValues().InGameValues.setMaxPunctuationMath(getCommonValues().getMaxPunctuation());
+        //Close the engine
+        getCommonValues().EndGame();
     }
 
+    /*
+    * Check the results
+     */
     public void CheckResult(Long result) throws OperationResultIsNull {
+        //Custom exception when you send a null result
         if(null == result) throw new OperationResultIsNull("Error, no puedes enviar el resultado en blanco.");
+        //Check the result
         if(getResult().equals(result)) {
             setValueCorrect(true);
-            CommonValues.setMaxPunctuation(CommonValues.getMaxPunctuation()+1);
+            getCommonValues().setMaxPunctuation(getCommonValues().getMaxPunctuation()+1);
         }
         else {
             setValueCorrect(false);
-            CommonValues.setLife(CommonValues.getLife()-1);
+            setOldResult(getResult());
+            getCommonValues().setLife(getCommonValues().getLife()-1);
         }
 
-        if(CommonValues.getLife() == 0) {
+        //If you don't have more life
+        if(getCommonValues().getLife() == 0) {
             EndGame();
         }
         else {
             NewCalculation();
         }
     }
-
-    public void NewCalculation() {
+    /*
+    * Generate a new calc
+     */
+    private void NewCalculation() {
+        //Get the numbers
         int calc1 = r.nextInt(99999);
         int calc2 = r.nextInt(99999);
+
+        //If the second number are higher than the first
         if (calc1 < calc2) {
             setSecondLine(calc1);
             setFirstLine(calc2);
@@ -73,12 +91,16 @@ public class MathMotor {
             setSecondLine(calc2);
             setFirstLine(calc1);
         }
+
         //Set the operation type
         setType(r.nextInt(3));
         //Get the result
         GetTheResult();
     }
 
+    /*
+    * Get the result
+     */
     private void GetTheResult() {
         switch (getType()) {
             case 0: //Sumar
@@ -102,7 +124,15 @@ public class MathMotor {
         return Type.getValue();
     }
 
-    public void setType(Integer type) {
+    /*
+     * Type
+     *
+     * 0 = Sumar
+     * 1 = Restar
+     * 2 = Multiplicar
+     *
+     */
+    private void setType(Integer type) {
         if(Type == null) Type = new SimpleIntegerProperty();
         Type.set(type);
     }
@@ -114,7 +144,7 @@ public class MathMotor {
         return FirstLine.getValue();
     }
 
-    public void setFirstLine(int firstLine) {
+    private void setFirstLine(int firstLine) {
         if(FirstLine == null) FirstLine = new SimpleIntegerProperty();
         FirstLine.set(firstLine);
     }
@@ -127,7 +157,7 @@ public class MathMotor {
         return SecondLine.getValue();
     }
 
-    public void setSecondLine(int secondLine) {
+    private void setSecondLine(int secondLine) {
         if(SecondLine == null) SecondLine = new SimpleIntegerProperty();
         SecondLine.set(secondLine);
     }
@@ -140,11 +170,29 @@ public class MathMotor {
         if(Result == null) Result = new SimpleLongProperty();
         Result.set(result);
     }
+
+    public Long getOldResult() {
+        return OldResult.getValue();
+    }
+
+    public void setOldResult(Long oldresult) {
+        if(OldResult == null) OldResult = new SimpleLongProperty();
+        OldResult.set(oldresult);
+    }
+
     public boolean isValueCorrect() {
         return ValueCorrect;
     }
 
-    public void setValueCorrect(boolean valueCorrect) {
+    private void setValueCorrect(boolean valueCorrect) {
         ValueCorrect = valueCorrect;
+    }
+
+    public Common getCommonValues() {
+        return CommonValues;
+    }
+
+    private void setCommonValues(Common commonValues) {
+        CommonValues = commonValues;
     }
 }

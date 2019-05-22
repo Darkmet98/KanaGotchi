@@ -5,18 +5,22 @@ import javafx.scene.control.Slider;
 
 public class Settings_Controller extends Common_Controller{
 
-    private int[][] Resolutions = new int[][] {{800, 600}};
-
+    //Values
     @FXML
     private Slider VolumenSlider;
 
-    //Go to the Title Screen
+    /*
+    * Return to the title screen
+     */
     @FXML
     private void TitleScreen() {
         PressedSound();
         VistaNavigator.loadVista(VistaNavigator.TITLE_SCREEN);
     }
 
+    /*
+    * Change the Actual Volume
+     */
     @FXML
     public void ChangeVolume() {
         System.out.println(VolumenSlider.getValue()/100);

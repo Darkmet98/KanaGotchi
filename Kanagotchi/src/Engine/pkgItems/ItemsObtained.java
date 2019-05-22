@@ -1,13 +1,15 @@
 package Engine.pkgItems;
 
 public class ItemsObtained {
+    //Values
     private int Amount;
     private String Name;
     private int Health;
     private int Experience;
 
-    public ItemsObtained() {}
-
+    /*
+    * Initialize the class
+     */
     public ItemsObtained(int amount, String name, int health, int experience) {
         setAmount(amount);
         setName(name);
@@ -15,6 +17,8 @@ public class ItemsObtained {
         setExperience(experience);
     }
 
+
+    //Get set zone
     public int getAmount() {
         return Amount;
     }

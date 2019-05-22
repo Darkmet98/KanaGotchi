@@ -45,10 +45,10 @@
         </Label>
       <TableView fx:id="ItemTable" layoutX="10.0" layoutY="236.0" prefHeight="354.0" prefWidth="780.0">
         <columns>
-            <TableColumn fx:id="Amount" prefWidth="88.0" text="Cantidad" />
-            <TableColumn fx:id="Name" prefWidth="471.0" text="Nombre" />
-            <TableColumn fx:id="Health" prefWidth="95.0" text="Salud" />
-            <TableColumn fx:id="Experience" prefWidth="118.0" text="Experiencia" />
+            <TableColumn fx:id="Amount" editable="false" prefWidth="88.0" sortable="false" text="Cantidad" />
+            <TableColumn fx:id="Name" editable="false" prefWidth="471.0" sortable="false" text="Nombre" />
+            <TableColumn fx:id="Health" editable="false" prefWidth="95.0" sortable="false" text="Salud" />
+            <TableColumn fx:id="Experience" editable="false" prefWidth="118.0" sortable="false" text="Experiencia" />
         </columns>
       </TableView>
         <Label id="TextUI" layoutX="691.0" layoutY="14.0" onMouseReleased="#Return" text="Volver">

@@ -11,6 +11,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 public class Food_Controller extends Common_Controller {
 
+    //Values
     @FXML
     TableView ItemTable;
     @FXML
@@ -22,13 +23,22 @@ public class Food_Controller extends Common_Controller {
     @FXML
     TableColumn<String, ItemsObtained> Amount;
 
+    /*
+     * Initialize the FXML Controller
+     */
     @FXML
     public void initialize() {
+        //Set the table
         SetTable();
+        //Load the item table
         LoadItemTable();
+        //Load the game valus
         LoadValues();
     }
 
+    /*
+    * Set the table cells
+     */
     private void SetTable() {
         Amount.setCellValueFactory(new PropertyValueFactory<>("Amount"));
         Name.setCellValueFactory(new PropertyValueFactory<>("Name"));
@@ -36,6 +46,9 @@ public class Food_Controller extends Common_Controller {
         Experience.setCellValueFactory(new PropertyValueFactory<>("Experience"));
     }
 
+    /*
+    * Load the table values
+     */
     private void LoadItemTable() {
         for(int i = 0; i < Ingame_Controller.game.getItem().getItemList().size(); i++) {
             Items item = (Items) Ingame_Controller.game.getItem().getItemList().get(i);
@@ -43,15 +56,21 @@ public class Food_Controller extends Common_Controller {
         }
     }
 
+    /*
+    * Eat a item
+     */
     @FXML
     private void Eat() {
+        //Call the eatfood method and validate the selection
         try{
             game.EatFood(ItemTable.getSelectionModel().getSelectedIndex());
         }
         catch (ItemIsZero | ItemNotSelected msg) {
             ShowInfoMsg(msg.getMessage());
         }
+        //Clear the item table
         ItemTable.getItems().clear();
+        //Refresh the item table
         LoadItemTable();
     }
 }

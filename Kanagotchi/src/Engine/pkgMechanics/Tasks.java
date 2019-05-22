@@ -6,12 +6,19 @@ import java.util.logging.Level;
 
 public class Tasks {
 
+    //Values
     private Game GameValues;
 
+    /*
+    * Initialize the class
+     */
     public Tasks(Game game) {
         GameValues = game;
     }
 
+    /*
+    * Initialize the engine tasks
+     */
     public void StartTasks() {
         //Create the task
         GameValues.setCount(new Timer());
@@ -24,13 +31,18 @@ public class Tasks {
         GameValues.getCount().schedule(checkHealth, 60000, 60000);
     }
 
+    /*
+     * Change the health
+     */
     public void DecreaseHealth() {
         if (GameValues.getDebug()) Game.Log.log(Level.INFO, "Enabled timer event, decreased one point from "+GameValues.getHealth());
         if(GameValues.getHealth() != 1) GameValues.setHealth(GameValues.getHealth()-1);
         ChangeStatus();
     }
 
-    //Change the character status
+    /*
+    * Change the character status
+     */
     public void ChangeStatus() {
         if(GameValues.getHealth() < 24) GameValues.setStatus(0);
         else if (GameValues.getHealth() > 24 && GameValues.getHealth() < 44) GameValues.setStatus(1);

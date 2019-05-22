@@ -10,23 +10,28 @@ import java.io.IOException;
 
 public class Main_Controller extends Application {
 
-    static Stage stagex;
+    static Stage MainStage;
 
     @Override
     public void start(Stage stage) throws Exception{
         stage.setTitle("Kanagotchi");
         stage.setScene(createScene(loadMainPane()));
+
         /* Fix Linux Window */
         stage.setResizable(false);
         stage.sizeToScene();
         stage.setMinWidth(800);
         stage.setMinHeight(600);
-
         /* End Fix */
+
         stage.show();
-        stagex = stage;
+        /* Load the stage to a static for emergent window */
+        MainStage = stage;
     }
 
+    /*
+    * Load the main panel
+     */
     private Pane loadMainPane() throws IOException {
         FXMLLoader loader = new FXMLLoader();
 
@@ -62,6 +67,7 @@ public class Main_Controller extends Application {
         scene.getStylesheets().addAll(this.getClass().getResource("../css/Window.css").toExternalForm());
         scene.getStylesheets().addAll(this.getClass().getResource("../css/ImageButtons.css").toExternalForm());
         scene.getStylesheets().addAll(this.getClass().getResource("../css/UI.css").toExternalForm());
+        //Start the title screen music
         TitleScreen_Controller.StartMusic();
         return scene;
     }

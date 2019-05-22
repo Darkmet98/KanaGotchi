@@ -16,28 +16,43 @@ public class Character {
      * 4 = Very happy   Health 85-100
      */
 
+    //Values
     private Game GameValues;
+
+    /*
+    * Initialize the class
+     */
     public Character(Game game) {
         GameValues = game;
     }
-    //When the character eat food
+
+    /*
+    * The character eat food
+     */
     public void EatFood(Integer selected) throws ItemIsZero, ItemNotSelected {
-        if(selected == -1 || selected == null) throw new ItemNotSelected("No has seleccionado ningún objeto.");
+        if(selected == -1) throw new ItemNotSelected("No has seleccionado ningún objeto.");
         if(GameValues.getItemsOwned().get(selected) == 0) throw new ItemIsZero("No tienes ese objeto.");
-        //Se reduce en uno su cantidad
+        //Decrease in one the item
         GameValues.getItemsOwned().replace(selected, GameValues.getItemsOwned().get(selected)-1);
-        //Se obtiene lo que cura y se cura el personaje
+        //Recover health
         Items i = (Items) GameValues.getItem().getItemList().get(selected);
         RecoveryHealth(i.getHealthRecovered());
+        //Get some experience from the food
         GameValues.setExperience(i.getExperience()+GameValues.getExperience());
         LevelUp();
     }
 
+    /*
+    * Recover health
+     */
     public void RecoveryHealth(int recovered) {
         GameValues.setHealth(GameValues.getHealth()+recovered);
         if (GameValues.getHealth() > 100) GameValues.setHealth(100);
     }
 
+    /*
+    * Level up the character
+     */
     public void LevelUp() {
         if(GameValues.getExperience() > 100) {
             GameValues.setPlayerLevel(GameValues.getPlayerLevel()+1);

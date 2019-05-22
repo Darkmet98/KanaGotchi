@@ -27,7 +27,7 @@ public class TestMinigames {
         System.out.println("El resultado es:" + testingame.Maths.getResult());
         System.out.println("El tipo de operación es:" + testingame.Maths.getType());
         testingame.Maths.CheckResult((long)50);
-        assertEquals(2, testingame.Maths.CommonValues.getLife().intValue());
+        assertEquals(2, testingame.Maths.getCommonValues().getLife().intValue());
     }
 
     @Test
@@ -36,7 +36,7 @@ public class TestMinigames {
         testingame.NewGame(false);
         testingame.Maths.StartGame();
         for(int i = 0; i < 80; i++) testingame.Maths.CheckResult(testingame.Maths.getResult());
-        System.out.println(testingame.Maths.CommonValues.getMaxPunctuation());
+        System.out.println(testingame.Maths.getCommonValues().getMaxPunctuation());
         for(int i = 0; i < 4; i++) testingame.Maths.CheckResult((long)0);
         assertEquals(80, testingame.getMaxPunctuationMath().intValue());
     }

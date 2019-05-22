@@ -19,10 +19,12 @@ public class Items {
     private String Image;
     private static List ItemList;
 
+    /*
+    * Initialize the class
+     */
     public Items() {
         LoadItems();
     }
-
     public Items(String image, String name, int price, int healthRecovered, int experience) {
         setImage(image);
         setName(name);
@@ -32,7 +34,6 @@ public class Items {
     }
 
     //http://www.java67.com/2015/08/how-to-load-data-from-csv-file-in-java.html
-
     public void LoadItems() {
         setItemList(readItemsFromCSV());
     }
@@ -76,6 +77,9 @@ public class Items {
         return temp;
     }
 
+    /*
+    * Load the item
+     */
     private static Items loadItem(String[] metadata) {
         String image = "/Media/Images/Icons/"+metadata[4];
         String name = metadata[0];
@@ -97,12 +101,6 @@ public class Items {
     public void setImage(String image) { Image = image; }
     public List getItemList() { return ItemList; }
     public void setItemList(List itemList) { ItemList = itemList; }
-
-    public int getExperience() {
-        return Experience;
-    }
-
-    public void setExperience(int experience) {
-        Experience = experience;
-    }
+    public int getExperience() { return Experience; }
+    public void setExperience(int experience) { Experience = experience; }
 }

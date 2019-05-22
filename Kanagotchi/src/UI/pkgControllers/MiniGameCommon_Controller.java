@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 
 public class MiniGameCommon_Controller extends Common_Controller  {
 
+    //Values
     @FXML
     Label Punctuation;
     @FXML

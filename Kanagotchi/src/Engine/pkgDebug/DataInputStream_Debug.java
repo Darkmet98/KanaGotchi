@@ -9,12 +9,19 @@ import java.util.logging.Logger;
 
 public class DataInputStream_Debug extends DataInputStream {
 
+    //Logger
     private static final Logger Log = Logger.getLogger( "DEBUG DATA IN" );
 
+    /*
+    * Initialize the class
+     */
     public DataInputStream_Debug(InputStream in) {
         super(in);
     }
 
+    /*
+    * Read the magic header from the local save
+     */
     public String readSaveMagic(boolean debug) throws IOException {
         String magic = readUTF();
         if(debug)Log.log(Level.INFO, magic);
@@ -22,6 +29,9 @@ public class DataInputStream_Debug extends DataInputStream {
         return magic;
     }
 
+    /*
+    * Read a long value from the local save
+     */
     public long readSaveLong(boolean debug) throws IOException {
         long result = readLong();
         if(debug)Log.log(Level.INFO, Long.toString(result));
@@ -29,6 +39,9 @@ public class DataInputStream_Debug extends DataInputStream {
         return result;
     }
 
+    /*
+    * Read the date from the local save
+     */
     public LocalDateTime readSaveDate(boolean debug) throws IOException {
         String date = readUTF();
         LocalDateTime dateTime = LocalDateTime.parse(date);
@@ -37,6 +50,9 @@ public class DataInputStream_Debug extends DataInputStream {
         return dateTime;
     }
 
+    /*
+    * Read a integer from the local save
+     */
     public int readSaveInt(boolean debug) throws IOException {
         int result = readInt();
         if(debug)Log.log(Level.INFO, Integer.toString(result));

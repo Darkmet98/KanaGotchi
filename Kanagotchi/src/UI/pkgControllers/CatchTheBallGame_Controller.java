@@ -11,20 +11,22 @@ import javafx.util.Duration;
 
 public class CatchTheBallGame_Controller extends MiniGameCommon_Controller {
 
+    //JavaFX Items
     @FXML
     Label time;
     @FXML
     Sphere sphere;
 
-    //Mechanics
+    //Ball Mechanics
     private double dx = 7; //Step on x or velocity
     private double dy = 3; //Step on y
 
-    Timeline timeline = new Timeline(new KeyFrame(Duration.millis(20), t -> {
+    private Timeline timeline = new Timeline(new KeyFrame(Duration.millis(20), t -> {
         //move the ball
         sphere.setLayoutX(sphere.getLayoutX() + dx);
         sphere.setLayoutY(sphere.getLayoutY() + dy);
 
+        //Obtain the limits on the window
         Bounds bounds = window.getBoundsInLocal();
 
         //If the ball reaches the left or right border make the step negative
@@ -46,61 +48,97 @@ public class CatchTheBallGame_Controller extends MiniGameCommon_Controller {
     }));
 
 
+
+    /*
+    * Initialize the FXML Controller
+     */
     @FXML
     public void initialize() {
+        //Start the game
         game.CatchBall.StartGame();
+        //Start the listeners
         LoadMiniGameListeners();
+        //Load the values
         LoadGameValues();
+        //Add the textures to the ball and move
         SelectMiniGame_Controller.AddSphereColor(sphere);
         MoveBall();
     }
 
 
-    public void LoadGameValues() {
+    /*
+    * Load the game Values
+     */
+    private void LoadGameValues() {
+        //Load the punctuation
         Punctuation.setText(String.valueOf(game.CatchBall.CommonValues.getMaxPunctuation()));
+        //Read the max punctuation
         MaxPunctuation.setText(String.valueOf(game.getMaxPunctuationCatchBall()));
+        //Get the time
         time.setText(String.valueOf(game.CatchBall.getTimeIngame()));
     }
 
+    /*
+    * Quit the game
+     */
     @FXML
     public void Quit() {
+        //Show a mesagge
         ShowInfoMsg("Fin de la partida. Has conseguido " + (game.CatchBall.CommonValues.getMaxPunctuation()*2) + " monedas y\n" + game.CatchBall.CommonValues.getMaxPunctuation() + " puntos de experiencia.");
+        //End the game and go to the ingame screen
         game.CatchBall.EndGame();
         VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);
     }
 
+    /*
+    * When you catch the ball
+     */
     @FXML
     public void BallCatched() {
+        //Add the punctuation and rewrite the time
         game.CatchBall.BallCatched();
+        //Add more speed
         dx+=4;
         dy+=2;
+        //Reload the ball
         StopBall();
         MoveBall();
     }
 
 
-    public void LoadMiniGameListeners() {
-        game.CatchBall.getTimeIngameProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
-            time.setText(String.valueOf(game.CatchBall.getTimeIngame()));
-        }));
+    /*
+    * Load the listeners
+     */
+    private void LoadMiniGameListeners() {
+        //Load the time
+        game.CatchBall.getTimeIngameProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> time.setText(String.valueOf(game.CatchBall.getTimeIngame()))));
 
         //Get the actual punctuation
-        game.CatchBall.CommonValues.getMaxPunctuationProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> {
-            Punctuation.setText(String.valueOf(game.CatchBall.CommonValues.getMaxPunctuation()));
-        }));
+        game.CatchBall.CommonValues.getMaxPunctuationProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(() -> Punctuation.setText(String.valueOf(game.CatchBall.CommonValues.getMaxPunctuation()))));
+
         //Get the life
         game.CatchBall.CommonValues.getLifeProperty().addListener((observable, oldValue, newValue) -> Platform.runLater(this::LifeHearts));
     }
 
+    /*
+    * Move the ball
+     */
     private void MoveBall() {
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
     }
+
+    /*
+    * Stop the ball
+     */
     private void StopBall() {
         timeline.stop();
     }
 
-    public void LifeHearts() {
+    /*
+    * Get the life info
+     */
+    private void LifeHearts() {
         switch (game.CatchBall.CommonValues.getLife()) {
             case 0: //End game
                 Heart1.setVisible(false);

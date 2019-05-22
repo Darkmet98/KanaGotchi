@@ -15,7 +15,6 @@ import Engine.pkgSaves.WriteSave;
 
 
 import java.io.IOException;
-import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.logging.Level;
@@ -53,8 +52,12 @@ public class Game {
     private boolean EngineStarted = false;
     private boolean BdFailed = false;
 
+    //Logger
     public static final Logger Log = Logger.getLogger( "DEBUG DATA IN" );
 
+    /*
+    * Initialize the class
+     */
     public Game() {
         load = new LoadSave(this);
         write = new WriteSave(this);
@@ -67,22 +70,28 @@ public class Game {
         DbConnect = new DataBase_Connection();
     }
 
-    //When you initialize the first time the game.
+    /*
+    * Start a new game
+     */
     public void NewGame(boolean debug) {
         //Check the BD
+        //TODO Refactorizar esto
         try{
             DbConnect.ConnectBD();
             DbTables.CheckTable();
         }
         catch (Exception e) {}
 
-
+        //Enable debug logger
         if(debug) EnableDebug();
+
+        //Generate a new item treemap and get all items
         Map<Integer, Integer> newgame = new TreeMap<>();
         for(int i = 0; i < getItem().getItemList().size(); i++) newgame.put(i, 0);
+
+        //Set the initial values
         newgame.replace(0,2);
         newgame.replace(1,2);
-        //Set the initial values
         setMoney(100);
         setStatus(4);
         setHealth(100);
@@ -93,13 +102,23 @@ public class Game {
         setTime(LocalDateTime.now());
         setItemsOwned(newgame);
         Task.StartTasks();
+        //Start the engine
         setEngineStarted(true);
     }
 
+    /*
+    * Enable debug
+     */
     private void EnableDebug()  {
         setDebug(true);
     }
+
+
+    /*
+    * Write the save game
+     */
     public void save() throws IOException {
+        //Try to connect to the DB
         try {
             DbConnect.ConnectBD();
             DbTables.WriteSaveToBD();
@@ -107,8 +126,13 @@ public class Game {
         catch (Exception e) {
             setBdFailed(true);
         }
+        //Write the local save
         write.WriteSaveFile();
          }
+
+     /*
+     * Load the save game
+      */
     public void load() throws BadHeaderSave, IOException, SaveFileDoesntExists {
 
         try {
@@ -116,7 +140,8 @@ public class Game {
             DbTables.LoadSaveBD();
         }
         catch (Exception e) {
-            e.printStackTrace();
+            //Enabled only for debug purposes
+            //e.printStackTrace();
             setBdFailed(true);
         }
 
@@ -128,16 +153,20 @@ public class Game {
         Task.StartTasks();
         setEngineStarted(true);
     }
-    //Stop the engine
+
+    /*
+    * Stop the time counters
+     */
     public void Stop() { getCount().cancel(); }
 
+    //For tests
     public void EatFood(int selected) throws ItemIsZero, ItemNotSelected { Chara.EatFood(selected); }
     public void Buy(int item_selected) throws InsufficientMoney, ItemNotSelected {ShopOperations.Buy(item_selected);}
-
-    //For tests
     public void DecreaseHealth() {Task.DecreaseHealth();}
     public void ChangeStatus() {Task.ChangeStatus();}
     public void RecoveryHealth(int recovered) {Chara.RecoveryHealth(recovered);}
+
+
 
     //Get Set Zone
     public Boolean getDebug() {
@@ -278,10 +307,6 @@ public class Game {
         CharacterSelected = characterSelected;
     }
 
-    public LongProperty getMaxPunctuationMathProperty() {
-        if(getDebug()) Log.log(Level.INFO, Long.toString(getMaxPunctuationMath()));
-        return MaxPunctuationMath;
-    }
     public Long getMaxPunctuationMath() {
         return MaxPunctuationMath.getValue();
     }
@@ -289,10 +314,6 @@ public class Game {
     public void setMaxPunctuationMath(Long maxPunctuationMath) {
         if(MaxPunctuationMath == null) MaxPunctuationMath = new SimpleLongProperty();
         MaxPunctuationMath.set(maxPunctuationMath);
-    }
-
-    public LongProperty getMaxPunctuationCatchBallProperty() {
-        return MaxPunctuationCatchBall;
     }
 
     public Long getMaxPunctuationCatchBall() {
