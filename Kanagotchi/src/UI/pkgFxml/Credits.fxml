@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.pkgControllers.Settings_Controller">
+
+    <ImageView id="image" fitHeight="38.0" fitWidth="89.0" layoutX="359.0" layoutY="548.0" onMouseEntered="#SelectedSound" onMouseReleased="#TitleScreen" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../../resources/Media/Images/UI/Salir.png" />
+        </image>
+    </ImageView>
+    <Label id="TextNotSelectionableUI" layoutX="334.0" layoutY="14.0" text="CREDITOS">
+        <font>
+            <Font name="Curse Casual Regular" size="42.0" />
+        </font>
+    </Label>
+      <Label id="TextNotSelectionableUI" layoutX="51.0" layoutY="63.0" text="Programador del juego: Pedro Garau Martínez (Darkmet98)">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="245.0" layoutY="103.0" text="Diseñador de Neptune: Fox">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="45.0" layoutY="143.0" text="Música de inicio: Up In My Jam (All Of A Sudden) by - Kubbi ">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="226.0" layoutY="183.0" text="Musica ingame: Arrival - MBB">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="24.0" layoutY="229.0"  text="KanaGotchi es un juego basado en el famoso Tamagotchi como">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="171.0" layoutY="269.0" text="proyecto de final de curso de 1º DAW.">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="36.0" layoutY="324.0" text="Neptune y Noire es obra de IF, CompileHeart y sus derivados.">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="57.0" layoutY="364.0" text="Box of Evil de Satania (Gabriel Dropout) es obra de eriyy.">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="117.0" layoutY="404.0" text="Kanna de Kobayashi-san Chi No Maid Dragon es">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="257.0" layoutY="444.0" text="obra de Coolkyoushinja.">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label id="TextNotSelectionableUI" layoutX="131.0" layoutY="493.0" text="Este programa esta bajo una licencia GPL V3.">
+         <font>
+            <Font name="Curse Casual Regular" size="34.0" />
+         </font>
+      </Label>
+</AnchorPane>

@@ -25,12 +25,12 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Label id="TextUI" layoutX="515.0" layoutY="198.0" prefHeight="36.0" prefWidth="88.0" text="Dinero:">
+      <Label id="TextNotSelectionableUI" layoutX="515.0" layoutY="198.0" prefHeight="36.0" prefWidth="88.0" text="Dinero:">
          <font>
             <Font name="Curse Casual Regular" size="32.0" />
          </font>
       </Label>
-      <Label id="TextUI" fx:id="Money" layoutX="603.0" layoutY="198.0" prefHeight="36.0" prefWidth="88.0" text="VALUE">
+      <Label id="TextNotSelectionableUI" fx:id="Money" layoutX="603.0" layoutY="198.0" prefHeight="36.0" prefWidth="88.0" text="VALUE">
          <font>
             <Font name="Curse Casual Regular" size="32.0" />
          </font>
@@ -40,7 +40,7 @@
             <Font name="Curse Casual Regular" size="42.0" />
          </font>
       </Label>
-      <Label id="TextUI" layoutX="11.0" layoutY="14.0" text="TIENDA">
+      <Label id="TextNotSelectionableUI" layoutX="11.0" layoutY="14.0" text="TIENDA">
          <font>
             <Font name="Curse Casual Regular" size="55.0" />
          </font>

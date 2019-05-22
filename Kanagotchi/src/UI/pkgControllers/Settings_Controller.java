@@ -19,6 +19,15 @@ public class Settings_Controller extends Common_Controller{
     }
 
     /*
+     * Return to the title screen
+     */
+    @FXML
+    private void Credits() {
+        PressedSound();
+        VistaNavigator.loadVista(VistaNavigator.CREDITS);
+    }
+
+    /*
     * Change the Actual Volume
      */
     @FXML

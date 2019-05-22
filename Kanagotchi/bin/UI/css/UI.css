@@ -3,6 +3,12 @@
     -fx-text-fill: white;
 }
 
+#TextNotSelectionableUI {
+    -fx-effect: dropshadow(three-pass-box, black, 2, 1, 0, 0);
+    -fx-text-fill: white;
+}
+
+
 #TextUI:hover {
     -fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 0);
 }
