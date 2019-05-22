@@ -25,6 +25,7 @@ public class SelectMiniGame_Controller extends Common_Controller {
      */
     @FXML
     public void StartMathGame() {
+        PressedSound();
         VistaNavigator.loadVista(VistaNavigator.MINIGAME_MATH);
     }
     /*
@@ -32,6 +33,7 @@ public class SelectMiniGame_Controller extends Common_Controller {
      */
     @FXML
     public void StartCatchTheBallGame() {
+        PressedSound();
         VistaNavigator.loadVista(VistaNavigator.MINIGAME_CATCHTHEBALL);
     }
 

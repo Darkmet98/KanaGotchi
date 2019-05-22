@@ -1,7 +1,6 @@
 package Engine.pkgTests;
 
 import Engine.pkgDataBase.DataBase_Connection;
-import Engine.pkgDataBase.DataBase_Tables;
 import Engine.pkgMechanics.Game;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -22,7 +21,7 @@ public class TestBD {
 
     @Test
     @DisplayName("Test BD.")
-    public void TestBD() throws SQLException {
+    public void TestTheBD() throws SQLException {
         DataBase_Connection bd = new DataBase_Connection();
         bd.ConnectBD();
         testingame.DbTables.CheckTable();

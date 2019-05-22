@@ -10,7 +10,7 @@
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.pkgControllers.SelectMiniGame_Controller">
     <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#48ff1f" height="13.0" layoutX="89.0" layoutY="224.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
-        <Label id="TextUI" layoutX="199.0" layoutY="50.0" text="SELECCIONA UN MINIJUEGO">
+        <Label id="TextNotSelectionableUI" layoutX="199.0" layoutY="50.0" text="SELECCIONA UN MINIJUEGO">
             <font>
                 <Font name="Curse Casual Regular" size="45.0" />
             </font>
@@ -20,12 +20,12 @@
                 <Font name="Curse Casual Regular" size="45.0" />
             </font>
         </Label>
-        <Label id="TextUI" layoutX="89.0" layoutY="359.0" text="MATEMATICAS">
+        <Label id="TextUI" layoutX="89.0" layoutY="359.0" text="MATEMATICAS" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#StartMathGame">
             <font>
                 <Font name="Curse Casual Regular" size="45.0" />
             </font>
         </Label>
-      <Label id="TextUI" layoutX="480.0" layoutY="359.0" text="ATRAPA LA BOLA">
+      <Label id="TextUI" layoutX="480.0" layoutY="359.0" text="ATRAPA LA BOLA" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#StartCatchTheBallGame">
          <font>
             <Font name="Curse Casual Regular" size="45.0" />
          </font>

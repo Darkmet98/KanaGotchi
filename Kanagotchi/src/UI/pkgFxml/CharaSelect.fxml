@@ -8,17 +8,17 @@
 
 <AnchorPane fx:id="window" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.pkgControllers.CharaSelect_Controller">
    <children>
-      <Label id="TextUI" layoutX="199.0" layoutY="50.0" text="SELECCIONA UN PERSONAJE">
+      <Label id="TextNotSelectionableUI" layoutX="199.0" layoutY="50.0" text="SELECCIONA UN PERSONAJE">
          <font>
             <Font name="Curse Casual Regular" size="45.0" />
          </font>
       </Label>
-      <Label id="TextUI" layoutX="133.0" layoutY="450.0" text="NEPTUNE">
+      <Label id="TextUI" layoutX="133.0" layoutY="450.0" text="NEPTUNE" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Neptune">
          <font>
             <Font name="Curse Casual Regular" size="45.0" />
          </font>
       </Label>
-      <Label id="TextUI" layoutX="558.0" layoutY="450.0" text="NOIRE">
+      <Label id="TextUI" layoutX="558.0" layoutY="450.0" text="NOIRE" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Noire">
          <font>
             <Font name="Curse Casual Regular" size="45.0" />
          </font>

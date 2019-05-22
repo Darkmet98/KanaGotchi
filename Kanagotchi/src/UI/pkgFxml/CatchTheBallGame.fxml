@@ -15,27 +15,27 @@
             <Font name="Curse Casual Regular" size="45.0" />
         </font>
     </Label>
-    <Label id="TextUI" layoutX="25.0" layoutY="63.0" text="PUNTUACIÓN:">
+    <Label id="TextNotSelectionableUI" layoutX="25.0" layoutY="63.0" text="PUNTUACIÓN:">
         <font>
             <Font name="Curse Casual Regular" size="25.0" />
         </font>
     </Label>
-    <Label id="TextUI" fx:id="MaxPunctuation" layoutX="184.0" layoutY="91.0" text="VALUEMAX">
+    <Label id="TextNotSelectionableUI" fx:id="MaxPunctuation" layoutX="184.0" layoutY="91.0" text="VALUEMAX">
         <font>
             <Font name="Curse Casual Regular" size="25.0" />
         </font>
     </Label>
-    <Label id="TextUI" layoutX="25.0" layoutY="91.0" text="PUNTUACIÓN MÁX:">
+    <Label id="TextNotSelectionableUI" layoutX="25.0" layoutY="91.0" text="PUNTUACIÓN MÁX:">
         <font>
             <Font name="Curse Casual Regular" size="25.0" />
         </font>
     </Label>
-    <Label id="TextUI" fx:id="Punctuation" layoutX="145.0" layoutY="63.0" text="VALUEPUNT">
+    <Label id="TextNotSelectionableUI" fx:id="Punctuation" layoutX="145.0" layoutY="63.0" text="VALUEPUNT">
         <font>
             <Font name="Curse Casual Regular" size="25.0" />
         </font>
     </Label>
-    <Label id="TextUI" layoutX="26.0" layoutY="31.0" text="VIDA:">
+    <Label id="TextNotSelectionableUI" layoutX="26.0" layoutY="31.0" text="VIDA:">
         <font>
             <Font name="Curse Casual Regular" size="25.0" />
         </font>
@@ -45,12 +45,12 @@
             <Image url="@../../../resources/Media/Images/Icons/life.png" />
         </image>
     </ImageView>
-      <Label id="TextUI" layoutX="25.0" layoutY="119.0" prefHeight="29.0" prefWidth="79.0" text="TIEMPO:">
+      <Label id="TextNotSelectionableUI" layoutX="25.0" layoutY="119.0" prefHeight="29.0" prefWidth="79.0" text="TIEMPO:">
          <font>
             <Font name="Curse Casual Regular" size="25.0" />
          </font>
       </Label>
-      <Label id="TextUI" fx:id="time" layoutX="99.0" layoutY="120.0" text="VALUETIE">
+      <Label id="TextNotSelectionableUI" fx:id="time" layoutX="99.0" layoutY="120.0" text="VALUETIE">
          <font>
             <Font name="Curse Casual Regular" size="25.0" />
          </font>

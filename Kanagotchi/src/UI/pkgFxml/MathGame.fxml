@@ -20,49 +20,49 @@
                 <Font name="Curse Casual Regular" size="45.0" />
             </font>
         </Label>
-        <Label id="TextUI" layoutX="25.0" layoutY="72.0" text="PUNTUACIÓN:">
+        <Label id="TextNotSelectionableUI" layoutX="25.0" layoutY="72.0" text="PUNTUACIÓN:">
             <font>
                 <Font name="Curse Casual Regular" size="35.0" />
             </font>
         </Label>
-      <Label fx:id="MaxPunctuation" id="TextUI" layoutX="249.0" layoutY="113.0" text="VALUEMAX">
+      <Label fx:id="MaxPunctuation" id="TextNotSelectionableUI" layoutX="249.0" layoutY="113.0" text="VALUEMAX">
          <font>
             <Font name="Curse Casual Regular" size="35.0" />
          </font>
       </Label>
-      <Label id="TextUI" layoutX="26.0" layoutY="113.0" text="PUNTUACIÓN MÁX:">
+      <Label id="TextNotSelectionableUI" layoutX="26.0" layoutY="113.0" text="PUNTUACIÓN MÁX:">
          <font>
             <Font name="Curse Casual Regular" size="35.0" />
          </font>
       </Label>
-      <Label fx:id="Punctuation" id="TextUI" layoutX="187.0" layoutY="72.0" text="VALUEPUNT">
+      <Label fx:id="Punctuation" id="TextNotSelectionableUI" layoutX="187.0" layoutY="72.0" text="VALUEPUNT">
          <font>
             <Font name="Curse Casual Regular" size="35.0" />
          </font>
       </Label>
-      <Label id="TextUI" layoutX="26.0" layoutY="160.0" text="OPERACIÓN ACTUAL:">
+      <Label id="TextNotSelectionableUI" layoutX="26.0" layoutY="160.0" text="OPERACIÓN ACTUAL:">
          <font>
             <Font name="Curse Casual Regular" size="50.0" />
          </font>
       </Label>
-      <Label fx:id="OperationLine1" id="TextUI" contentDisplay="CENTER" layoutX="342.0" layoutY="272.0" text="VALUE1" textAlignment="CENTER">
+      <Label fx:id="OperationLine1" id="TextNotSelectionableUI" contentDisplay="CENTER" layoutX="342.0" layoutY="272.0" text="VALUE1" textAlignment="CENTER">
          <font>
             <Font name="Curse Casual Regular" size="48.0" />
          </font>
       </Label>
-      <Label fx:id="OperationLine2" id="TextUI" contentDisplay="CENTER" layoutX="342.0" layoutY="328.0" text="VALUE2" textAlignment="CENTER">
+      <Label fx:id="OperationLine2" id="TextNotSelectionableUI" contentDisplay="CENTER" layoutX="342.0" layoutY="328.0" text="VALUE2" textAlignment="CENTER">
          <font>
             <Font name="Curse Casual Regular" size="48.0" />
          </font>
       </Label>
       <Line endX="402.0" layoutX="265.0" layoutY="397.0" startX="-110.0" />
       <TextField fx:id="UserResult" layoutX="154.0" layoutY="409.0" prefHeight="26.0" prefWidth="513.0" />
-      <Label id="TextUI" layoutX="26.0" layoutY="31.0" text="VIDA:">
+      <Label id="TextNotSelectionableUI" layoutX="26.0" layoutY="31.0" text="VIDA:">
          <font>
             <Font name="Curse Casual Regular" size="35.0" />
          </font>
       </Label>
-      <Label fx:id="Operation" id="TextUI" layoutX="366.0" layoutY="160.0" text="VALUEACTU">
+      <Label fx:id="Operation" id="TextNotSelectionableUI" layoutX="366.0" layoutY="160.0" text="VALUEACTU">
          <font>
             <Font name="Curse Casual Regular" size="50.0" />
          </font>
@@ -83,5 +83,4 @@
          </image>
       </ImageView>
     </children>
-
 </AnchorPane>

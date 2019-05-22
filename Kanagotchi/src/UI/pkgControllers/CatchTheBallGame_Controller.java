@@ -83,6 +83,7 @@ public class CatchTheBallGame_Controller extends MiniGameCommon_Controller {
      */
     @FXML
     public void Quit() {
+        PressedSound();
         //Show a mesagge
         ShowInfoMsg("Fin de la partida. Has conseguido " + (game.CatchBall.CommonValues.getMaxPunctuation()*2) + " monedas y\n" + game.CatchBall.CommonValues.getMaxPunctuation() + " puntos de experiencia.");
         //End the game and go to the ingame screen
@@ -95,6 +96,7 @@ public class CatchTheBallGame_Controller extends MiniGameCommon_Controller {
      */
     @FXML
     public void BallCatched() {
+        PressedSound();
         //Add the punctuation and rewrite the time
         game.CatchBall.BallCatched();
         //Add more speed

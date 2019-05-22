@@ -61,6 +61,7 @@ public class Food_Controller extends Common_Controller {
      */
     @FXML
     private void Eat() {
+        PressedSound();
         //Call the eatfood method and validate the selection
         try{
             game.EatFood(ItemTable.getSelectionModel().getSelectedIndex());

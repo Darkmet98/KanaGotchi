@@ -29,7 +29,7 @@ public class Ingame_Controller extends Common_Controller {
     * Initialize the class
      */
     public Ingame_Controller() throws IOException{
-        //Try to load the local save
+        //Try to load the save
         if(VistaNavigator.loadSave && !game.isEngineStarted()) {
             try {
                 game.load();
@@ -62,9 +62,10 @@ public class Ingame_Controller extends Common_Controller {
                     "y la partida local guardada está dañada o no existe.\n" +
                     "Has vuelto a la pantalla de título.");
             returnToTitleScreen();
+            return;
         }
+
         //Load the values
-        //TODO Optimizar esto
         LoadValues();
         DigiEvolution();
         //Read the character selected
@@ -76,13 +77,17 @@ public class Ingame_Controller extends Common_Controller {
     * Open the MiniGame menu
      */
     @FXML
-    public void SelectMiniGame() {VistaNavigator.loadVista(VistaNavigator.MINIGAME_MENU);}
+    public void SelectMiniGame() {
+        PressedSound();
+        VistaNavigator.loadVista(VistaNavigator.MINIGAME_MENU);}
 
     /*
     * Open the Shop menu
      */
     @FXML
     public void Shop() {
+
+        PressedSound();
         VistaNavigator.loadVista(VistaNavigator.SHOP);
     }
 
@@ -91,6 +96,7 @@ public class Ingame_Controller extends Common_Controller {
      */
     @FXML
     public void Food() {
+        PressedSound();
         VistaNavigator.loadVista(VistaNavigator.FOOD_MENU);
     }
 

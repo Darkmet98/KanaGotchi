@@ -18,17 +18,17 @@
                 <Image url="@../../../resources/Media/Images/UI/LifeBar.png" />
             </image>
         </ImageView>
-        <Label id="TextUI" layoutX="29.0" layoutY="156.0" text="Nivel:">
+        <Label id="TextNotSelectionableUI" layoutX="29.0" layoutY="156.0" text="Nivel:">
             <font>
                 <Font name="Curse Casual Regular" size="26.0" />
             </font>
         </Label>
-        <Label id="TextUI" layoutX="24.0" layoutY="78.0" text="Estado:">
+        <Label id="TextNotSelectionableUI" layoutX="24.0" layoutY="78.0" text="Estado:">
             <font>
                 <Font name="Curse Casual Regular" size="26.0" />
             </font>
         </Label>
-        <Label id="TextUI" fx:id="status" layoutX="96.0" layoutY="79.0" text="VALUE">
+        <Label id="TextNotSelectionableUI" fx:id="status" layoutX="96.0" layoutY="79.0" text="VALUE">
             <font>
                 <Font name="Curse Casual Regular" size="26.0" />
             </font>
@@ -38,7 +38,7 @@
                 <Image url="@../../../resources/Media/Images/UI/LifeBar.png" />
             </image>
         </ImageView>
-        <Label id="TextUI" fx:id="level" layoutX="84.0" layoutY="156.0" text="VALUE">
+        <Label id="TextNotSelectionableUI" fx:id="level" layoutX="84.0" layoutY="156.0" text="VALUE">
             <font>
                 <Font name="Curse Casual Regular" size="26.0" />
             </font>
@@ -51,17 +51,17 @@
             <TableColumn fx:id="Experience" editable="false" prefWidth="118.0" sortable="false" text="Experiencia" />
         </columns>
       </TableView>
-        <Label id="TextUI" layoutX="691.0" layoutY="14.0" onMouseReleased="#Return" text="Volver">
+        <Label id="TextUI" layoutX="691.0" layoutY="14.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Return" text="Volver">
             <font>
                 <Font name="Curse Casual Regular" size="42.0" />
             </font>
         </Label>
-        <Label id="TextUI" layoutX="22.0" layoutY="188.0" onMouseReleased="#Eat" text="Dar">
+        <Label id="TextUI" layoutX="22.0" layoutY="188.0" onMouseClicked="#PressedSound" onMouseEntered="#SelectedSound" onMouseReleased="#Eat" text="Dar">
             <font>
                 <Font name="Curse Casual Regular" size="42.0" />
             </font>
         </Label>
-        <Label id="TextUI" layoutX="11.0" layoutY="14.0" prefHeight="49.0" prefWidth="217.0" text="ALIMENTAR">
+        <Label id="TextNotSelectionableUI" layoutX="11.0" layoutY="14.0" prefHeight="49.0" prefWidth="217.0" text="ALIMENTAR">
             <font>
                 <Font name="Curse Casual Regular" size="55.0" />
             </font>

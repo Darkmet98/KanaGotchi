@@ -3,7 +3,6 @@ package Engine.pkgTests;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import Engine.pkgMechanics.Game;
 import Engine.pkgItems.Items;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -207,6 +207,7 @@ public class Common_Controller {
      */
     @FXML
     public void Return() {
+        PressedSound();
         VistaNavigator.loadVista(VistaNavigator.MAIN_INGAME);
     }
 

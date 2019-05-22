@@ -75,12 +75,13 @@ public class Game {
      */
     public void NewGame(boolean debug) {
         //Check the BD
-        //TODO Refactorizar esto
         try{
             DbConnect.ConnectBD();
             DbTables.CheckTable();
         }
-        catch (Exception e) {}
+        catch (Exception e) {
+            if(debug) e.printStackTrace();
+        }
 
         //Enable debug logger
         if(debug) EnableDebug();

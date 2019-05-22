@@ -78,6 +78,7 @@ public class Shop_Controller extends Common_Controller{
      */
     @FXML
     public void Buy() {
+        PressedSound();
         try{
             Ingame_Controller.game.Buy(ItemTable.getSelectionModel().getSelectedIndex());
         } catch (InsufficientMoney | ItemNotSelected  msg) {

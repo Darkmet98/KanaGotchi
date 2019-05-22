@@ -68,10 +68,8 @@ public class Items {
                 line = br.readLine();
             }
 
-        } catch (IOException ioe) {
+        } catch (IOException | URISyntaxException ioe) {
             ioe.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
         }
 
         return temp;
