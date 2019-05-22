@@ -15,7 +15,7 @@ Próximamente
 * Música de inicio: Up In My Jam (All Of A Sudden) by - Kubbi
 * Musica ingame: Arrival - MBB
 
-#Disclaimer
+# Disclaimer
 Neptune y Noire es obra de IF, CompileHeart y sus derivados.
 
 Box of Evil de Satania (Gabriel Dropout) es obra de eriyy.
