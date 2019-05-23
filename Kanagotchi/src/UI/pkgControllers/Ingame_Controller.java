@@ -40,7 +40,7 @@ public class Ingame_Controller extends Common_Controller {
         }
         //If load correctly
         else if (!VistaNavigator.loadSave && !game.isEngineStarted()) {
-            game.NewGame(false);
+            game.NewGame(true);
             game.setCharacterSelected(VistaNavigator.chara);
         }
     }

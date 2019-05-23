@@ -21,7 +21,6 @@ public class DataBase_Tables  {
      */
     public DataBase_Tables(Game game) {
         GameValues = game;
-
     }
 
     /*
@@ -36,6 +35,10 @@ public class DataBase_Tables  {
         if(ResultadoSql.next())
             //If the table doesn't exists
             if (ResultadoSql.getByte(1) == 0)  CreateTable();
+            else {
+                DeleteSave();
+                CreateTable();
+            }
 
     }
 
@@ -67,6 +70,18 @@ public class DataBase_Tables  {
                     "  ADD item" + i +" integer DEFAULT 0");
         }
     }
+
+    /*
+    * Drop the table
+     */
+    public void DeleteSave() throws SQLException {
+        //Connect
+        LineSql = DataBase_Connection.BdConnection.createStatement();
+
+        //Delete the table
+        ResultadoSql = LineSql.executeQuery("drop table KanaGotchi_Save");
+    }
+
 
     /*
     * Write the save to the DB

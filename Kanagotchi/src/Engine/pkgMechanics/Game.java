@@ -76,7 +76,7 @@ public class Game {
     public void NewGame(boolean debug) {
         //Check the BD
         try{
-            DbConnect.ConnectBD();
+            DbConnect.LoadCSV();
             DbTables.CheckTable();
         }
         catch (Exception e) {
@@ -121,10 +121,12 @@ public class Game {
     public void save() throws IOException {
         //Try to connect to the DB
         try {
-            DbConnect.ConnectBD();
+            DbConnect.LoadCSV();
             DbTables.WriteSaveToBD();
         }
         catch (Exception e) {
+            //Enabled only for debug purposes
+            e.printStackTrace();
             setBdFailed(true);
         }
         //Write the local save
@@ -137,12 +139,12 @@ public class Game {
     public void load() throws BadHeaderSave, IOException, SaveFileDoesntExists {
 
         try {
-            DbConnect.ConnectBD();
+            DbConnect.LoadCSV();
             DbTables.LoadSaveBD();
         }
         catch (Exception e) {
             //Enabled only for debug purposes
-            //e.printStackTrace();
+            e.printStackTrace();
             setBdFailed(true);
         }
 

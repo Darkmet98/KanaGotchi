@@ -10,7 +10,7 @@ import java.io.IOException;
 public class WriteSave {
 
     //Values
-    private static File SaveFolder = new File(System.getProperty("user.home")+"/KanaGotchi");
+    public static File SaveFolder = new File(System.getProperty("user.home")+"/KanaGotchi");
     public static File SaveFile = new File(SaveFolder +"/save.sav");
     private Game Gameor;
 

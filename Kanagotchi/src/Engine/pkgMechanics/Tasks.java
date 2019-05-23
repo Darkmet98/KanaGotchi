@@ -28,8 +28,8 @@ public class Tasks {
                 DecreaseHealth();
             }
         };
-        //GameValues.getCount().schedule(checkHealth, 0, 1000);
-        GameValues.getCount().schedule(checkHealth, 60000, 60000);
+        GameValues.getCount().schedule(checkHealth, 0, 1000);
+        //GameValues.getCount().schedule(checkHealth, 60000, 60000);
     }
 
     /*
